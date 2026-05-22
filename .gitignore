@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+._*
+
+# Claude Code 本地配置
+.claude/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 临时文件
+*.log
+*.tmp
