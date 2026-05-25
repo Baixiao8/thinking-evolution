@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 时代的用户体验之书 · 千图AI 内部读本</title>
+<meta name="description" content="一份给千图AI 团队的内部 UX 读本——AI 时代的设计语言、问题地图、案例横评、原则重构。">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_shared/style.css?v=20260525a">
+<link rel="stylesheet" href="../../_shared/reader-bootstrap.css?v=20260525a">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<style>
+  /* Pending chapter card · 待写章节的视觉降级 */
+  .hero-toc .card.pending {
+    opacity: 0.42;
+    cursor: default;
+    pointer-events: none;
+  }
+  .hero-toc .card.pending::after {
+    content: "WIP";
+    position: absolute;
+    top: 12px; right: 12px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--c-theory);
+    font-family: var(--ff-mono, "JetBrains Mono", monospace);
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ============= HERO ============= -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-badge">AI UX HANDBOOK · 内部读本 · v0.1</div>
+    <h1>
+      AI 时代的用户体验之书<span class="ital">.</span>
+      <span class="small">范式 · 问题地图 · 案例 · 原则 · 应用 · <em class="ital">An AI-Native UX Handbook</em></span>
+    </h1>
+    <p class="lede">
+      这不是一份对外发表稿,是一份<em>写给千图AI 团队的内部读本</em>——
+      当 ChatGPT、Claude、Cursor、v0、Krea 重写了 UX 的词汇表,
+      Don Norman 1988 年的设计原则开始漏风,
+      我们需要新的设计语言、新的判断标准、新的应用准绳。
+      <strong>16 章 · 4 幕 · 一套适用于 AI 产品的设计思考框架。</strong>
+      本书不写"怎么用 AI",写"AI 产品的 UX 怎么设计"。
+    </p>
+
+    <div class="hero-meta">
+      <div class="item">
+        <div class="label">CHAPTERS</div>
+        <div class="value">16<span class="unit">/4 PARTS</span></div>
+        <div class="sub">总论 · 问题地图 · 案例横评 · 重构应用</div>
+      </div>
+      <div class="item">
+        <div class="label">CURRENT</div>
+        <div class="value">v0.1<span class="unit">5/16</span></div>
+        <div class="sub">前言 + 第 1-4 章 · 约 21K 字</div>
+      </div>
+      <div class="item">
+        <div class="label">PLANNED</div>
+        <div class="value">55K<span class="unit">words</span></div>
+        <div class="sub">完整版预计 5-6 周完成</div>
+      </div>
+      <div class="item">
+        <div class="label">AUDIENCE</div>
+        <div class="value">内部<span class="unit">team</span></div>
+        <div class="sub">千图AI 设计 · 产品 · 研发</div>
+      </div>
+    </div>
+
+    <div class="hero-toc-section">
+      <div class="hero-toc-label">CHAPTER MAP · 章节地图</div>
+
+      <div class="hero-toc-part">
+        <div class="part-title">前言 <span class="en">PREFACE · 为什么我们要写这本书</span></div>
+        <div class="hero-toc">
+          <a href="#s0" class="card" style="--ch-color: var(--c-psych);">
+            <span class="num">PREFACE</span>
+            <div class="title">为什么我们要写这本书</div>
+            <div class="en">Why This Book Exists</div>
+            <div class="desc">起源 / 边界 / 四个立场 / 三种读法。从 ChatGPT 比 GPT-3 网页版火一万倍说起。</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-toc-part">
+        <div class="part-title">第一篇 总论与历史 <span class="en">PART I · CONTEXT &amp; EVOLUTION</span></div>
+        <div class="hero-toc">
+          <a href="#s1" class="card" style="--ch-color: var(--c-psych);">
+            <span class="num">CHAPTER 01 · PARADIGM</span>
+            <div class="title">GUI → 触控 → Agent 范式跃迁</div>
+            <div class="en">The Three Paradigm Shifts</div>
+            <div class="desc">三个时代,三个 Hello 时刻,三段范式。理解今天的 UX 难题是上一代的"遗产税"。</div>
+          </a>
+          <a href="#s2" class="card" style="--ch-color: var(--c-theory);">
+            <span class="num">CHAPTER 02 · WHY DIFFERENT</span>
+            <div class="title">AI 产品的 UX 为什么不一样?</div>
+            <div class="en">What Makes AI UX Different</div>
+            <div class="desc">5 组对比 → 5 个特质 → 引出 Part II 问题地图。从 Smart Compose vs Copilot 开始。</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-toc-part">
+        <div class="part-title">第二篇 问题地图 <span class="en">PART II · PROBLEM MAP · 8 大 UX 新难题</span></div>
+        <div class="hero-toc">
+          <a href="#s3" class="card" style="--ch-color: var(--c-physio);">
+            <span class="num">CHAPTER 03 · TRUST</span>
+            <div class="title">信任与幻觉</div>
+            <div class="en">Trust &amp; Hallucinations</div>
+            <div class="desc">从 Schwartz 律师案讲起。信任三层次 · 5 种 UX 模式 · 产品横评。</div>
+          </a>
+          <a href="#s4" class="card" style="--ch-color: var(--c-session);">
+            <span class="num">CHAPTER 04 · CONTROL</span>
+            <div class="title">可控性悖论</div>
+            <div class="en">The Control Paradox</div>
+            <div class="desc">从法航 447 讲起。可控性 5 维度 · 4 种行业解法 · 适用边界。</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-strength);">
+            <span class="num">CHAPTER 05 · GENERATIVE UI</span>
+            <div class="title">生成式 UI</div>
+            <div class="en">Generative UI</div>
+            <div class="desc">界面本身在被生成 · v0 / Claude Artifact / Bolt 对比 · v0.2 待写</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-recovery);">
+            <span class="num">CHAPTER 06 · GRACEFUL FAILURE</span>
+            <div class="title">错误兜底与优雅降级</div>
+            <div class="en">Graceful Failure</div>
+            <div class="desc">AI 必然出错时的 UX 哲学 · retry / undo / human handoff · v0.2 待写</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-nutrition);">
+            <span class="num">CHAPTER 07 · PROMPT LAYER</span>
+            <div class="title">提示词作为新交互层</div>
+            <div class="en">Prompt as New Interaction</div>
+            <div class="desc">从命令到对话到意图 · placeholder / slash / system prompt · v0.2 待写</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-injury);">
+            <span class="num">CHAPTER 08 · AGENT EDGE</span>
+            <div class="title">Agent 的边界感</div>
+            <div class="en">Agent Boundaries</div>
+            <div class="desc">自动 vs 问询的张力 · 多步任务的中断/回滚/介入 · v0.2 待写</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-physio);">
+            <span class="num">CHAPTER 09 · MULTIMODAL</span>
+            <div class="title">多模态融合</div>
+            <div class="en">Multimodal Fusion</div>
+            <div class="desc">语音 + 视觉 + 手势 + 文本 · 模态切换的 UX 议题 · v0.3 待写</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-psych);">
+            <span class="num">CHAPTER 10 · PERSONALITY</span>
+            <div class="title">AI 产品的人格与情感设计</div>
+            <div class="en">AI Persona &amp; Emotion Design</div>
+            <div class="desc">Claude vs ChatGPT vs Grok · 品牌 + UX 交叉 · v0.3 待写</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-toc-part">
+        <div class="part-title">第三篇 案例横评 <span class="en">PART III · CASE STUDIES</span></div>
+        <div class="hero-toc">
+          <a class="card pending" style="--ch-color: var(--c-theory);">
+            <span class="num">CHAPTER 11 · GENERATIVE</span>
+            <div class="title">内容生成类 X-Ray</div>
+            <div class="en">Generative Products X-Ray</div>
+            <div class="desc">Claude / v0 / Krea / 即梦 / 通义万相 / Midjourney · v0.4 待写</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-strength);">
+            <span class="num">CHAPTER 12 · DEVTOOLS</span>
+            <div class="title">AI 辅助生产力对比组</div>
+            <div class="en">AI DevTools Comparison</div>
+            <div class="desc">Cursor / Copilot / Bolt / Lovable · v0.4 待写</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-injury);">
+            <span class="num">CHAPTER 13 · FAILURES</span>
+            <div class="title">硬件 / Agent 的失败考古</div>
+            <div class="en">Hardware &amp; Agent Failures</div>
+            <div class="desc">Rabbit R1 / Humane Pin / 早期 Bing Chat · v0.4 待写</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-toc-part">
+        <div class="part-title">第四篇 重构与应用 <span class="en">PART IV · RECONSTRUCTION &amp; APPLICATION</span></div>
+        <div class="hero-toc">
+          <a class="card pending" style="--ch-color: var(--c-race);">
+            <span class="num">CHAPTER 14 · NEW PRINCIPLES</span>
+            <div class="title">AI 时代设计十二诫</div>
+            <div class="en">The Twelve Commandments</div>
+            <div class="desc">Don Norman / Nielsen 启发法的体检与重写 · v0.5 待写</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-session);">
+            <span class="num">CHAPTER 15 · QIANTU AUDIT</span>
+            <div class="title">千图AI 的 UX 体检</div>
+            <div class="en">Qiantu AI Audit</div>
+            <div class="desc">用前 13 章工具系统扫描我们自己 · v0.5 待写</div>
+          </a>
+          <a class="card pending" style="--ch-color: var(--c-recovery);">
+            <span class="num">CHAPTER 16 · ROADMAP</span>
+            <div class="title">千图AI 的 90 / 180 / 365 天改进路线图</div>
+            <div class="en">Action Roadmap</div>
+            <div class="desc">体检诊断 → 落地行动清单 · v0.5 待写</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<main>

@@ -1,0 +1,188 @@
+/* ==========================================================================
+ * Reader · 极简听书组件样式
+ * v7.0 · 2026-05-24
+ *
+ * 通用化重写:无主题切换 / 无字号档位 / 无 Sheet / 无 mini player
+ * 只有最简 3 个控件 + 浮层
+ * ========================================================================== */
+
+.reader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: #f0ebdd;
+  color: #1a1a1a;
+  display: none;
+  flex-direction: column;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  animation: rOverlayIn 0.22s ease;
+}
+.reader-overlay.open {
+  display: flex;
+}
+@keyframes rOverlayIn {
+  from { opacity: 0; transform: scale(0.985); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ─── 控制条 ──────────────────────────────────────────────── */
+.reader-controls {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: rgba(240, 235, 221, 0.95);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(26, 26, 26, 0.08);
+}
+
+.reader-controls button,
+.reader-controls select {
+  background: rgba(26, 26, 26, 0.06);
+  border: none;
+  color: #1a1a1a;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-family: "JetBrains Mono", "PingFang SC", monospace;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+  height: 36px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.reader-controls button:hover,
+.reader-controls select:hover {
+  background: rgba(26, 26, 26, 0.12);
+}
+.reader-controls button:active {
+  transform: scale(0.96);
+}
+
+/* v8.2 · SVG icon 统一尺寸控制(防 button 容器撑满) */
+.reader-controls button svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: inherit;
+}
+
+/* 主播放按钮 · 44px 圆形 · 内部 SVG 18px */
+.reader-play {
+  background: #a8423b !important;
+  color: #f0ebdd !important;
+  width: 44px;
+  height: 44px;
+  border-radius: 50% !important;
+  font-size: 14px !important;
+  padding: 0 !important;
+}
+.reader-play svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+.reader-play:hover {
+  background: #a8423b !important;
+  opacity: 0.88;
+}
+
+/* 速度 select */
+.reader-rate {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 28px;
+  position: relative;
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(26,26,26,0.5) 50%),
+    linear-gradient(135deg, rgba(26,26,26,0.5) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) calc(50% - 2px),
+    calc(100% - 9px) calc(50% - 2px);
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+}
+
+/* 关闭按钮 */
+.reader-close {
+  background: transparent !important;
+  margin-left: auto;
+  width: 36px;
+  padding: 0 !important;
+  font-size: 14px;
+  color: rgba(26, 26, 26, 0.6) !important;
+}
+.reader-close svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+.reader-close:hover {
+  background: rgba(26, 26, 26, 0.08) !important;
+  color: #1a1a1a !important;
+}
+
+/* ─── 内容区 ─────────────────────────────────────────────── */
+.reader-content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 36px 24px 80px;
+  scroll-behavior: smooth;
+}
+
+.reader-content-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.reader-content-inner p {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #1a1a1a;
+  margin: 0 0 1em;
+  letter-spacing: 0.005em;
+}
+
+/* ─── 移动端 ─────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .reader-controls {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+  .reader-controls button,
+  .reader-controls select {
+    padding: 6px 12px;
+    font-size: 12px;
+    height: 38px;
+  }
+  .reader-controls button svg {
+    width: 17px;
+    height: 17px;
+  }
+  .reader-play {
+    width: 42px;
+    height: 42px;
+  }
+  .reader-play svg {
+    width: 17px !important;
+    height: 17px !important;
+  }
+  .reader-close svg {
+    width: 17px !important;
+    height: 17px !important;
+  }
+  .reader-content {
+    padding: 24px 18px 60px;
+  }
+  .reader-content-inner p {
+    font-size: 16.5px;
+    line-height: 1.75;
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "s0": {
+    "title": "前言 · 立场与读法",
+    "points": [
+      "<strong>核心命题</strong>:AI 产品的成败,越来越多地取决于 UX,而不是模型本身——从 ChatGPT 比 GPT-3 网页版火一万倍可以看到。",
+      "<strong>四个立场</strong>:UI 让位于意图层 · 信任比可用性更重要 · 错误是主菜不是边角料 · 设计师是新一代系统工程师。",
+      "<strong>本书不写</strong>:模型训练 / 千图AI 功能细节 / AI 商业模式 / 视觉规范 / 全景产品评测。",
+      "<strong>本书写</strong>:AI 产品的 UX 新难题(Part II)· 头部产品怎么解(Part III)· 经典原则怎么改写(Part IV 第 14 章)· 怎么用到千图AI(末章)。",
+      "<strong>读法</strong>:线性读 4-6 小时 / 问题读跳到对应章节 / 案例读从 Part III 倒推。如果只看一章,看末两章千图AI 体检与路线图。"
+    ]
+  },
+  "s1": {
+    "title": "范式跃迁要点",
+    "points": [
+      "<strong>三个时代</strong>:GUI(1984-2007) → 触控(2007-2022) → Agent(2022-),每个时代有一个'Hello'时刻(Macintosh / iPhone / ChatGPT)。",
+      "<strong>每个时代的核心矛盾</strong>:GUI 解决专家工具民主化 · 触控解决随身使用 · Agent 解决意图直接执行。",
+      "<strong>失控风险逐代上升</strong>:GUI 低(每步手动)→ 触控中(手势误触)→ Agent 高(AI 自动执行)。这是 AI 时代最重要的新议题。",
+      "<strong>跃迁不是替代是重心位移</strong>:Word 没死,只是文字创作主战场移到 ChatGPT。不要为了 AI 化而 AI 化。",
+      "<strong>底层规律</strong>:每次跃迁 = 新输入设备 + 新认知模型;旧时代的'遗产税'变成新时代的设计议题。"
+    ]
+  },
+  "s2": {
+    "title": "AI UX 五大新特质",
+    "points": [
+      "<strong>输出复杂度超过秒判</strong>:Smart Compose vs Copilot——AI 输出越长,'验证机制'越关键。",
+      "<strong>意图可能被错解</strong>:Photoshop vs Photoroom——意图型软件必须为'AI 理解错了'准备体面退路。",
+      "<strong>UI 从资产变实例</strong>:Notion 模板 vs Notion AI——UI 元素从'预先存在'变成'按需生成',需要全新的生成 / 修改 / 保存 / 复用四态。",
+      "<strong>多步自动执行</strong>:滴滴 vs Cursor Composer——Agent 的中断 / 回滚 / 介入需要新设计,'取消'按钮不够用。",
+      "<strong>上下文成为资产</strong>:百度搜索 vs 豆包对话——'记忆'从无变成核心资产,需要可见 / 可控 / 可移植。"
+    ]
+  },
+  "s3": {
+    "title": "信任 UX 要点",
+    "points": [
+      "<strong>幻觉是 LLM 结构性特征</strong>,不是 bug——Schwartz 律师案不只是用户轻信,也是 UX 失败。",
+      "<strong>信任分三层</strong>:任务级(这次对吗)/ 系统级(平时靠谱吗)/ 模型级(AI 能信吗),要分别设计。",
+      "<strong>5 种信任 UX 模式</strong>:Confidence Display · Citation · Source Transparency · Disclaimer · Verify-before-Act。每种都有典型坑。",
+      "<strong>行业最佳实践</strong>:可点验引用(Perplexity)+ 主动说不知道(Claude)+ 关键时刻确认(Computer Use)+ 不堆废话 disclaimer + 可审计记忆(ChatGPT)。",
+      "<strong>警惕过度</strong>:按'可逆性 × 错误成本'分级,避免用户麻木——堆 disclaimer 不如关键时刻一次强提示。"
+    ]
+  },
+  "s4": {
+    "title": "可控性悖论要点",
+    "points": [
+      "<strong>核心悖论</strong>:自动化越强,人在关键时刻的失控越严重(法航 447 / Bainbridge 1983)。AI 介入度与用户控制感反比。",
+      "<strong>可控性 5 维度</strong>:启动控制 / 过程控制 / 边界控制 / 撤销控制 / 学习控制——必须独立设计,不是二元判断。",
+      "<strong>4 种行业解法</strong>:Cursor 三段式介入(Tab/Composer/Agent)· Claude Artifact 编辑预览分离 · Krea 实时参数滑块 · ChatGPT Memory 可审计学习。",
+      "<strong>控制权交接是危险时刻</strong>:AI 主动放手 / 用户主动接手时,必须明确状态、避免抢控制。",
+      "<strong>可控性不是越多越好</strong>:创意 / 生产 / 执行 / 协作 四类任务各有最优可控性配方。"
+    ]
+  }
+}
