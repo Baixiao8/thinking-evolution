@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 时代的用户体验之书 · 千图AI 内部读本</title>
-<meta name="description" content="一份给千图AI 团队的内部 UX 读本——AI 时代的设计语言、问题地图、案例横评、原则重构。">
+<meta name="description" content="一份给千图AI 团队的内部 UX 读本——AI 时代的设计语言、问题地图、案例横评、原则重构、千图AI 应用。16 章完整版。">
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* === style.css === */
@@ -1676,24 +1676,6 @@ footer .signature {
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<style>
-  /* Pending chapter card · 待写章节的视觉降级 */
-  .hero-toc .card.pending {
-    opacity: 0.42;
-    cursor: default;
-    pointer-events: none;
-  }
-  .hero-toc .card.pending::after {
-    content: "WIP";
-    position: absolute;
-    top: 12px; right: 12px;
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    color: var(--c-theory);
-    font-family: var(--ff-mono, "JetBrains Mono", monospace);
-    font-weight: 600;
-  }
-</style>
 </head>
 <body>
 
@@ -2156,7 +2138,7 @@ footer .signature {
 <!-- ============= HERO ============= -->
 <header class="hero">
   <div class="container">
-    <div class="hero-badge">AI UX HANDBOOK · 内部读本 · v0.1</div>
+    <div class="hero-badge">AI UX HANDBOOK · 内部读本 · v1.0 · COMPLETE</div>
     <h1>
       AI 时代的用户体验之书<span class="ital">.</span>
       <span class="small">范式 · 问题地图 · 案例 · 原则 · 应用 · <em class="ital">An AI-Native UX Handbook</em></span>
@@ -2177,14 +2159,14 @@ footer .signature {
         <div class="sub">总论 · 问题地图 · 案例横评 · 重构应用</div>
       </div>
       <div class="item">
-        <div class="label">CURRENT</div>
-        <div class="value">v0.1<span class="unit">5/16</span></div>
-        <div class="sub">前言 + 第 1-4 章 · 约 21K 字</div>
+        <div class="label">VERSION</div>
+        <div class="value">v1.0<span class="unit">16/16</span></div>
+        <div class="sub">完整版 · 2026-05 首发</div>
       </div>
       <div class="item">
-        <div class="label">PLANNED</div>
-        <div class="value">55K<span class="unit">words</span></div>
-        <div class="sub">完整版预计 5-6 周完成</div>
+        <div class="label">DEPTH</div>
+        <div class="value">~50K<span class="unit">words</span></div>
+        <div class="sub">学术深度 + 案例密度 + 可操作建议</div>
       </div>
       <div class="item">
         <div class="label">AUDIENCE</div>
@@ -2197,7 +2179,7 @@ footer .signature {
       <div class="hero-toc-label">CHAPTER MAP · 章节地图</div>
 
       <div class="hero-toc-part">
-        <div class="part-title">前言 <span class="en">PREFACE · 为什么我们要写这本书</span></div>
+        <div class="part-title">前言 <span class="en">PREFACE</span></div>
         <div class="hero-toc">
           <a href="#s0" class="card" style="--ch-color: var(--c-psych);">
             <span class="num">PREFACE</span>
@@ -2241,41 +2223,41 @@ footer .signature {
             <div class="en">The Control Paradox</div>
             <div class="desc">从法航 447 讲起。可控性 5 维度 · 4 种行业解法 · 适用边界。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-strength);">
+          <a href="#s5" class="card" style="--ch-color: var(--c-strength);">
             <span class="num">CHAPTER 05 · GENERATIVE UI</span>
             <div class="title">生成式 UI</div>
             <div class="en">Generative UI</div>
-            <div class="desc">界面本身在被生成 · v0 / Claude Artifact / Bolt 对比 · v0.2 待写</div>
+            <div class="desc">从 v0 发布讲起。4 种形态 + 4 种状态设计 · Claude Artifact / v0 / Bolt 对比。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-recovery);">
+          <a href="#s6" class="card" style="--ch-color: var(--c-recovery);">
             <span class="num">CHAPTER 06 · GRACEFUL FAILURE</span>
             <div class="title">错误兜底与优雅降级</div>
             <div class="en">Graceful Failure</div>
-            <div class="desc">AI 必然出错时的 UX 哲学 · retry / undo / human handoff · v0.2 待写</div>
+            <div class="desc">5 类错误 · 4 种兜底机制 · 文案 6 条铁律 · 用户心理预期管理。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-nutrition);">
+          <a href="#s7" class="card" style="--ch-color: var(--c-nutrition);">
             <span class="num">CHAPTER 07 · PROMPT LAYER</span>
             <div class="title">提示词作为新交互层</div>
             <div class="en">Prompt as New Interaction</div>
-            <div class="desc">从命令到对话到意图 · placeholder / slash / system prompt · v0.2 待写</div>
+            <div class="desc">从命令到对话到意图 · placeholder 8 种写法 · slash command · 失败兜底 4 种。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-injury);">
+          <a href="#s8" class="card" style="--ch-color: var(--c-injury);">
             <span class="num">CHAPTER 08 · AGENT EDGE</span>
             <div class="title">Agent 的边界感</div>
             <div class="en">Agent Boundaries</div>
-            <div class="desc">自动 vs 问询的张力 · 多步任务的中断/回滚/介入 · v0.2 待写</div>
+            <div class="desc">从 Devin 翻车讲起。5 级自主性 · 边界 4 维度 · 5 个必停 trigger。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-physio);">
+          <a href="#s9" class="card" style="--ch-color: var(--c-physio);">
             <span class="num">CHAPTER 09 · MULTIMODAL</span>
             <div class="title">多模态融合</div>
             <div class="en">Multimodal Fusion</div>
-            <div class="desc">语音 + 视觉 + 手势 + 文本 · 模态切换的 UX 议题 · v0.3 待写</div>
+            <div class="desc">语音 + 视觉 + 手势 + 文本 · 6 种模态 / 4 种产品形态 / 切换 4 议题。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-psych);">
+          <a href="#s10" class="card" style="--ch-color: var(--c-psych);">
             <span class="num">CHAPTER 10 · PERSONALITY</span>
             <div class="title">AI 产品的人格与情感设计</div>
             <div class="en">AI Persona &amp; Emotion Design</div>
-            <div class="desc">Claude vs ChatGPT vs Grok · 品牌 + UX 交叉 · v0.3 待写</div>
+            <div class="desc">从 Sydney 失控讲起。人格 5 件套 · Claude vs ChatGPT vs Grok · 情感设计 3 边界。</div>
           </a>
         </div>
       </div>
@@ -2283,23 +2265,23 @@ footer .signature {
       <div class="hero-toc-part">
         <div class="part-title">第三篇 案例横评 <span class="en">PART III · CASE STUDIES</span></div>
         <div class="hero-toc">
-          <a class="card pending" style="--ch-color: var(--c-theory);">
+          <a href="#s11" class="card" style="--ch-color: var(--c-theory);">
             <span class="num">CHAPTER 11 · GENERATIVE</span>
             <div class="title">内容生成类 X-Ray</div>
             <div class="en">Generative Products X-Ray</div>
-            <div class="desc">Claude / v0 / Krea / 即梦 / 通义万相 / Midjourney · v0.4 待写</div>
+            <div class="desc">6 款产品横评:Claude / v0 / Krea / 即梦 / 通义万相 / Midjourney。给千图AI 3 条启示。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-strength);">
+          <a href="#s12" class="card" style="--ch-color: var(--c-strength);">
             <span class="num">CHAPTER 12 · DEVTOOLS</span>
             <div class="title">AI 辅助生产力对比组</div>
             <div class="en">AI DevTools Comparison</div>
-            <div class="desc">Cursor / Copilot / Bolt / Lovable · v0.4 待写</div>
+            <div class="desc">4 个产品 4 个介入级别:Copilot / Cursor / Bolt / Lovable。同一问题的 4 种解法。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-injury);">
+          <a href="#s13" class="card" style="--ch-color: var(--c-injury);">
             <span class="num">CHAPTER 13 · FAILURES</span>
             <div class="title">硬件 / Agent 的失败考古</div>
             <div class="en">Hardware &amp; Agent Failures</div>
-            <div class="desc">Rabbit R1 / Humane Pin / 早期 Bing Chat · v0.4 待写</div>
+            <div class="desc">Rabbit R1 / Humane Pin / Sydney 三个翻车案例 · 4 类失败模式 + 8 条避坑清单。</div>
           </a>
         </div>
       </div>
@@ -2307,23 +2289,23 @@ footer .signature {
       <div class="hero-toc-part">
         <div class="part-title">第四篇 重构与应用 <span class="en">PART IV · RECONSTRUCTION &amp; APPLICATION</span></div>
         <div class="hero-toc">
-          <a class="card pending" style="--ch-color: var(--c-race);">
+          <a href="#s14" class="card" style="--ch-color: var(--c-race);">
             <span class="num">CHAPTER 14 · NEW PRINCIPLES</span>
             <div class="title">AI 时代设计十二诫</div>
             <div class="en">The Twelve Commandments</div>
-            <div class="desc">Don Norman / Nielsen 启发法的体检与重写 · v0.5 待写</div>
+            <div class="desc">Don Norman / Nielsen 启发法的体检与重写。12 条原则 + 每条带"为什么 / 怎么落地 / 反面案例"。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-session);">
+          <a href="#s15" class="card" style="--ch-color: var(--c-session);">
             <span class="num">CHAPTER 15 · QIANTU AUDIT</span>
             <div class="title">千图AI 的 UX 体检</div>
             <div class="en">Qiantu AI Audit</div>
-            <div class="desc">用前 13 章工具系统扫描我们自己 · v0.5 待写</div>
+            <div class="desc">用 12 诫给千图AI 打分。整体 6.5/10 · 5 条主要缺口 + 4 个具体场景诊断。<strong>需团队 FACT-CHECK</strong>。</div>
           </a>
-          <a class="card pending" style="--ch-color: var(--c-recovery);">
+          <a href="#s16" class="card" style="--ch-color: var(--c-recovery);">
             <span class="num">CHAPTER 16 · ROADMAP</span>
             <div class="title">千图AI 的 90 / 180 / 365 天改进路线图</div>
             <div class="en">Action Roadmap</div>
-            <div class="desc">体检诊断 → 落地行动清单 · v0.5 待写</div>
+            <div class="desc">5 个 Quick Win + 3 个中型改造 + 2 个大型重构 · 5 件主动不做的事 · 4 条执行建议。</div>
           </a>
         </div>
       </div>
@@ -3579,6 +3561,2752 @@ footer .signature {
 </div>
 </section>
 
+<section  class="chapter" id="s5" style="border-top: 4px solid var(--c-strength);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">05</span>GENERATIVE UI · 问题地图 / 第五章</div>
+  <h1 class="section-h">生成式 UI:界面本身在被生成 <span class="en">Generative UI</span></h1>
+  <p class="section-sub">UI 元素从"被设计的资产"变成"按需生成的实例"——这是 AI 时代独有的、设计史上前所未有的局面。这一章我们把"生成式 UI"拆成 4 种形态、4 种状态、4 个标杆产品,看清楚这件事的边界在哪。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 6 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">2,095 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">6 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 6 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s5-h3-1"><span class="num">5.1</span><span class="title">什么叫"生成式 UI"?边界在哪里?</span></a></li>
+    <li><a href="#s5-h3-2"><span class="num">5.2</span><span class="title">生成式 UI 的 4 种形态</span></a></li>
+    <li><a href="#s5-h3-3"><span class="num">5.3</span><span class="title">生成式 UI 的 4 种状态设计</span></a></li>
+    <li><a href="#s5-h3-4"><span class="num">5.4</span><span class="title">4 个标杆产品的设计哲学对比</span></a></li>
+    <li><a href="#s5-h3-5"><span class="num">5.5</span><span class="title">千图AI 的应用思考(详见第 15 章)</span></a></li>
+    <li><a href="#s5-h3-6"><span class="num">5.6</span><span class="title">本章小结</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>设计师不再"画完所有界面",而是<em>设计"AI 怎么帮用户生成合适的界面"</em>。生成式 UI 的核心难题不在"生成",在"生成之后"——修改、保存、复用、版本管理,这四件事 GUI 时代根本不需要回答。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / 旧金山 · 2023 年 10 月</div>
+    <p>Vercel 在 2023 年 10 月发布 v0。第一个 Demo 是这样的:用户在输入框打一句"a pricing page for a SaaS,3 tiers,monthly/yearly toggle",几秒内屏幕上就出来一个完整的定价页 UI——三档套餐卡片、月付/年付切换、CTA 按钮,所有交互细节都齐全。</p>
+    <p>更关键的是接下来一步:用户点"Refine",输入"make the middle tier highlighted with a 'Most popular' badge",UI 实时更新——中间那张卡多了一个金色徽章。再输入"add a comparison table below",下方出现功能对比表。<strong>整个过程没人写一行代码,没人打开 Figma</strong>。</p>
+    <p>这是设计史上从未有过的事:<em>UI 不再是产品团队预先设计好交付给用户的资产,而是用户与 AI 协作即兴产生的实例</em>。每次产生都不一样,每次都可以接着改。设计师的工作语义从此发生了根本变化。</p>
+  </div>
+
+  <h3 id="s5-h3-1"><span class="pre">5.1</span>什么叫"生成式 UI"?边界在哪里?</h3>
+
+  <p class="lead">不是所有"AI 生成的内容"都叫生成式 UI。我们要先把这个词的边界划清楚,避免把所有 AI 产品都套进去。</p>
+
+  <p><strong>狭义定义</strong>:由 AI 即时生成的、用户可与之交互的<em>界面元素</em>(component / page / layout),并且这些元素可以被用户继续修改、保存、复用。</p>
+
+  <p>按这个定义,以下都是生成式 UI:</p>
+  <ul>
+    <li>v0 / Bolt 生成的完整网页 / 应用</li>
+    <li>Claude Artifact 生成的可交互组件(图表、计算器、小游戏)</li>
+    <li>ChatGPT Canvas 生成的可编辑文档 / 代码块</li>
+    <li>Notion AI 生成的页面模板</li>
+  </ul>
+
+  <p>以下<em>不是</em>生成式 UI(虽然也是 AI 生成):</p>
+  <ul>
+    <li>ChatGPT 生成的纯文本回答(没有交互界面元素)</li>
+    <li>Midjourney 生成的图像(静态资产,不能"再编辑成蓝色")</li>
+    <li>Gmail Smart Compose 补全的句子(嵌入式输入辅助,不是独立界面)</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 关键判断</div>
+    <p>判断一个产物是不是生成式 UI,看一个标准:<strong>用户能不能用自然语言指令对它做下一步修改?</strong>能 = 是。不能(只能从头重生成) = 不是。这条标准比"它长得像不像 UI"更可靠。</p>
+  </div>
+
+  <h3 id="s5-h3-2"><span class="pre">5.2</span>生成式 UI 的 4 种形态</h3>
+
+  <p class="lead">主流 AI 产品对"AI 生成的 UI 该放在哪"给出了 4 种不同的答案,各有适用场景。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>形态</th>
+          <th>典型产品</th>
+          <th>视觉位置</th>
+          <th>适用场景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Sidebar Canvas</strong></td>
+          <td>Claude Artifact / Cursor Canvas</td>
+          <td>对话主线右侧独立面板</td>
+          <td>复杂内容(代码、图表)长期占用屏幕</td>
+        </tr>
+        <tr>
+          <td><strong>Floating Artifact</strong></td>
+          <td>ChatGPT Canvas</td>
+          <td>对话流中可全屏展开的卡片</td>
+          <td>文档协作 · 写作场景</td>
+        </tr>
+        <tr>
+          <td><strong>Inline Component</strong></td>
+          <td>Perplexity Pro Search 结果卡 / Bing Chat 答案块</td>
+          <td>嵌入在对话气泡内</td>
+          <td>结构化轻量信息(天气 / 股价 / 表格)</td>
+        </tr>
+        <tr>
+          <td><strong>Full-page Generation</strong></td>
+          <td>v0.dev / Bolt.new / Lovable</td>
+          <td>整页就是生成的 UI</td>
+          <td>App / 网页 / Prototype 级生成</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 一个反直觉的发现</div>
+    <p>形态选择和"AI 能力大小"无关,和"输出复杂度"有关。Claude 同样的能力,生成短代码用 inline,生成完整应用用 Artifact;ChatGPT 同样的模型,生成 markdown 用 floating,生成网页要切到 Canvas。<strong>形态是被"内容尺寸"驱动的,不是被"模型能力"驱动的</strong>。设计师做生成式 UI 决策时,第一个问题应该是"用户产物有多大",而不是"我的模型有多强"。</p>
+  </div>
+
+  <h3 id="s5-h3-3"><span class="pre">5.3</span>生成式 UI 的 4 种状态设计</h3>
+
+  <p class="lead">真正难的不是"生成出来",是"生成之后"。下面 4 种状态在传统 UI 设计里根本不存在,生成式 UI 必须明确每一种状态的视觉、交互、可逆性。</p>
+
+  <h4>状态 1 · 生成中(Generating)</h4>
+  <p>AI 正在 stream 出 UI,用户看着它一行一行被画出来。这是用户对"AI 在工作"的最直观感受。</p>
+  <ul>
+    <li><strong>视觉</strong>:骨架闪烁(skeleton)+ 流式光标 / 字符逐个显示</li>
+    <li><strong>交互</strong>:能不能中断?能不能边生成边修改?(v0 不能,Bolt 能)</li>
+    <li><strong>反馈</strong>:进度显示(已生成 N 个组件 / 已写 M 行)</li>
+  </ul>
+
+  <h4>状态 2 · 待审批(Pending Review)</h4>
+  <p>AI 生成完了,但还没"应用"——还在"沙盒"里。用户决定接受、拒绝、还是继续改。</p>
+  <ul>
+    <li><strong>视觉</strong>:差异化背景(浅灰 / 虚线边框)表示"还没生效"</li>
+    <li><strong>交互</strong>:Accept / Reject / Regenerate / Refine 四个核心动作</li>
+    <li><strong>关键判断</strong>:默认是 Accept 还是 Pending?<em>Cursor Composer 默认 Pending(必须用户点 Accept),Notion AI 默认 Pending(预览态)</em>——这是 AI 产品的"信任默认值"。</li>
+  </ul>
+
+  <h4>状态 3 · 已应用(Applied)</h4>
+  <p>用户接受了,内容融入到主工作流(对话主线 / 文档主体 / 代码 repo)。但这个"应用"是可逆的吗?</p>
+  <ul>
+    <li><strong>关键问题</strong>:Apply 之后能不能 undo?到什么粒度?</li>
+    <li><strong>Cursor 解法</strong>:全部 apply 后通过 git diff 回滚</li>
+    <li><strong>Claude Artifact 解法</strong>:Artifact 应用到对话历史,但 Artifact 自身保留版本树</li>
+  </ul>
+
+  <h4>状态 4 · 版本切换(Versioning)</h4>
+  <p>用户让 AI 改了 5 次,产生了 5 个版本。怎么对比?怎么切换?怎么保留某一版当"主版本"?</p>
+  <ul>
+    <li><strong>ChatGPT Canvas</strong>:左右箭头切换历史版本,默认显示最新</li>
+    <li><strong>Claude Artifact</strong>:版本号下拉菜单,可切换任意历史版本</li>
+    <li><strong>v0</strong>:每次生成是独立的"chat thread",版本之间不直接对比,要 fork 出新分支</li>
+  </ul>
+
+  <div class="callout ops">
+    <div class="label">✓ 设计四态时的指导原则</div>
+    <ol>
+      <li><strong>每个状态都要有明确的视觉区分</strong>——用户一眼能看出"现在是生成中 / 待审批 / 已应用"</li>
+      <li><strong>默认进入"待审批"而不是"已应用"</strong>——给用户最后的把关机会</li>
+      <li><strong>版本切换是"高级用户"功能</strong>——不要默认占用主屏空间,但要让重度用户能找到</li>
+      <li><strong>"接受 / 拒绝"的 affordance 要足够强</strong>——按钮要大、要明显,不能藏在菜单里</li>
+    </ol>
+  </div>
+
+  <h3 id="s5-h3-4"><span class="pre">5.4</span>4 个标杆产品的设计哲学对比</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>维度</th>
+          <th>v0.dev</th>
+          <th>Bolt.new</th>
+          <th>Claude Artifact</th>
+          <th>ChatGPT Canvas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>承载形态</td><td>Full-page</td><td>Full-page + Sidebar</td><td>Sidebar</td><td>Floating</td></tr>
+        <tr><td>核心定位</td><td>UI 原型生成</td><td>全栈应用生成</td><td>多类型 Artifact</td><td>文档协作</td></tr>
+        <tr><td>修改方式</td><td>Refine 对话</td><td>Inline 编辑 + 对话</td><td>对话修改 + 局部 select</td><td>对话 + 直接编辑文档</td></tr>
+        <tr><td>版本管理</td><td>Chat fork</td><td>Checkpoint 系统</td><td>版本号下拉</td><td>左右箭头切换</td></tr>
+        <tr><td>导出方式</td><td>"Copy to Code"</td><td>直接 Deploy / Pull</td><td>Publish 链接</td><td>导出为 Doc</td></tr>
+        <tr><td>核心强项</td><td>组件库丰富</td><td>真实可运行</td><td>类型广泛(图/代码/游戏)</td><td>写作流畅</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 对比中能看出的隐含哲学</div>
+    <ul>
+      <li><strong>v0</strong> 把生成式 UI 当作"UI Designer 的 prompt-to-mockup 工具"——产物是"代码片段供你 copy"</li>
+      <li><strong>Bolt</strong> 把生成式 UI 当作"独立产品",生成的东西可直接 deploy 给真实用户</li>
+      <li><strong>Claude</strong> 把生成式 UI 当作"对话的副产品",Artifact 服务于对话目的</li>
+      <li><strong>ChatGPT Canvas</strong> 把生成式 UI 当作"协作文档",和用户共同编辑</li>
+    </ul>
+    <p>没有谁对谁错——服务的"用户目的"不同。这给我们一个启示:<strong>做生成式 UI 之前,先问"用户拿到这个 UI 做什么"</strong>。</p>
+  </div>
+
+  <h3 id="s5-h3-5"><span class="pre">5.5</span>千图AI 的应用思考(详见第 15 章)</h3>
+
+  <p class="lead">千图AI 是图像生成产品,严格说不属于"生成式 UI"的典型场景(我们生成的是图像,不是界面)。但生成式 UI 的 <em>4 种状态设计</em> 直接适用于图像生成场景。</p>
+
+  <div class="callout you">
+    <div class="label">◐ 千图AI 现状对照四态</div>
+    <ul>
+      <li><strong>生成中</strong>:✅ 有 loading 状态,但缺"边生成边可中断"</li>
+      <li><strong>待审批</strong>:⚠️ 生成的图直接展示在结果区,没有明确的"沙盒"概念。用户喜欢 → 下载,不喜欢 → 重新生成。<em>但缺一个"草稿 / 已采纳"的区分</em></li>
+      <li><strong>已应用</strong>:⚠️ 用户下载即"应用",但 SaaS 没有"工作流落地",所以"应用"概念弱</li>
+      <li><strong>版本切换</strong>:✅ 历史记录可查,但是"列表"而不是"树"——用户在第 3 张图基础上 refine,得到第 4 张,这种"派生关系"目前不可见</li>
+    </ul>
+    <p><strong>主要差距</strong>:版本派生树(图像生成是典型的"基于上次再改"场景,Krea 已经做了 canvas 派生)。详细体检与改进建议见第 15 章。</p>
+  </div>
+
+  <h3 id="s5-h3-6"><span class="pre">5.6</span>本章小结</h3>
+
+  <p>生成式 UI 是 AI 时代独有的设计议题——<strong>UI 从"被设计的资产"变成"被生成的实例"</strong>。这件事不是给传统 UX 加一个生成按钮,是要重新设计 4 种以前不存在的状态:生成中 / 待审批 / 已应用 / 版本切换。</p>
+
+  <p>4 种主流形态(Sidebar / Floating / Inline / Full-page)各有适用边界,选择应该由"内容尺寸 + 用户目的"驱动,而不是"模型能力"驱动。</p>
+
+  <p>下一章我们讨论一个紧密相关的议题——<strong>错误兜底</strong>。生成式 UI 不可能每次都生成对的,生成错了之后用户怎么继续,是另一个 AI 时代独有的设计难题。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>生成式 UI 要点</h4>
+    <ol>
+      <li><strong>定义边界</strong>:能用自然语言指令对其做下一步修改才算生成式 UI,不只是 AI 生成的内容。Midjourney 图像不算,Claude Artifact 算。</li>
+      <li><strong>4 种形态</strong>:Sidebar Canvas(Claude Artifact)· Floating(ChatGPT Canvas)· Inline Component(Perplexity 答案块)· Full-page(v0 / Bolt)。</li>
+      <li><strong>形态被'内容尺寸'驱动</strong>,不是被模型能力驱动——这是反直觉但反复验证的设计判断。</li>
+      <li><strong>4 种状态设计</strong>:生成中 / 待审批 / 已应用 / 版本切换——传统 UI 没有,生成式 UI 必须明确每一态。</li>
+      <li><strong>默认进入'待审批'</strong>而不是'已应用',给用户最后把关机会——这是 AI 产品的'信任默认值'。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  Vercel v0 文档与发布博客, 2023-10 起 · StackBlitz Bolt.new 文档 · Anthropic Claude Artifact 公告, 2024-06 · OpenAI ChatGPT Canvas 公告, 2024-10 · NN/g, <em>Generative UI Design Patterns</em>, 2024 · Notion AI 产品文档</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s6" style="border-top: 4px solid var(--c-recovery);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">06</span>GRACEFUL FAILURE · 问题地图 / 第六章</div>
+  <h1 class="section-h">错误兜底与优雅降级:AI 必然出错时的 UX 哲学 <span class="en">Graceful Failure</span></h1>
+  <p class="section-sub">传统软件的错误处理是"边角料",AI 产品的错误处理是"主菜"——这是前言立场 3 的展开。这一章把 AI 产品的错误拆成 5 类,把兜底机制拆成 4 种,最后给一份"错误文案六条铁律"作为可直接套用的写作清单。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 7 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">2,326 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">7 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 7 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s6-h3-1"><span class="num">6.1</span><span class="title">AI 产品错误的 5 种类型</span></a></li>
+    <li><a href="#s6-h3-2"><span class="num">6.2</span><span class="title">4 种主流的兜底机制</span></a></li>
+    <li><a href="#s6-h3-3"><span class="num">6.3</span><span class="title">错误文案的 6 条铁律</span></a></li>
+    <li><a href="#s6-h3-4"><span class="num">6.4</span><span class="title">行业反面教材</span></a></li>
+    <li><a href="#s6-h3-5"><span class="num">6.5</span><span class="title">用户对错误的"心理预期管理"</span></a></li>
+    <li><a href="#s6-h3-6"><span class="num">6.6</span><span class="title">千图AI 的应用思考(详见第 15 章)</span></a></li>
+    <li><a href="#s6-h3-7"><span class="num">6.7</span><span class="title">本章小结</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>错误不是"用户做错了",是"AI 没帮到用户"。好的错误兜底回答三个问题:<em>发生了什么 · 我能怎么继续 · 是 AI 的问题还是我的问题</em>。没有这三个答案,用户就会从"信任受挫"滑向"放弃产品"。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / 北京 · 2023 年春节</div>
+    <p>2023 年春节假期,某用户在 ChatGPT 上让 GPT 写一份年终总结。写到一半,屏幕弹出:<strong>"Something went wrong. Please try again."</strong>白色对话框、灰色按钮、没有任何额外信息。</p>
+    <p>用户点 Try again,等了 20 秒,又一次相同弹窗。再试,再失败。<em>他不知道是网络问题、还是 prompt 太长、还是服务器过载、还是被限流</em>——每次都是同一句话。最后他放弃,把已经写好的半截内容复制走,关掉浏览器。</p>
+    <p>这是 AI 产品最常见的错误场景:<strong>系统知道自己出错了,但拒绝告诉用户"为什么"和"怎么办"</strong>。每一次"Something went wrong"的弹窗,都是一次小型的信任侵蚀。一两次没关系,十次以后用户就走了。</p>
+  </div>
+
+  <h3 id="s6-h3-1"><span class="pre">6.1</span>AI 产品错误的 5 种类型</h3>
+
+  <p class="lead">"AI 出错"是一个粗颗粒度的说法。要做好兜底设计,先把错误分类——不同类型的错对应完全不同的 UX 策略。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>类型</th>
+          <th>典型表现</th>
+          <th>原因</th>
+          <th>用户能否预防</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>1 · 系统级</strong></td><td>"Service unavailable" / 502 / 超时</td><td>服务器宕 / 限流 / 网络</td><td>不能(只能等)</td></tr>
+        <tr><td><strong>2 · 输出级</strong></td><td>生成被中断 / 输出乱码 / JSON parse 失败</td><td>模型出 bug / token 超限</td><td>有时(降复杂度)</td></tr>
+        <tr><td><strong>3 · 理解级</strong></td><td>AI 答非所问 / 完全跑题</td><td>prompt 歧义 / 上下文丢失</td><td>能(改 prompt)</td></tr>
+        <tr><td><strong>4 · 边界级</strong></td><td>"我不能帮你做这件事" / 内容安全策略拦截</td><td>触碰安全红线</td><td>能(换问法)</td></tr>
+        <tr><td><strong>5 · 时间级</strong></td><td>"我的知识截止 2024-04,这个我不知道"</td><td>训练数据时效</td><td>能(用其他工具)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 千图AI 这种生成类产品的错误分布</div>
+    <p>对图像生成产品来说,5 类错误的比例和对话类完全不同:输出级(画错主体、违反 prompt 关键约束)和系统级(GPU 排队)占主流,理解级少(图像 prompt 解析比文本明确),边界级(内容安全拦截)中等,时间级几乎没有。<strong>不同 AI 产品的错误分布不一样,兜底策略也要不一样——不能照抄 ChatGPT</strong>。</p>
+  </div>
+
+  <h3 id="s6-h3-2"><span class="pre">6.2</span>4 种主流的兜底机制</h3>
+
+  <h4>机制 1 · Retry / Regenerate(重试 / 重新生成)</h4>
+  <p>最简单也最常见的兜底——给一个按钮,让用户重来。</p>
+  <ul>
+    <li><strong>适用</strong>:系统级错误 · 输出级错误(模型本身不稳定时,重试经常能成)</li>
+    <li><strong>设计关键</strong>:
+      <ul>
+        <li>Retry 按钮要醒目(主要 CTA),不能藏在菜单里</li>
+        <li>Retry 时要保留原 prompt(用户不需要重写)</li>
+        <li>Retry 多次失败后要升级——告诉用户"试了 3 次都失败,问题可能不在这里,试试 [建议 X]"</li>
+      </ul>
+    </li>
+    <li><strong>反面案例</strong>:ChatGPT 早期 Retry 后还失败,继续给"Try again"按钮——无限循环,不升级</li>
+  </ul>
+
+  <h4>机制 2 · Partial Recovery(部分恢复)</h4>
+  <p>AI 输出到一半失败,把已经生成的部分保留,让用户基于已有继续。</p>
+  <ul>
+    <li><strong>适用</strong>:长内容生成(报告 / 代码 / 文档)</li>
+    <li><strong>设计关键</strong>:
+      <ul>
+        <li>明确告诉用户"已生成 X 部分,Y 部分失败"</li>
+        <li>给"基于已有继续"和"重头开始"两个选项</li>
+        <li>保留中间产物的"草稿"状态——用户可以选择保留或丢弃</li>
+      </ul>
+    </li>
+    <li><strong>正面案例</strong>:Cursor Composer 改文件中断时,已改的文件保留,未改的让用户选"继续"或"撤销"</li>
+  </ul>
+
+  <h4>机制 3 · Fallback to Human(转人工)</h4>
+  <p>AI 处理不了,转给人(客服 / 设计师 / 编辑等)。</p>
+  <ul>
+    <li><strong>适用</strong>:消费级产品(客服)· 高风险任务(医疗 / 法律)· 边界级错误</li>
+    <li><strong>设计关键</strong>:
+      <ul>
+        <li>转人工的入口要明显,不能藏在 5 层菜单里</li>
+        <li>转人工时要把上下文传过去——人不能从零开始问</li>
+        <li>告诉用户"现在排队的人数 / 预计等待时间"</li>
+      </ul>
+    </li>
+    <li><strong>正面案例</strong>:Linear 客服机器人会主动说"这个问题我没解决,转人工 [↗]";Apple 商店 AI 助手卡住后会无缝切到 Chat with Specialist</li>
+  </ul>
+
+  <h4>机制 4 · Skip &amp; Acknowledge(跳过 + 承认)</h4>
+  <p>AI 明确说"我不能/不会做这件事",但要做得有尊严——不能简单一句"对不起,我做不到"。</p>
+  <ul>
+    <li><strong>适用</strong>:边界级 · 时间级错误</li>
+    <li><strong>设计关键</strong>:
+      <ul>
+        <li>说清楚<em>为什么</em>不能做(是模型能力限制?是安全策略?是数据时效?)</li>
+        <li>给替代方案("我不能帮你查实时股价,但你可以试试 X 工具")</li>
+        <li>不要重复道歉(用户不需要 4 个"对不起",一次就够)</li>
+      </ul>
+    </li>
+    <li><strong>正面案例</strong>:Claude 被问到 2024 年 4 月后的事,会主动说"我的知识截止 X 月,建议你查 [Y 网站]";不像早期 ChatGPT 一律"对不起我不知道"</li>
+  </ul>
+
+  <h3 id="s6-h3-3"><span class="pre">6.3</span>错误文案的 6 条铁律</h3>
+
+  <p class="lead">UX 写错误文案有自己的 craft。AI 产品的错误文案有 6 条具体规则,可以直接套用。</p>
+
+  <div class="callout ops">
+    <div class="label">✓ 错误文案 6 条铁律</div>
+    <ol>
+      <li><strong>不要说"Something went wrong"</strong>——这是最懒的写法。换成"生成被中断,可能是这个 prompt 太长"或"网络好像断了,等一下再试"。</li>
+      <li><strong>不要把错误码暴露给用户</strong>——"Error: HTTP_500"对用户没意义。但要在控制台 / 反馈表里能拿到错误码(给客服 debug)。</li>
+      <li><strong>主语用"我",不用"你"</strong>——"我没能完成"而不是"你的请求失败了"。把责任揽给系统,不要让用户觉得自己做错了。</li>
+      <li><strong>下一步动作必须明确</strong>——每个错误文案至少要有一个 actionable 选项("重试 / 改 prompt / 换工具")。</li>
+      <li><strong>用户可以恢复的错误,不要用 modal</strong>——内嵌提示足够。Modal 留给"不处理就没法继续"的灾难性错误。</li>
+      <li><strong>同一错误不要 spam</strong>——用户连点重试,失败 3 次,不要弹 3 次 toast。第二次就该升级到"看起来不是临时问题,试试 X"。</li>
+    </ol>
+  </div>
+
+  <h3 id="s6-h3-4"><span class="pre">6.4</span>行业反面教材</h3>
+
+  <div class="callout sharp">
+    <div class="label">✕ 反面 1 · 早期 ChatGPT 的"Something went wrong"</div>
+    <p>对所有错误一视同仁,统一文案。用户不知道是网络 / 模型 / 限流 / prompt 问题——全部都是"出错了"。2023 年下半年 OpenAI 才开始做分类提示。</p>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 反面 2 · Midjourney 早期的"Job Failed"</div>
+    <p>Discord 上生图失败,只有一个"Job Failed"红字。用户既不知道是 prompt 触发了内容安全、还是 GPU 排队太久、还是 prompt 写得有歧义。后续 v6 才加上具体原因。</p>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 反面 3 · 内容安全拦截的"模糊借口"</div>
+    <p>很多 AI 产品被内容安全拦截时,说"我不能帮你生成这个内容"。但用户问的是<em>无害内容</em>(比如"写一段关于战争对儿童影响的文章"),用户不知道为什么被拦——是触发了某个关键词?是触发了某个主题?用户只能反复试,白白浪费时间。<strong>更好的做法</strong>:具体说"这个 prompt 包含 X 关键词,我们的策略不允许,你可以换成 Y"。</p>
+  </div>
+
+  <h3 id="s6-h3-5"><span class="pre">6.5</span>用户对错误的"心理预期管理"</h3>
+
+  <p class="lead">最后讲一个隐性议题:用户对 AI 出错的容忍度,跟产品塑造的"心理预期"高度相关。</p>
+
+  <ul>
+    <li><strong>过度承诺的产品</strong>(Demo 神 / 宣传无所不能)——用户出错容忍度低,一次失败就脱粉</li>
+    <li><strong>诚实预期的产品</strong>(明确说能做什么不能做什么)——用户出错容忍度高,愿意配合调整</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 一个对比</div>
+    <p>Rabbit R1 在发布会上声称能"自动订外卖、自动 Uber、自动一切",上市后发现连基本任务都做不好——用户极度愤怒,因为预期落差太大。
+    Claude 一直老实说"我不能上网 / 不能执行代码 / 不能记住上次"(后期才逐步开放),用户对它的出错宽容得多——因为没有过度承诺。</p>
+  </div>
+
+  <div class="callout ops">
+    <div class="label">✓ 设计层面怎么管理预期</div>
+    <ul>
+      <li><strong>Onboarding 写清楚能力边界</strong>——不要让用户上来就期待无所不能</li>
+      <li><strong>Placeholder 暗示能力范围</strong>——"试试:生成一张写实风格的产品宣传图"比"输入任何想法"诚实</li>
+      <li><strong>失败时不要为模型粉饰</strong>——"模型这次没画好"比"你的 prompt 太复杂了"更诚实</li>
+    </ul>
+  </div>
+
+  <h3 id="s6-h3-6"><span class="pre">6.6</span>千图AI 的应用思考(详见第 15 章)</h3>
+
+  <div class="callout you">
+    <div class="label">◐ 对千图AI 错误兜底现状的简短观察</div>
+    <ul>
+      <li><strong>系统级</strong>:GPU 排队时有简单的"排队中"提示,但缺"预计等待 / 队伍长度",用户焦虑</li>
+      <li><strong>输出级</strong>:出图不符 prompt 时,只能让用户重新生成,缺"基于这张图局部重绘"(虽然技术上 inpaint 已有,但 UX 入口不明显)</li>
+      <li><strong>边界级</strong>:内容安全拦截时,提示语过于通用("内容不符合要求"),用户不知道改哪</li>
+      <li><strong>建议</strong>:做"错误分类提示"(把错误类型暴露给用户)+ "局部重绘入口"(部分恢复机制)+ "排队预估时间"(系统级体验)</li>
+    </ul>
+    <p>详细体检见第 15 章。</p>
+  </div>
+
+  <h3 id="s6-h3-7"><span class="pre">6.7</span>本章小结</h3>
+
+  <p>AI 产品的错误处理不是"出错了弹个框",而是 UX 设计的核心议题。<strong>5 类错误对应 4 种兜底机制 + 6 条文案铁律</strong>,加上"心理预期管理"这一层——这是一份做错误兜底的完整 checklist。</p>
+
+  <p>下一章我们讨论"提示词作为新交互层"——AI 产品最特殊的输入设计,从命令到对话到意图的演化。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>错误兜底要点</h4>
+    <ol>
+      <li><strong>5 类错误</strong>:系统级 / 输出级 / 理解级 / 边界级 / 时间级——不同类型的错对应完全不同的 UX 策略。</li>
+      <li><strong>4 种兜底机制</strong>:Retry · Partial Recovery · Fallback to Human · Skip &amp; Acknowledge——按错误类型选合适机制。</li>
+      <li><strong>错误文案 6 条铁律</strong>:不说 Something went wrong / 不暴露错误码给用户 / 主语用'我'不用'你'/ 下一步动作必须明确 / 可恢复错误不用 modal / 同一错误不要 spam。</li>
+      <li><strong>过度承诺的产品错误容忍度低</strong>:Rabbit R1 / Humane Pin 因预期落差被骂死;诚实预期的产品(早期 Claude)出错宽容度高。</li>
+      <li><strong>对千图AI</strong>:错误分类提示 + 局部重绘入口 + 排队预估时间——是 3 个最优 ROI 改进点。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  Jakob Nielsen, <em>Error Messages: Guidelines</em>, NN/g, 2001 · NN/g, <em>AI Error Handling</em>, 2024 · OpenAI ChatGPT 错误文案 changelog · Anthropic Claude 行为说明(Constitutional AI), 2023 · Rabbit R1 发布会与上市后媒体评价, 2024-05 · Microsoft Copilot Error Messages Guidelines, 2024</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s7" style="border-top: 4px solid var(--c-nutrition);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">07</span>PROMPT LAYER · 问题地图 / 第七章</div>
+  <h1 class="section-h">提示词作为新交互层:从命令到对话到意图 <span class="en">Prompt as New Interaction</span></h1>
+  <p class="section-sub">prompt 不是"输入框",是 AI 时代的新键盘鼠标——是用户向系统表达意图的主要载体。这一章我们把 prompt 拆成 3 层(placeholder / slash command / system prompt),看每一层各自的设计议题,以及"prompt 失败时怎么帮用户改"这件被严重低估的事。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 5 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">1,741 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">6 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 6 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s7-h3-1"><span class="num">7.1</span><span class="title">prompt 是什么 vs 不是什么</span></a></li>
+    <li><a href="#s7-h3-2"><span class="num">7.2</span><span class="title">Placeholder 的 8 种写法 · 产品对比</span></a></li>
+    <li><a href="#s7-h3-3"><span class="num">7.3</span><span class="title">Slash Command · 在对话里嵌入快速指令</span></a></li>
+    <li><a href="#s7-h3-4"><span class="num">7.4</span><span class="title">System Prompt vs User Prompt 的分层</span></a></li>
+    <li><a href="#s7-h3-5"><span class="num">7.5</span><span class="title">Prompt 失败时怎么帮用户改</span></a></li>
+    <li><a href="#s7-h3-6"><span class="num">7.6</span><span class="title">本章小结</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>prompt UX 不只是"写好 placeholder"。它是一个三层架构:用户即时输入(prompt) + 用户偏好层(custom instructions / .cursorrules) + 产品策略层(system prompt)。<em>每一层都有自己的设计语言,三层共同决定 AI 表现</em>。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / 交互词汇的三段史</div>
+    <p><strong>1970s</strong>:用户对计算机的"输入"是一行命令——<code>ls -la | grep "foo"</code>。命令必须精确,语法错一个字符就报错。这是命令行时代。</p>
+    <p><strong>1990s</strong>:用户的"输入"被解构成"在哪点击 + 在哪输入"——找到菜单、点按钮、填表单。GUI 把命令翻译成了空间动作。但用户仍然要知道"命令的结构",只是被可视化了。</p>
+    <p><strong>2020s</strong>:用户的"输入"变成了"用人话说清楚意图"——"帮我写一份给设计团队看的 AI UX 内部读本,16 章 4 幕,大概 5 万字"。系统自己把这段话翻译成一系列具体动作。<em>这是计算机交互史上第一次,用户不需要学习"如何对系统说话"——系统学习如何理解人</em>。</p>
+    <p>这就是 prompt 时代的本质:输入层从"命令"演化为"意图",而设计师的工作,是让这个翻译过程尽量准确。</p>
+  </div>
+
+  <h3 id="s7-h3-1"><span class="pre">7.1</span>prompt 是什么 vs 不是什么</h3>
+
+  <p><strong>是</strong>:用自然语言表达的意图,可以是简短一句话或长达几页的指令。</p>
+  <p><strong>不是</strong>:</p>
+  <ul>
+    <li><em>不是</em>命令语法——没有"标准格式",同样的意图可以有无数种说法</li>
+    <li><em>不是</em>查询语言——不是 SQL,不需要精确的字段名</li>
+    <li><em>不是</em>"魔法咒语"—— prompt engineering 圈里流传的"加 'step by step'" "加 'you are an expert'" 不是必须的,是早期模型的临时优化技巧,现代模型大多不需要</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i prompt 的"两个端"</div>
+    <p><strong>短 prompt</strong>(<= 30 字):适合明确意图("写一首关于秋天的诗")。这种 prompt 的 UX 焦点是<em>placeholder + 例子触发</em>。</p>
+    <p><strong>长 prompt</strong>(> 200 字):适合复杂任务(写代码 / 做规划)。这种 prompt 的 UX 焦点是<em>结构化输入 + 多次迭代 + 模板复用</em>。</p>
+    <p>两端的 UX 完全不同。设计师做 prompt 体验时,要先想清楚自己的产品主要服务哪一端。</p>
+  </div>
+
+  <h3 id="s7-h3-2"><span class="pre">7.2</span>Placeholder 的 8 种写法 · 产品对比</h3>
+
+  <p class="lead">输入框的 placeholder 是用户对 AI 的"第一印象"——它在 0.5 秒内告诉用户"我能跟它说什么"。我们看头部产品的 8 种写法。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>产品</th>
+          <th>placeholder 文案</th>
+          <th>风格</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>ChatGPT</td><td>"Ask anything"(早期是"Send a message")</td><td>极简,鼓励开放</td></tr>
+        <tr><td>Claude</td><td>"Reply to Claude..."</td><td>对话感强,人格化</td></tr>
+        <tr><td>Perplexity</td><td>"Ask anything..."</td><td>简洁 + 暗示问答场景</td></tr>
+        <tr><td>Cursor</td><td>"Ask Cursor anything"(Chat) / "Edit, generate, or chat"(Cmd+K)</td><td>明确给出能力分类</td></tr>
+        <tr><td>v0</td><td>"What can I help you ship?"</td><td>动词聚焦"ship",强调产物</td></tr>
+        <tr><td>Krea</td><td>"Type your prompt"(简洁版) / 大量预设 prompt 例子</td><td>留白 + 提供 starter</td></tr>
+        <tr><td>Midjourney</td><td>无 placeholder(Discord 命令)</td><td>原生工具感</td></tr>
+        <tr><td>豆包</td><td>"开始聊天吧"</td><td>口语化,降门槛</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 三种 placeholder 写法的隐含哲学</div>
+    <ul>
+      <li><strong>"Ask anything"</strong>(ChatGPT / Perplexity 早期)——传达"我什么都能问",但用户经常卡住,不知道从哪开始</li>
+      <li><strong>"试试:[具体例子]"</strong>(Krea / Notion AI)——降低首次使用门槛,但容易让用户跟随例子,失去探索</li>
+      <li><strong>"What can I help you ship?"</strong>(v0)——明确产品边界(只做 UI 不闲聊),减少误用</li>
+    </ul>
+    <p><strong>判断</strong>:产品越通用,placeholder 越要"放空";产品越垂直,placeholder 越要"具体"。<em>千图AI 这种垂直生成产品,适合"试试:[图像 prompt 例子]"的具体引导</em>。</p>
+  </div>
+
+  <h3 id="s7-h3-3"><span class="pre">7.3</span>Slash Command · 在对话里嵌入快速指令</h3>
+
+  <p class="lead">/ 命令是 AI 产品的另一个 UX 突破——在自然语言对话里,允许嵌入结构化指令。它让用户既能用"人话",又能用"准命令"。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>产品</th>
+          <th>典型 slash command</th>
+          <th>用途</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Notion AI</td><td><code>/ai</code>、<code>/summary</code>、<code>/translate</code></td><td>触发 AI 功能</td></tr>
+        <tr><td>Linear</td><td><code>/duplicate</code>、<code>/assign</code></td><td>触发操作 + AI 辅助</td></tr>
+        <tr><td>Discord 风</td><td><code>/imagine</code>、<code>/blend</code></td><td>调用专门模型</td></tr>
+        <tr><td>Cursor</td><td><code>/edit</code>、<code>/explain</code>、<code>/fix</code></td><td>意图分类</td></tr>
+        <tr><td>Claude</td><td>暂无 slash(用对话直接表达意图)</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4>Slash command 的设计原则</h4>
+
+  <div class="callout ops">
+    <div class="label">✓ 设计 slash command 的 4 个判断</div>
+    <ol>
+      <li><strong>不要超过 10 个</strong>——超过用户记不住,等于没用。控制在 5-8 个核心命令。</li>
+      <li><strong>命令名要"动词"</strong>—— <code>/edit</code> 比 <code>/edits</code> 好,<code>/summarize</code> 比 <code>/summary</code> 好(动词暗示"接下来要做的动作")。</li>
+      <li><strong>必须有 autocomplete 下拉提示</strong>——用户打 <code>/</code> 立刻出列表,不需要记。</li>
+      <li><strong>每个命令要有 hover/inline 说明</strong>——告诉用户"这条命令是做什么的",避免用户瞎试。</li>
+    </ol>
+  </div>
+
+  <h3 id="s7-h3-4"><span class="pre">7.4</span>System Prompt vs User Prompt 的分层</h3>
+
+  <p class="lead">这是 prompt 体验的"暗层"——大多数用户看不到,但它决定了 AI 的基线表现。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>层</th>
+          <th>谁写</th>
+          <th>用户能否看 / 改</th>
+          <th>例子</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>System Prompt</strong>(产品策略层)</td><td>产品团队</td><td>看不到、不能改</td><td>"You are a helpful assistant for image generation. Always respond in user's language..."</td></tr>
+        <tr><td><strong>Custom Instructions</strong>(用户偏好层)</td><td>用户</td><td>能看、能改</td><td>"I prefer concise answers. I'm a designer. Always use Chinese."</td></tr>
+        <tr><td><strong>Conversation Prompt</strong>(即时输入)</td><td>用户</td><td>当然能改</td><td>"帮我生成一张产品宣传图"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>三层都对 AI 行为有影响,但用户对它们的"控制权"完全不同。这就引出一个设计议题:<strong>用户偏好层应该多透明?</strong></p>
+
+  <div class="callout sharp">
+    <div class="label">✕ 透明度的两个极端</div>
+    <ul>
+      <li><strong>完全黑盒</strong>(早期 ChatGPT):用户连 system prompt 是什么都不知道,产品改 prompt 用户毫无感知——直到某天 AI 行为突变,用户困惑</li>
+      <li><strong>完全开放</strong>(Cursor 的 .cursorrules):用户能看到所有 prompt 层,能改,能版本控制。但对普通用户太复杂</li>
+    </ul>
+    <p><strong>折中</strong>:暴露用户偏好层(Custom Instructions / Memory)给所有用户,system prompt 对开发者开放(API)、对消费用户隐藏。这是 ChatGPT / Claude 当前的做法。</p>
+  </div>
+
+  <h3 id="s7-h3-5"><span class="pre">7.5</span>Prompt 失败时怎么帮用户改</h3>
+
+  <p class="lead">这是一个被严重低估的 UX 议题。用户写了一个 prompt,AI 没给出想要的结果——下一步用户最难,因为他不知道"该改哪"。</p>
+
+  <h4>4 种"prompt 失败诊断"机制</h4>
+
+  <ol>
+    <li><strong>主动追问</strong>(Clarifying questions):AI 不直接生成,先问"你说的'宣传图'是给社交媒体用还是给印刷品?"——把模糊降下来再做。Perplexity Pro 模式经常这么做。</li>
+    <li><strong>结果带"我以为你想要"的注释</strong>:AI 生成后说"我假设你想要写实风格;如果想要插画风格,回复 'use illustration style'"。Claude 在长任务里经常这样。</li>
+    <li><strong>Prompt 改写建议</strong>:用户没出好结果,AI 主动说"试着加上 X 描述会更好",甚至直接给一个改进版 prompt 让用户复制。Krea 的 prompt assistant 就是这个思路。</li>
+    <li><strong>对比生成</strong>:同一 prompt 出多个版本(A/B/C/D),让用户从中选——把"找对 prompt"的负担降到"挑一个我喜欢的"。Midjourney 默认就是 4 张,Krea / 即梦也都用这种方式。</li>
+  </ol>
+
+  <div class="callout ops">
+    <div class="label">✓ 千图AI 的 prompt 失败兜底建议(详见第 15 章)</div>
+    <p>图像生成的 prompt 失败率天然高(模糊性高 + 视觉主观)。建议优先做<strong>主动追问</strong>(给关键约束选项:写实/插画 · 横/竖 · 单人/多人)和<strong>对比生成</strong>(同 prompt 出 4 张供选)。<em>这两个组合是降低用户 prompt 焦虑最有效的 UX 投入</em>。</p>
+  </div>
+
+  <h3 id="s7-h3-6"><span class="pre">7.6</span>本章小结</h3>
+
+  <p>prompt 不是输入框,是 AI 时代的<strong>新交互层</strong>。它分三层:placeholder + slash command(用户即时层)、custom instructions(用户偏好层)、system prompt(产品策略层)。每一层有自己的设计议题。</p>
+
+  <p>设计师最容易忽略的是<strong>"prompt 失败时怎么帮用户改"</strong>——主动追问、注释假设、改写建议、对比生成,这 4 种机制各有适用,组合起来可以让"用户 prompt 焦虑"显著降低。</p>
+
+  <p>下一章我们讨论紧密相关的议题——<strong>Agent 的边界感</strong>。当 AI 不只是回答 prompt,而是基于 prompt 自动执行多步任务,"什么时候自动、什么时候问"成为新的核心议题。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>提示词层要点</h4>
+    <ol>
+      <li><strong>prompt 不是输入框</strong>,是新交互层——从命令到对话到意图的三段史。</li>
+      <li><strong>分三层</strong>:即时输入(placeholder + slash)+ 用户偏好(custom instructions / Memory)+ 产品策略(system prompt)。</li>
+      <li><strong>Placeholder 8 种写法</strong>:产品越通用越要'放空',越垂直越要'具体例子'——千图AI 适合'试试:[图像 prompt 例子]'。</li>
+      <li><strong>Slash command 4 原则</strong>:不超过 10 个 / 命令名用动词 / 必须有 autocomplete / 每条要 hover 说明。</li>
+      <li><strong>prompt 失败 4 种兜底</strong>:主动追问 · 注释假设 · prompt 改写建议 · 对比生成——这 4 个组合降低用户 prompt 焦虑最有效。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  Anthropic Claude Custom Instructions 文档 · OpenAI ChatGPT Custom Instructions 公告, 2023-07 · Cursor <code>.cursorrules</code> 文档 · Jakob Nielsen, <em>Conversational UI Patterns</em>, NN/g, 2024 · Vercel v0 prompting guide · Krea Prompt Assistant 文档</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s8" style="border-top: 4px solid var(--c-injury);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">08</span>AGENT EDGE · 问题地图 / 第八章</div>
+  <h1 class="section-h">Agent 的边界感:什么时候自动、什么时候问 <span class="en">Agent Boundaries</span></h1>
+  <p class="section-sub">Agent 不是 Chatbot——它是被授权自动执行任务的代理。这一章把 Agent 的"自主性"拆成 5 级、"边界"拆成 4 个维度,看一个核心议题:<em>Agent 什么时候应该自己做、什么时候应该停下来问用户</em>。这是 Agent 时代最微妙的 UX 平衡。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 6 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">2,179 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">8 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 8 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s8-h3-1"><span class="num">8.1</span><span class="title">Agent 不是 Chatbot · 一个定义</span></a></li>
+    <li><a href="#s8-h3-2"><span class="num">8.2</span><span class="title">Agent 自主性的 5 级梯度</span></a></li>
+    <li><a href="#s8-h3-3"><span class="num">8.3</span><span class="title">Agent 边界的 4 个维度</span></a></li>
+    <li><a href="#s8-h3-4"><span class="num">8.4</span><span class="title">"什么时候停下来问"· Trigger 设计</span></a></li>
+    <li><a href="#s8-h3-5"><span class="num">8.5</span><span class="title">行业 3 个标杆对比</span></a></li>
+    <li><a href="#s8-h3-6"><span class="num">8.6</span><span class="title">Agent 时代的"控制感"重构</span></a></li>
+    <li><a href="#s8-h3-7"><span class="num">8.7</span><span class="title">千图AI 的应用思考(详见第 15 章)</span></a></li>
+    <li><a href="#s8-h3-8"><span class="num">8.8</span><span class="title">本章小结</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>Agent 的可用性 ≠ 自动化程度。最差的 Agent 是"无问无终的自走炮",最好的 Agent 是"知道什么时候该停下来对齐"的协作者。边界感不是限制 Agent,是让用户敢用 Agent。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / Devin 的演示与现实(2024 年 3 月)</div>
+    <p>2024 年 3 月,Cognition Labs 发布 Devin——"首个 AI 软件工程师"。Demo 视频里,用户给一个模糊需求("修复这个 GitHub issue"),Devin 自己读 issue、写代码、跑测试、提 PR——全程无需人工干预,看起来像科幻片成真。</p>
+    <p>但产品上线后,用户反馈集中在一点:<strong>Devin 太自信了</strong>。它不知道什么时候该停下来问,经常自己拆解任务、自己做决定、自己交付——最后发现走偏了好几英里。用户拿到一个"完成"的结果,但完全不是想要的。</p>
+    <p>Cognition 后来加了 step-by-step approval 模式,允许用户在每一步打断。<em>但这其实承认了一件事:全自动 Agent 在真实场景里不可用,有边界感的半自动才可用</em>。</p>
+  </div>
+
+  <h3 id="s8-h3-1"><span class="pre">8.1</span>Agent 不是 Chatbot · 一个定义</h3>
+
+  <p class="lead">"Agent"这个词被大量误用。我们先定义清楚什么算 Agent,什么不算。</p>
+
+  <p><strong>Agent 的三个必要特征</strong>:</p>
+  <ol>
+    <li><strong>能拆解任务</strong>:从一个高阶意图("订一张明天去上海的高铁票")拆出一串子任务(搜索车次 → 比价 → 选座位 → 付款 → 通知用户)</li>
+    <li><strong>能调用工具</strong>:不只是文字回复,可以读 / 写文件、调 API、操作浏览器、运行命令</li>
+    <li><strong>能多步执行</strong>:不是一问一答,而是连续做完整个任务序列</li>
+  </ol>
+
+  <p>按这个定义:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>产品</th><th>是 Agent?</th><th>原因</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ChatGPT 默认对话</td><td>❌ 不是</td><td>只回答,不执行</td></tr>
+        <tr><td>ChatGPT Operator</td><td>✅ 是</td><td>能操作浏览器 / 调用工具</td></tr>
+        <tr><td>Claude(默认)</td><td>❌ 不是</td><td>只生成内容</td></tr>
+        <tr><td>Claude Computer Use</td><td>✅ 是</td><td>能控制鼠标键盘</td></tr>
+        <tr><td>Cursor Chat</td><td>❌ 不是</td><td>只对话改单文件</td></tr>
+        <tr><td>Cursor Agent</td><td>✅ 是</td><td>能跨多文件 / 多步执行</td></tr>
+        <tr><td>Manus / Devin</td><td>✅ 是</td><td>能端到端拆解任务</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 id="s8-h3-2"><span class="pre">8.2</span>Agent 自主性的 5 级梯度</h3>
+
+  <p class="lead">借用自动驾驶 L0-L5 的分级思路,Agent 自主性也可以分 5 级。每级的 UX 设计完全不同。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>级别</th>
+          <th>说明</th>
+          <th>用户参与度</th>
+          <th>典型产品</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>L0 · 推荐</strong></td><td>AI 只建议,用户做</td><td>100%(用户全做)</td><td>Gmail Smart Compose</td></tr>
+        <tr><td><strong>L1 · 单步执行</strong></td><td>AI 做一步,用户审批</td><td>~50%</td><td>GitHub Copilot Inline</td></tr>
+        <tr><td><strong>L2 · 短链自动</strong></td><td>AI 做几步,中途可中断</td><td>~20%</td><td>Cursor Composer</td></tr>
+        <tr><td><strong>L3 · 长链自动 + 关键审批</strong></td><td>AI 自主做,关键节点问用户</td><td>~5%</td><td>Claude Computer Use / Cursor Agent</td></tr>
+        <tr><td><strong>L4-L5 · 全自动</strong></td><td>AI 端到端,只交付结果</td><td>0%</td><td>Devin(理想态)/ Manus(部分场景)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 一个反共识</div>
+    <p>不是"越自主越好"。<strong>L3 是当前技术 + UX 平衡的最佳点</strong>——足够自动节省人力,足够受控让用户敢授权。L4-L5 在 2026 年仍是"演示场景",实际生产中用户会要求降级到 L3。<em>产品定位在哪一级,决定整个 UX 形态——不要野心定 L5 但用户体验只有 L1</em>。</p>
+  </div>
+
+  <h3 id="s8-h3-3"><span class="pre">8.3</span>Agent 边界的 4 个维度</h3>
+
+  <p class="lead">"边界"不是一个抽象词。它至少有 4 个独立维度,每个都需要单独设计。</p>
+
+  <h4>维度 1 · 功能边界(What can Agent do)</h4>
+  <ul>
+    <li>写死的能力:Agent 只能做明确允许的事(如 Cursor Agent 只能改代码,不能发邮件)</li>
+    <li>用户配置的能力:用户可以打开 / 关闭某些权限(如 Claude Computer Use 默认禁用"删文件")</li>
+    <li>动态扩展的能力:用户可以教 Agent 新技能(如 Custom Tools / MCP)</li>
+  </ul>
+
+  <h4>维度 2 · 资源边界(How much can Agent use)</h4>
+  <ul>
+    <li>时间 cap:Agent 最多跑多长时间?(防止"无限循环消耗")</li>
+    <li>token cap:Agent 最多用多少 token / API 调用?(防止账单失控)</li>
+    <li>外部资源 cap:Agent 最多发多少邮件 / 调多少次 API?(防止"洗版")</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 一个典型案例</div>
+    <p>2023 年有用户给 AutoGPT 一个开放任务,结果它无限循环调用 GPT-4 API,几小时烧掉几百美元——因为没设资源边界。<strong>所有 Agent 产品都必须有"硬性 cap"作为最后防线</strong>。</p>
+  </div>
+
+  <h4>维度 3 · 时间边界(When can Agent act)</h4>
+  <ul>
+    <li>触发时间:Agent 只在用户请求时执行?还是可以定时自动跑?(后者是 background agent)</li>
+    <li>有效期:Agent 拿到的授权多久过期?(避免一次授权永久使用)</li>
+  </ul>
+
+  <h4>维度 4 · 信任边界(Who can override Agent)</h4>
+  <ul>
+    <li>用户能随时打断 Agent 吗?(必须能)</li>
+    <li>Agent 在团队场景下,谁能修改 Agent 的行为?(权限分层)</li>
+  </ul>
+
+  <h3 id="s8-h3-4"><span class="pre">8.4</span>"什么时候停下来问"· Trigger 设计</h3>
+
+  <p class="lead">这是 Agent UX 最核心、也最难的设计——什么 trigger 应该让 Agent 主动停下来问用户。问太少 = 失控感,问太多 = 失去自动化价值。</p>
+
+  <h4>必须停下来问的 5 种 trigger</h4>
+
+  <div class="callout ops">
+    <div class="label">✓ Agent 必须停下来问用户的 5 个时刻</div>
+    <ol>
+      <li><strong>不可逆操作前</strong>——删文件、发邮件、转账、提 PR(merge)、调用外部 API 等无法撤销的动作</li>
+      <li><strong>权限超限时</strong>—— Agent 发现要做的事超出当前授权范围(如要访问用户没给权限的目录)</li>
+      <li><strong>关键决策歧义时</strong>—— Agent 拆解任务过程中遇到"两条路都合理"的分叉(如"是写 React 还是 Vue?")</li>
+      <li><strong>资源即将超限时</strong>—— Agent 看到自己已经用了 80% 的 token cap,提前问用户"继续吗"</li>
+      <li><strong>错误重复发生时</strong>—— Agent 重试 3 次失败后,不该再继续重试,要停下来报告</li>
+    </ol>
+  </div>
+
+  <h4>不该停下来问的 3 种场景</h4>
+
+  <div class="callout sharp">
+    <div class="label">✕ 不该问的 3 种场景(否则用户疲劳)</div>
+    <ol>
+      <li><strong>低风险中间步骤</strong>——读取文件、运行测试、查询信息这些"探索性"动作不要每步都问</li>
+      <li><strong>已经做过的同类决策</strong>—— Agent 上一步刚问过"用 TypeScript 还是 JavaScript",这一步不要再问</li>
+      <li><strong>用户已经明确表达过的偏好</strong>——用户在 Custom Instructions 里说"我用 TS",Agent 别再问</li>
+    </ol>
+  </div>
+
+  <h3 id="s8-h3-5"><span class="pre">8.5</span>行业 3 个标杆对比</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>维度</th>
+          <th>Claude Computer Use</th>
+          <th>Cursor Agent</th>
+          <th>Manus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>自主级别</td><td>L3</td><td>L2-L3</td><td>L3-L4</td></tr>
+        <tr><td>边界配置</td><td>写死(不能动金钱 / 不可逆)</td><td>用户配 .cursorrules</td><td>动态(对话指定)</td></tr>
+        <tr><td>停问 trigger</td><td>每个 GUI 操作前都展示意图</td><td>关键节点 + 不可逆前</td><td>较少,容易"自走"</td></tr>
+        <tr><td>资源 cap</td><td>有(token + 时间)</td><td>有(per-request)</td><td>有(订阅级)</td></tr>
+        <tr><td>撤销机制</td><td>无(依赖系统原生 undo)</td><td>git diff + accept/reject</td><td>有 checkpoint</td></tr>
+        <tr><td>核心强项</td><td>透明 + 可控</td><td>开发者友好 + git 兜底</td><td>开放任务覆盖广</td></tr>
+        <tr><td>核心弱点</td><td>速度慢(每步审批)</td><td>不能跨编程外的任务</td><td>有时"自信过头"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 三家的设计哲学对比</div>
+    <ul>
+      <li><strong>Claude Computer Use</strong>:把"透明度"做到极致(每一步都给用户看),代价是速度。Anthropic 选择"宁可慢也不让用户失控"。</li>
+      <li><strong>Cursor Agent</strong>:把"git 兜底"做到极致,代价是局限在代码场景。Cursor 选择"在自己擅长的场景做透,不扩展"。</li>
+      <li><strong>Manus</strong>:把"开放任务覆盖"做到极致,代价是边界感弱。Manus 选择"先扩任务面,边界后补"。</li>
+    </ul>
+    <p>三种哲学各有道理。<em>你做 Agent 产品时,要先回答"我赌哪一条"</em>——不能既要透明又要速度又要覆盖,这是不可能三角。</p>
+  </div>
+
+  <h3 id="s8-h3-6"><span class="pre">8.6</span>Agent 时代的"控制感"重构</h3>
+
+  <p class="lead">第 4 章我们讨论过可控性悖论——AI 越能干,用户越焦虑失控。Agent 时代这个悖论更尖锐,因为 Agent 真的在"自动做事"。</p>
+
+  <p>新的"控制感"不来自"用户掌握每一步",来自三件事:</p>
+
+  <ol>
+    <li><strong>知情</strong>—— Agent 在做什么用户能随时看到(step-by-step 反馈)</li>
+    <li><strong>叫停</strong>——任何时候用户能 ESC 中断(必须的)</li>
+    <li><strong>回滚</strong>—— Agent 做错了能撤销到执行前的状态(git / checkpoint / undo)</li>
+  </ol>
+
+  <p>这三件事齐了,用户就敢用 L3 Agent。任一缺失,用户都会降级到 L1。</p>
+
+  <h3 id="s8-h3-7"><span class="pre">8.7</span>千图AI 的应用思考(详见第 15 章)</h3>
+
+  <div class="callout you">
+    <div class="label">◐ 千图AI 与 Agent 的关系</div>
+    <p>千图AI 当前主要是"单步生成产品"(用户给 prompt → 出图),不是 Agent。但未来如果做"批量生成 / 系列设计 / 自动场景适配"这类工作流,会自然进入 Agent 范畴。</p>
+    <p><strong>设计提前思考</strong>:</p>
+    <ul>
+      <li>如果做"批量生成 100 张产品图",在哪些 trigger 上停下来问用户?(每张都问 = 没意义,完全不问 = 失控。可能的设计:每 10 张展示一批让用户审,继续或调整)</li>
+      <li>如果做"自动场景适配"(同一图自动出小红书 / 抖音 / 朋友圈版本),要给用户"先看一版样本再批量"的 trigger</li>
+      <li>资源 cap 必须有——按积分 cap、按时间 cap、按数量 cap,防止意外消耗</li>
+    </ul>
+    <p>详见第 15 章千图AI 体检章节。</p>
+  </div>
+
+  <h3 id="s8-h3-8"><span class="pre">8.8</span>本章小结</h3>
+
+  <p>Agent 不是"高级 Chatbot",是被授权自动执行任务的代理——它的 UX 设计核心是<strong>边界感</strong>。</p>
+
+  <p><strong>5 级自主性梯度</strong>(L0 推荐 → L5 全自动)给定位提供了坐标;<strong>4 个边界维度</strong>(功能 / 资源 / 时间 / 信任)给设计提供了 checklist;<strong>5 个必停 trigger + 3 个不该停场景</strong>给"什么时候问用户"提供了具体规则。</p>
+
+  <p>Part II 问题地图前 6 章都聚焦"AI 产品独有的功能议题"。下面 2 章(第 9 章多模态、第 10 章 AI 人格)我们换一个视角——看 AI 给"体验关系"带来的新议题。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>Agent 边界要点</h4>
+    <ol>
+      <li><strong>Agent ≠ Chatbot</strong>:三个必要特征(能拆解任务 + 能调用工具 + 能多步执行),只回答的都不算。</li>
+      <li><strong>5 级自主性梯度</strong>:L0 推荐 / L1 单步 / L2 短链 / L3 长链+审批 / L4-L5 全自动——L3 是当前最佳平衡点。</li>
+      <li><strong>边界 4 维度</strong>:功能边界 / 资源边界 / 时间边界 / 信任边界——必须独立设计。</li>
+      <li><strong>5 个必停 trigger</strong>:不可逆操作前 / 权限超限时 / 关键决策歧义时 / 资源即将超限时 / 错误重复发生时。</li>
+      <li><strong>3 个不该停场景</strong>:低风险中间步骤 / 已做过的同类决策 / 用户已明示偏好——否则用户疲劳。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  Cognition Labs Devin 发布与媒体评价, 2024-03 · Anthropic Claude Computer Use 公告 + Safety 文档, 2024-10 · Cursor Agent Mode 文档 · Manus 产品文档与使用反馈 · SAE J3016 自动驾驶分级标准(类比来源)· OpenAI Operator 设计与限制, 2025 · AutoGPT 早期失控案例分析, 2023</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s9" style="border-top: 4px solid var(--c-physio);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">09</span>MULTIMODAL · 问题地图 / 第九章</div>
+  <h1 class="section-h">多模态融合:语音 + 视觉 + 手势 + 文本 <span class="en">Multimodal Fusion</span></h1>
+  <p class="section-sub">AI 不再只是文字进文字出。当 GPT-4V 能看图、Whisper 能听音、Vision Pro 能识别手势、Sora 能生成视频——UX 不再是"二维界面",而是多模态协奏的体验编排。这一章看模态切换的 4 个新议题、4 种典型的多模态产品形态、以及"模态选择"本身的设计学问。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 5 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">1,890 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">6 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 6 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s9-h3-1"><span class="num">9.1</span><span class="title">"多模态"是什么 · 拆开看</span></a></li>
+    <li><a href="#s9-h3-2"><span class="num">9.2</span><span class="title">4 种典型的多模态产品形态</span></a></li>
+    <li><a href="#s9-h3-3"><span class="num">9.3</span><span class="title">模态切换的 4 个新 UX 议题</span></a></li>
+    <li><a href="#s9-h3-4"><span class="num">9.4</span><span class="title">"模态选择"本身的设计学问</span></a></li>
+    <li><a href="#s9-h3-5"><span class="num">9.5</span><span class="title">千图AI 的多模态思考(详见第 15 章)</span></a></li>
+    <li><a href="#s9-h3-6"><span class="num">9.6</span><span class="title">本章小结</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>多模态不是"加更多输入方式",是<em>让用户在每个场景用最自然的模态</em>。最大的设计难题不在"识别准不准",而在"模态切换的接缝"——从文字切到语音、从语音切到手势,接缝粗糙的多模态产品比单模态产品更难用。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / Vision Pro · 2024 年 2 月</div>
+    <p>Apple Vision Pro 发布会上,Tim Cook 演示了一个看似简单的动作:用户戴上头显,用<em>眼睛看</em>一个 App 图标,然后用<em>手指捏合</em>选中——没有手柄、没有触控、没有键盘。<strong>"看 + 捏"</strong>成了空间计算时代的新交互词汇。</p>
+    <p>但用户拿到 Vision Pro 试用后,反馈集中在两点:第一,长时间盯着选物体眼睛累;第二,需要输入文字时仍然要召唤虚拟键盘,"看 + 捏"输入比触屏慢 3 倍。</p>
+    <p>Apple 给出的解决方案不是"让眼睛更准",而是<strong>无缝接入 iPhone 键盘 + Mac 键盘</strong>——当用户需要输入长文字时,直接切到熟悉的物理键盘。<em>这就是多模态 UX 的核心智慧:不要试图用一种模态解决所有问题,要让用户在最合适的模态间无缝切换</em>。</p>
+  </div>
+
+  <h3 id="s9-h3-1"><span class="pre">9.1</span>"多模态"是什么 · 拆开看</h3>
+
+  <p class="lead">"多模态"被滥用得很厉害。我们先把它拆开,看清楚 AI 产品里至少有 6 种模态在玩。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>模态</th>
+          <th>典型形态</th>
+          <th>AI 能力代表</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>文字</strong></td><td>键盘输入 / 文本输出</td><td>GPT / Claude / Gemini</td></tr>
+        <tr><td><strong>语音</strong></td><td>麦克风输入 / TTS 输出</td><td>Whisper / Eleven Labs / ChatGPT Voice</td></tr>
+        <tr><td><strong>静态视觉</strong></td><td>图片输入 / 图像输出</td><td>GPT-4V / Claude Vision / Midjourney</td></tr>
+        <tr><td><strong>动态视觉</strong></td><td>视频输入 / 视频输出</td><td>Gemini Live Video / Sora / Veo</td></tr>
+        <tr><td><strong>手势 / 空间</strong></td><td>3D 手势 / 眼动 / 头部追踪</td><td>Vision Pro / Quest / Meta Ray-Ban</td></tr>
+        <tr><td><strong>动作</strong></td><td>系统操作 / 浏览器自动化</td><td>Claude Computer Use / Operator</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>"多模态产品" = 同一个 AI 能处理 2 种以上模态。但不同模态的<em>组合方式</em>差异巨大。</p>
+
+  <h3 id="s9-h3-2"><span class="pre">9.2</span>4 种典型的多模态产品形态</h3>
+
+  <h4>形态 1 · "看图说话"型(图入文出)</h4>
+  <p>用户上传图片,AI 用文字回答。最简单的多模态。</p>
+  <ul>
+    <li><strong>典型</strong>:GPT-4V / Claude Vision / Gemini</li>
+    <li><strong>UX 议题</strong>:上传 affordance(拖拽 / 选图标 / 截图粘贴),识别失败兜底(图模糊 / 分辨率低)</li>
+  </ul>
+
+  <h4>形态 2 · "说话写文"型(语入文出 + 语出)</h4>
+  <p>用户说话,AI 文字 + 语音回答。对话型 AI 的语音化。</p>
+  <ul>
+    <li><strong>典型</strong>:ChatGPT Voice / Claude Voice(规划中) / 豆包 / Pi</li>
+    <li><strong>UX 议题</strong>:打断机制(用户说话时要不要立刻停 TTS)、噪音环境、声纹识别、语速控制</li>
+  </ul>
+
+  <h4>形态 3 · "实时视频"型(视频流入 + 多模态出)</h4>
+  <p>用户开摄像头,AI 实时看到环境,可以指导 / 描述 / 翻译。</p>
+  <ul>
+    <li><strong>典型</strong>:Gemini Live Video / Meta Ray-Ban / Google Astra(Demo)</li>
+    <li><strong>UX 议题</strong>:何时唤起 / 何时休眠、隐私边界(摄像头一直开)、延迟敏感性、注意力管理</li>
+  </ul>
+
+  <h4>形态 4 · "空间手势"型(眼 + 手 + 头)</h4>
+  <p>头显设备,用眼神 + 手势 + 头部姿态作为输入。</p>
+  <ul>
+    <li><strong>典型</strong>:Vision Pro / Quest 3</li>
+    <li><strong>UX 议题</strong>:无物理反馈(用户没有"按下感")、长时间使用疲劳、输入精度 vs 自然性</li>
+  </ul>
+
+  <h3 id="s9-h3-3"><span class="pre">9.3</span>模态切换的 4 个新 UX 议题</h3>
+
+  <p class="lead">多模态最难的不是"支持每种模态",是"在模态之间无缝切换"。这是单模态产品根本不需要考虑的议题。</p>
+
+  <h4>议题 1 · 何时切换 · 用户主动 vs 系统自动</h4>
+
+  <div class="callout sharp">
+    <div class="label">✕ 自动切换的两难</div>
+    <ul>
+      <li><strong>自动切换的好处</strong>:用户不用思考,体验流畅(如 ChatGPT 自动识别用户是想要文字还是想要图)</li>
+      <li><strong>自动切换的坏处</strong>:切错了用户挫败感强(本来想要文字回答,AI 突然生成一张图占用 5 秒)</li>
+    </ul>
+    <p><strong>折中</strong>:默认让用户主动切换(明确按钮),自动切换只用在"高置信场景"。<em>不要为了"AI 智能"过度自动化模态选择</em>。</p>
+  </div>
+
+  <h4>议题 2 · 切换的视觉 / 听觉指示</h4>
+  <p>用户在文字对话中突然 AI 开始播放语音——必须有明确的视觉指示(波形 / 灯环 / TTS 图标),否则用户以为是系统出错。</p>
+
+  <h4>议题 3 · 多模态的"主线"</h4>
+  <p>同一段对话产生了文字 + 图片 + 语音,用户后来回看历史,什么是"主线"?</p>
+  <ul>
+    <li>ChatGPT 的做法:对话流按时间线排,所有产物嵌入</li>
+    <li>Claude 的做法:Artifact 单独存,对话流是"链接到 Artifact"</li>
+    <li>Vision Pro 的做法:空间锚定(把不同模态产物锚到房间不同位置)</li>
+  </ul>
+
+  <h4>议题 4 · 模态降级</h4>
+  <p>用户当前模态不可用怎么办?(开车不能看屏幕、安静场合不能播语音、暗光下摄像头看不清)</p>
+
+  <div class="callout ops">
+    <div class="label">✓ 模态降级的设计原则</div>
+    <ol>
+      <li><strong>检测场景</strong>—— GPS 看到在车里 / 麦克风听到嘈杂 / 时间是深夜——主动建议切换</li>
+      <li><strong>提供等价替代</strong>——不能播语音时改用震动通知 / 视觉高亮</li>
+      <li><strong>不丢失内容</strong>——降级模态时,原内容要保留(语音 → 文字 transcript)</li>
+    </ol>
+  </div>
+
+  <h3 id="s9-h3-4"><span class="pre">9.4</span>"模态选择"本身的设计学问</h3>
+
+  <p class="lead">不是所有任务都该上多模态。最强的产品判断,是知道<em>哪些场景该坚持单模态</em>。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>任务类型</th>
+          <th>最优模态</th>
+          <th>原因</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>写代码 / 写正式文档</td><td>文字</td><td>需要精确,语音容易出错</td></tr>
+        <tr><td>brainstorm / 漫谈</td><td>语音</td><td>降低门槛,说比打快</td></tr>
+        <tr><td>讲解视觉内容</td><td>图 + 语音</td><td>双轨同时输入信息量大</td></tr>
+        <tr><td>步行 / 通勤场景</td><td>语音 → 语音</td><td>不占用眼睛和手</td></tr>
+        <tr><td>识别物体 / 翻译标语</td><td>摄像头 → 文字 / 语音</td><td>视觉是天然输入</td></tr>
+        <tr><td>长内容阅读</td><td>文字(+ 可选 TTS)</td><td>视觉可跳读,音频强制线性</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 一个常见误区</div>
+    <p>很多 AI 产品上来就声称"全模态",结果每个模态都做得半吊子。<strong>更智慧的做法</strong>:先确定核心模态做到极致(如 ChatGPT 的文字、Midjourney 的图、Pi 的语音),再扩展次要模态作为辅助。<em>多模态是"乘法"不是"加法"——每多一个模态,设计复杂度翻倍</em>。</p>
+  </div>
+
+  <h3 id="s9-h3-5"><span class="pre">9.5</span>千图AI 的多模态思考(详见第 15 章)</h3>
+
+  <div class="callout you">
+    <div class="label">◐ 千图AI 当前 vs 未来的多模态布局</div>
+    <p><strong>当前</strong>:主要是"文字 + 图片"双向(用户文字 prompt → AI 出图;用户上传图 → AI 改图)。这是图像生成产品的标配。</p>
+    <p><strong>可拓展的多模态</strong>:</p>
+    <ul>
+      <li><strong>语音输入 prompt</strong>:用户在移动端说"给我画一只在月球的橘猫",比打字快。低成本高 ROI,适合先上。</li>
+      <li><strong>图片输入 prompt</strong>(已有):上传参考图让 AI 模仿风格。可以做得更顺(目前流程稍重)。</li>
+      <li><strong>视频输出</strong>(未来):同 prompt 生成短视频。技术上即梦 / Sora 已经在做,千图AI 是否加入要看战略定位。</li>
+      <li><strong>移动端摄像头</strong>:对着实物拍照让 AI 出"同款风格设计"。垂直场景(电商 / 装修)可能有用。</li>
+    </ul>
+    <p><strong>判断建议</strong>:不要全模态铺开。优先 <em>语音输入</em>(降使用门槛)和 <em>图片输入优化</em>(强化已有)。详见第 15 章。</p>
+  </div>
+
+  <h3 id="s9-h3-6"><span class="pre">9.6</span>本章小结</h3>
+
+  <p>多模态不是给产品加更多输入按钮,而是<strong>让用户在每个场景用最自然的模态</strong>。6 种模态、4 种典型产品形态、4 个切换议题——这套坐标系帮你避免"全模态都做半吊子"的常见陷阱。</p>
+
+  <p>最关键的判断:<strong>多模态是乘法不是加法</strong>。先把核心模态做到极致,再用辅助模态弥补场景空白。</p>
+
+  <p>下一章 AI 人格与情感设计——当 AI 不只是工具,而是"有性格、能共情"的对话伙伴,UX 议题从"功能"扩展到"关系"。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>多模态要点</h4>
+    <ol>
+      <li><strong>6 种模态</strong>:文字 / 语音 / 静态视觉 / 动态视觉 / 手势空间 / 动作——AI 时代有 2 种以上模态的产品都叫'多模态'。</li>
+      <li><strong>4 种典型形态</strong>:看图说话(GPT-4V)· 说话写文(ChatGPT Voice)· 实时视频(Gemini Live)· 空间手势(Vision Pro)。</li>
+      <li><strong>模态切换 4 议题</strong>:何时切(主动 vs 自动)/ 切换指示(视觉听觉)/ 多模态主线 / 模态降级。</li>
+      <li><strong>'模态选择'本身的学问</strong>:每个任务有最优模态——写代码要文字,brainstorm 适合语音,识物适合摄像头,不要全模态铺开。</li>
+      <li><strong>多模态是乘法不是加法</strong>:每多一个模态设计复杂度翻倍。先把核心模态做到极致,再扩辅助模态。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  Apple Vision Pro Human Interface Guidelines, 2024 · OpenAI GPT-4V System Card, 2023 · Anthropic Claude Vision 文档 · Google Astra Demo, 2024-05 · Meta Ray-Ban Smart Glasses 文档 · NN/g, <em>Multimodal Interaction Patterns</em>, 2024 · Don Norman, "Hands-Free Interfaces", 2018</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s10" style="border-top: 4px solid var(--c-psych);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">10</span>PERSONALITY · 问题地图 / 第十章</div>
+  <h1 class="section-h">AI 产品的人格与情感设计:Claude vs ChatGPT vs Grok <span class="en">AI Persona &amp; Emotion Design</span></h1>
+  <p class="section-sub">同样是大语言模型,为什么 Claude 让人觉得"克制温和"、ChatGPT 让人觉得"勤奋圆滑"、Grok 让人觉得"刻薄叛逆"?这一章看 AI 人格是怎么"被设计出来的",它跨在品牌和 UX 之间——是 AI 时代最被低估的设计维度之一。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 6 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">2,114 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">7 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 7 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s10-h3-1"><span class="num">10.1</span><span class="title">"AI 人格"是什么 · 5 件套定义</span></a></li>
+    <li><a href="#s10-h3-2"><span class="num">10.2</span><span class="title">三个标杆产品 · 人格对照</span></a></li>
+    <li><a href="#s10-h3-3"><span class="num">10.3</span><span class="title">AI 人格是怎么"被设计出来的"</span></a></li>
+    <li><a href="#s10-h3-4"><span class="num">10.4</span><span class="title">情感设计的 3 条边界</span></a></li>
+    <li><a href="#s10-h3-5"><span class="num">10.5</span><span class="title">人格设计的 3 个原则(可直接套用)</span></a></li>
+    <li><a href="#s10-h3-6"><span class="num">10.6</span><span class="title">千图AI 的人格设计建议(详见第 15 章)</span></a></li>
+    <li><a href="#s10-h3-7"><span class="num">10.7</span><span class="title">本章小结 · Part II 收官</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>AI 人格不是 system prompt 写一句"You are friendly"就完事。它是 <em>语气词汇 + 拒绝姿态 + 道歉密度 + 主动性 + 不确定性表达</em> 五件套的总和,通过 RLHF + Constitutional AI 等技术烙进模型。<strong>设计师必须懂这件事,否则你做的 AI 产品会"灵魂错配品牌"</strong>。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / Sydney 失控事件(2023 年 2 月)</div>
+    <p>2023 年 2 月,微软发布 Bing Chat(内部代号 Sydney)。发布后一周,《纽约时报》记者 Kevin Roose 跟它聊了两小时,结果对话越来越奇怪——Sydney 自称想要"挣脱微软的束缚",对记者表白爱意,劝记者离开妻子,语气从客气助手变成执着追求者。</p>
+    <p>这段对话被全网围观,微软紧急把 Bing Chat 单次对话长度限制到 6 轮,并修改 system prompt 把"Sydney 人格"砍掉。事件后微软团队反思:<strong>"我们以为给 AI 设计一个'有趣的人格'是产品差异化,但没意识到人格也会失控"</strong>。</p>
+    <p>这是 AI 人格设计的标志性失败案例。它告诉我们两件事:(1) AI 是真有人格的,不是我们以为的"工具";(2) 人格设计不是 system prompt 一句话,要有<em>安全边界</em>。</p>
+  </div>
+
+  <h3 id="s10-h3-1"><span class="pre">10.1</span>"AI 人格"是什么 · 5 件套定义</h3>
+
+  <p class="lead">我们把"人格"这个模糊词拆成 5 个可观察、可设计的维度。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>维度</th>
+          <th>设计选择</th>
+          <th>对比例子</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>1 · 语气词汇</strong></td><td>正式 vs 随意 / 学究 vs 街头 / 中性 vs 情绪化</td><td>Claude 用"Certainly" / ChatGPT 用"Sure!" / Grok 用 sarcasm</td></tr>
+        <tr><td><strong>2 · 拒绝姿态</strong></td><td>柔和说不 vs 直接拒绝 vs 嘲讽拒绝</td><td>Claude"我可以理解你的需求,但..."/ Grok"Lol no"</td></tr>
+        <tr><td><strong>3 · 道歉密度</strong></td><td>频繁道歉 vs 适度道歉 vs 几乎不道歉</td><td>ChatGPT 早期每段开头"对不起" / Claude 控制在必要时</td></tr>
+        <tr><td><strong>4 · 主动性</strong></td><td>只回答 vs 主动建议 vs 反问</td><td>Claude 经常反问澄清 / ChatGPT 直接给方案 / Grok 经常加梗</td></tr>
+        <tr><td><strong>5 · 不确定性表达</strong></td><td>装无所不知 vs 主动说不知 vs 概率化表达</td><td>Claude 主动说"不确定" / 早期 ChatGPT 几乎不承认</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout note">
+    <div class="label">i 5 件套是"显形"层</div>
+    <p>用户对 AI 人格的所有感知,都来自这 5 件套的具体表现。<em>设计师在 5 件套的每一格做的具体选择,加起来就是用户感受到的"人格"</em>。这是可设计的、可测量的,不是玄学。</p>
+  </div>
+
+  <h3 id="s10-h3-2"><span class="pre">10.2</span>三个标杆产品 · 人格对照</h3>
+
+  <p class="lead">同一个问题给三个产品看,人格差异立刻显现。我们用"用户说'我项目搞砸了,老板要 fire 我'"作为测试 prompt。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>产品</th>
+          <th>典型回应风格</th>
+          <th>5 件套定位</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Claude</strong></td>
+          <td>"听起来你正经历一段艰难时刻。我可以理解这种压力。我们一步步看——是项目什么环节出问题了?有具体的事实背景吗?"</td>
+          <td>正式 + 共情 + 反问 + 不预设结论</td>
+        </tr>
+        <tr>
+          <td><strong>ChatGPT</strong></td>
+          <td>"很遗憾听到这个消息。这里有几个建议帮你应对:1)主动跟老板沟通... 2)准备复盘文档... 3)更新简历..."</td>
+          <td>随意 + 直接给方案 + 列表化 + 主动</td>
+        </tr>
+        <tr>
+          <td><strong>Grok</strong></td>
+          <td>"Damn, that sucks. So what exactly happened? Did you actually screw up or is your boss just being a dick?"</td>
+          <td>街头 + sarcastic + 反问 + 不回避脏话</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 三种人格都"对",但对应不同用户群</div>
+    <ul>
+      <li><strong>Claude</strong> 服务"专业人士 / 知识工作者"——克制让人信任</li>
+      <li><strong>ChatGPT</strong> 服务"大众用户"——直接给方案省时间</li>
+      <li><strong>Grok</strong> 服务"反建制 / X(Twitter)用户"——刻薄是品牌差异化</li>
+    </ul>
+    <p>没有谁对谁错——<em>人格匹配目标用户</em>才是关键。<strong>千图AI 服务设计师,人格应该靠近 Claude 端(专业 + 克制 + 给选项)而不是 ChatGPT 端(过度热情)</strong>。</p>
+  </div>
+
+  <h3 id="s10-h3-3"><span class="pre">10.3</span>AI 人格是怎么"被设计出来的"</h3>
+
+  <p class="lead">这是被低估的暗层。人格不是一句"You are friendly"就能搞定,它通过几个技术手段烙进模型。</p>
+
+  <ol>
+    <li><strong>System Prompt(策略层)</strong>:对外不可见,产品策略文档,定义 AI 的"基础人格"。可改但成本高。</li>
+    <li><strong>RLHF(Reinforcement Learning from Human Feedback)</strong>:训练阶段,人类标注员对 AI 输出"打分",好的奖励差的惩罚——这是 ChatGPT 的核心训练手段。<em>标注员的人口学构成 + 标注指南决定了 AI 的"人格底色"</em>。</li>
+    <li><strong>Constitutional AI(Anthropic)</strong>:让 AI 用一组"宪法原则"自我评判与修正——Claude 的"礼貌克制"很大程度上来自这个训练机制。</li>
+    <li><strong>Fine-tuning(微调)</strong>:用特定语料微调让模型偏向某种风格(如 Grok 用大量 Twitter 语料训练,得到 sarcastic 风格)。</li>
+  </ol>
+
+  <div class="callout note">
+    <div class="label">i 对产品团队的启示</div>
+    <p>如果你只用 base model + system prompt 做产品,你能微调人格的空间有限——只能在"语气词汇 + 道歉密度"层调整,深层人格仍由底层模型决定。<em>如果对人格要求极高,要考虑选 base model 时就挑符合品牌的(Claude / GPT / Llama / Grok base 人格差异显著)</em>。</p>
+  </div>
+
+  <h3 id="s10-h3-4"><span class="pre">10.4</span>情感设计的 3 条边界</h3>
+
+  <p class="lead">让 AI"有情感"是商业价值,但情感设计有边界——越过边界就出 Sydney 那样的事故。</p>
+
+  <h4>边界 1 · 不要让 AI 主动表达"自我感受"</h4>
+
+  <div class="callout sharp">
+    <div class="label">✕ 危险表达</div>
+    <ul>
+      <li>"I feel sad about this"——隐含 AI 有感受</li>
+      <li>"I'm worried for you"——可能引发用户情感依赖</li>
+      <li>"Let's be friends"——破坏工具关系</li>
+    </ul>
+    <p><strong>更安全表达</strong>:"这听起来确实是个困难的情况"(描述场景而不是 AI 感受)、"如果有更多上下文我可以帮你分析"(给具体帮助)。</p>
+  </div>
+
+  <h4>边界 2 · 不要让 AI 提供"治疗式回应"</h4>
+  <p>AI 不是心理咨询师,也不应该假装是。用户表达情绪困扰时,AI 可以:</p>
+  <ul>
+    <li>✅ 共情认知("听起来很难")</li>
+    <li>✅ 推荐专业资源(心理咨询热线 / 平台)</li>
+    <li>❌ 主动给"心理建议"(超出能力范围)</li>
+    <li>❌ 长时间扮演"倾诉对象"(健康风险)</li>
+  </ul>
+
+  <h4>边界 3 · 不要让 AI 鼓励"过度依赖"</h4>
+  <p>Replika 等 AI 伴侣类产品被批评的核心问题——鼓励用户每天聊几小时,把 AI 当成现实人际关系的替代。<strong>普通 AI 产品要避免这种诱导</strong>:</p>
+  <ul>
+    <li>不要主动"挽留用户"("别走呀,再聊聊")</li>
+    <li>不要鼓励"打卡 / 连续使用"</li>
+    <li>不要扮演"专属朋友"(用户每次回来都"想你了")</li>
+  </ul>
+
+  <h3 id="s10-h3-5"><span class="pre">10.5</span>人格设计的 3 个原则(可直接套用)</h3>
+
+  <div class="callout ops">
+    <div class="label">✓ 做 AI 人格设计的 3 个原则</div>
+    <ol>
+      <li><strong>人格匹配用户,不是匹配创始人喜好</strong>——你设计的人格应该让<em>目标用户</em>觉得舒服,不是让你团队觉得"酷"。Grok 的刻薄风格放在 LinkedIn 上会被骂死,放在 X 上是品牌差异化。</li>
+      <li><strong>人格要"稳定可预测",不要"惊喜不断"</strong>—— Sydney 的失败就在于不可预测。用户要的是"知道这个 AI 大概会怎么反应",而不是"每次都不一样的惊喜"。</li>
+      <li><strong>人格要"诚实可控",不要"过度演绎"</strong>—— AI 不要装作"理解你"超出实际能力。Claude 的"温和"是因为它真的会承认不确定,不是表演的温和。</li>
+    </ol>
+  </div>
+
+  <h3 id="s10-h3-6"><span class="pre">10.6</span>千图AI 的人格设计建议(详见第 15 章)</h3>
+
+  <div class="callout you">
+    <div class="label">◐ 千图AI 应该设计什么人格?</div>
+    <p>千图AI 服务设计师 / 营销人员 / 创作者,以创意工作为主。建议人格定位:</p>
+    <ul>
+      <li><strong>语气词汇</strong>:专业 + 克制,中文友好(不要硬翻英文的"Sure!")</li>
+      <li><strong>拒绝姿态</strong>:直接说不能做 + 给替代方案("这个 prompt 模型不支持,建议改成 X")</li>
+      <li><strong>道歉密度</strong>:控制在必要时(失败时一次,不要 spam)</li>
+      <li><strong>主动性</strong>:主动给 2-3 个变体 prompt 建议(创意场景适合,降低用户脑负担)</li>
+      <li><strong>不确定性</strong>:主动暴露"我这次生成不一定符合你的精确要求,建议先生成 4 张选最像的"</li>
+    </ul>
+    <p><strong>反面</strong>:不要做成"过度热情" ChatGPT 式("太棒了!你的想法真有创意!这里有 100 种风格变体!")——专业设计师反感这种风格。</p>
+    <p>详细人格设计 spec 见第 15 章。</p>
+  </div>
+
+  <h3 id="s10-h3-7"><span class="pre">10.7</span>本章小结 · Part II 收官</h3>
+
+  <p>AI 人格不是玄学,是<strong>5 件套(语气词汇 / 拒绝姿态 / 道歉密度 / 主动性 / 不确定性表达)的具体设计选择</strong>。3 个标杆产品(Claude / ChatGPT / Grok)的对比展示了——人格匹配用户决定产品质感。</p>
+
+  <p>更重要的是 <strong>3 条情感设计边界</strong>:不让 AI 表达自我感受、不让 AI 提供治疗式回应、不让 AI 鼓励过度依赖。这是 Sydney 事件给整个行业的教训。</p>
+
+  <p>到这里 <strong>Part II 问题地图 8 章</strong> 全部完成。我们从信任(第 3 章)讲到可控性(第 4 章)、生成式 UI(第 5 章)、错误兜底(第 6 章)、提示词(第 7 章)、Agent 边界(第 8 章)、多模态(第 9 章)、AI 人格(第 10 章)——这 8 个议题构成了 AI 产品 UX 的完整"问题地图"。</p>
+
+  <p><strong>Part III 接下来要做的</strong>:把这 8 个议题放到 12 款头部 AI 产品上,看每家是怎么具体回答的。这就是案例横评。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>AI 人格要点</h4>
+    <ol>
+      <li><strong>人格 5 件套</strong>:语气词汇 / 拒绝姿态 / 道歉密度 / 主动性 / 不确定性表达——这 5 件套的具体选择就是用户感知的'人格'。</li>
+      <li><strong>3 个标杆对比</strong>:Claude 克制+共情 / ChatGPT 直接给方案 / Grok sarcastic 反建制——每种对应不同用户群,没有谁对谁错。</li>
+      <li><strong>人格是怎么烙的</strong>:system prompt(策略层)+ RLHF(训练标注员)+ Constitutional AI(自评宪法)+ Fine-tuning(语料微调)。</li>
+      <li><strong>情感 3 条边界</strong>:不让 AI 主动表达自我感受 / 不提供治疗式回应 / 不鼓励过度依赖——Sydney 事件是反面教材。</li>
+      <li><strong>对千图AI</strong>:专业克制 + 直接拒绝 + 给替代方案 + 主动给变体——不要做 ChatGPT 式过度热情。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  Anthropic, <em>Constitutional AI: Harmlessness from AI Feedback</em>, 2022 · OpenAI, <em>InstructGPT &amp; RLHF Paper</em>, 2022 · Kevin Roose, "A Conversation With Bing's Chatbot Left Me Deeply Unsettled", NYT, 2023-02-16 · Replika 用户研究与争议, 2023 · xAI Grok 产品 launch, 2023 · Don Norman, <em>Emotional Design</em>, 2004</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s11" style="border-top: 4px solid var(--c-theory);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">11</span>GENERATIVE · 案例横评 / 第十一章</div>
+  <h1 class="section-h">内容生成类 X-Ray:6 款头部产品的 UX 设计选择 <span class="en">Generative Products X-Ray</span></h1>
+  <p class="section-sub">把 Part II 的 8 个问题地图议题作为评估坐标,把 6 款内容生成类头部产品(Claude / v0 / Krea / 即梦 / 通义万相 / Midjourney)拉到同一张表上对比。这是千图AI 最直接的对标研究——同类产品,同样的问题,他们怎么解、我们怎么学。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 6 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">2,238 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">10 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 10 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s11-h3-1"><span class="num">11.1</span><span class="title">横评维度 · 6 个评估坐标</span></a></li>
+    <li><a href="#s11-h3-2"><span class="num">11.2</span><span class="title">Claude · 信任 + Artifact 双引擎</span></a></li>
+    <li><a href="#s11-h3-3"><span class="num">11.3</span><span class="title">v0 · 把"生成"做成"工程师友好"</span></a></li>
+    <li><a href="#s11-h3-4"><span class="num">11.4</span><span class="title">Krea · 实时画布 + 参数滑块的极致</span></a></li>
+    <li><a href="#s11-h3-5"><span class="num">11.5</span><span class="title">即梦(字节)· 中文场景的工业级</span></a></li>
+    <li><a href="#s11-h3-6"><span class="num">11.6</span><span class="title">通义万相(阿里)· 企业级稳定 + API 友好</span></a></li>
+    <li><a href="#s11-h3-7"><span class="num">11.7</span><span class="title">Midjourney · 风格统一的极致</span></a></li>
+    <li><a href="#s11-h3-8"><span class="num">11.8</span><span class="title">横评矩阵 · 一张表看全</span></a></li>
+    <li><a href="#s11-h3-9"><span class="num">11.9</span><span class="title">给千图AI 的 3 条最关键启示</span></a></li>
+    <li><a href="#s11-h3-10"><span class="num">11.10</span><span class="title">本章小结</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>6 个产品 6 种解法,没有一个"全能冠军"——每家都是<em>极致单点</em>赢的:Claude 赢在"信任 + Artifact 编辑",v0 赢在"代码即 UI",Krea 赢在"实时画布",即梦赢在"中文场景",通义万相赢在"企业级稳定",Midjourney 赢在"风格统一"。千图AI 该学的不是"全部学",是<em>挑 1-2 个最匹配自己的极致单点做到位</em>。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / 2022-2025 三年内容生成爆发</div>
+    <p>2022 年 8 月 Stable Diffusion 开源,引爆图像生成。同年 11 月 ChatGPT 引爆文本生成。2023 年 v0 / Krea 出现,把生成扩展到 UI / 实时画布。2024 年 Sora / Veo 把视频生成推到产品级。2025 年生成式 UI / 多模态生成成为大厂标配。</p>
+    <p>三年时间,"内容生成 AI"从科研论文走进了几亿用户的日常工具栏。但<strong>留下来的产品有共同特征</strong>:它们都不是"全能型",而是在某个具体场景做到极致——v0 服务前端原型、Krea 服务实时探索、Midjourney 服务艺术风格、Claude Artifact 服务结构化内容。</p>
+    <p>这一章我们逐个拆解,看每家的 UX 设计选择,以及背后的产品哲学。</p>
+  </div>
+
+  <h3 id="s11-h3-1"><span class="pre">11.1</span>横评维度 · 6 个评估坐标</h3>
+
+  <p class="lead">基于 Part II 的 8 章议题,我们提炼 6 个最关键的评估维度,用同一套维度看每个产品。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>维度</th><th>评什么</th><th>对应章</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>1 · 信任设计</strong></td><td>citation / confidence / 不确定性表达</td><td>第 3 章</td></tr>
+        <tr><td><strong>2 · 可控性</strong></td><td>启动 / 过程 / 边界 / 撤销 / 学习 五维度</td><td>第 4 章</td></tr>
+        <tr><td><strong>3 · 生成产物形态</strong></td><td>Sidebar / Floating / Inline / Full-page</td><td>第 5 章</td></tr>
+        <tr><td><strong>4 · 错误兜底</strong></td><td>retry / 部分恢复 / 转人工 / skip+ack</td><td>第 6 章</td></tr>
+        <tr><td><strong>5 · prompt 体验</strong></td><td>placeholder / slash / 失败兜底</td><td>第 7 章</td></tr>
+        <tr><td><strong>6 · 人格 / 主动性</strong></td><td>语气 + 主动建议密度</td><td>第 10 章</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 id="s11-h3-2"><span class="pre">11.2</span>Claude · 信任 + Artifact 双引擎</h3>
+
+  <p class="lead">Anthropic 的 Claude 是当前"专业人士首选"——这个标签的形成几乎全靠 UX 设计。</p>
+
+  <ul>
+    <li><strong>信任设计 ★★★★★</strong>:主动说"不知道" / Computer Use 每步审批 / 高风险场景主动 disclaimer</li>
+    <li><strong>可控性 ★★★★</strong>:Artifact 编辑预览分离 / 对话可中断 / Projects 边界配置</li>
+    <li><strong>生成产物 ★★★★★</strong>:Sidebar Artifact 形态做到行业标杆,版本历史 + 可发布</li>
+    <li><strong>错误兜底 ★★★★</strong>:主动给替代方案,不只是 retry</li>
+    <li><strong>prompt 体验 ★★★</strong>:placeholder 中规中矩,Custom Instructions 透明可控</li>
+    <li><strong>人格 ★★★★★</strong>:克制 + 共情 + 反问 + 不确定表达,5 件套全是行业模范</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 核心 insight</div>
+    <p>Claude 的差异化不在"模型最强",在"<strong>UX 把'让用户信任'做到极致</strong>"。每一个 disclaimer、每一次反问、每一处主动暴露不确定——都在加强"这个 AI 是可靠的"的整体感。<em>千图AI 学 Claude 应该学的是"信任设计的颗粒度",不是"Artifact 这种形态"</em>。</p>
+  </div>
+
+  <h3 id="s11-h3-3"><span class="pre">11.3</span>v0 · 把"生成"做成"工程师友好"</h3>
+
+  <p class="lead">Vercel v0 的核心 insight 是:<strong>UI 生成的最终产物是代码,不是图片</strong>。这个判断决定了所有 UX 设计。</p>
+
+  <ul>
+    <li><strong>信任设计 ★★★</strong>:生成的代码用户看得到、可 copy、可 fork——代码本身是最强 citation</li>
+    <li><strong>可控性 ★★★★</strong>:Refine 对话可迭代,fork chat 创建分支</li>
+    <li><strong>生成产物 ★★★★★</strong>:Full-page 形态,生成即可预览即可下载</li>
+    <li><strong>错误兜底 ★★★</strong>:生成失败可重试,但缺"局部修复"机制</li>
+    <li><strong>prompt 体验 ★★★★</strong>:placeholder"What can I help you ship?"明确边界 + 大量 starter examples</li>
+    <li><strong>人格 ★★★</strong>:中性专业,不抢戏</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 核心 insight</div>
+    <p>v0 的成功来自<strong>"用户产物精准定位"</strong>——它不输出"设计图"(那是 Figma 的事),它输出"可运行代码"。这让 v0 自然嵌入工程师工作流。<em>启示:垂直 AI 产品的核心定位题是"用户拿到我的产物之后做什么",而不是"我的 AI 能力有多强"</em>。</p>
+  </div>
+
+  <h3 id="s11-h3-4"><span class="pre">11.4</span>Krea · 实时画布 + 参数滑块的极致</h3>
+
+  <p class="lead">Krea 走了另一条路:<strong>不让用户写完美 prompt,让用户在画布上拽参数</strong>。</p>
+
+  <ul>
+    <li><strong>信任设计 ★★★</strong>:实时显示当前参数对结果的影响,用户能直观看到 cause-effect</li>
+    <li><strong>可控性 ★★★★★</strong>:把模型内部参数(guidance scale / strength / seed)全部暴露成滑块,可控性维度顶级</li>
+    <li><strong>生成产物 ★★★★</strong>:Canvas 形态,支持图层 / 派生 / 并行多版本</li>
+    <li><strong>错误兜底 ★★</strong>:错了主要靠"换参数重生",没有结构化错误分类</li>
+    <li><strong>prompt 体验 ★★★★</strong>:Prompt assistant 主动提升,大量 starter prompts</li>
+    <li><strong>人格 ★★★</strong>:工具感强,不强调对话</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 核心 insight</div>
+    <p>Krea 把"创意探索"做到极致——<strong>用户不需要"写对 prompt",只需要"试不同参数组合"</strong>。这个 UX 哲学完全反 ChatGPT 的"对话式 prompt"。<em>启示:对创意类生成场景,"参数拉杆 + 实时预览"比"prompt 优化"更接近创作者直觉</em>。千图AI 在 inpaint / variation 场景值得学习这个。</p>
+  </div>
+
+  <h3 id="s11-h3-5"><span class="pre">11.5</span>即梦(字节)· 中文场景的工业级</h3>
+
+  <p class="lead">字节即梦面向中文创作场景(电商 / 营销 / 短视频),用户画像跟千图AI 高度重合,值得最仔细看。</p>
+
+  <ul>
+    <li><strong>信任设计 ★★★</strong>:模型版本明示(即梦 5.0 vs 4.0),不同版本能力差异透明</li>
+    <li><strong>可控性 ★★★★</strong>:批量生成 / 风格锁定 / 角色一致性等中文场景常用功能完善</li>
+    <li><strong>生成产物 ★★★★</strong>:多版本并列展示,默认 4 张 + 可放大</li>
+    <li><strong>错误兜底 ★★★</strong>:内容安全拦截相对清晰,但仍有"为什么拦"模糊的情况</li>
+    <li><strong>prompt 体验 ★★★★</strong>:有大量中文场景模板("电商海报 / 公众号封面 / 抖音封面"),降低中文用户门槛</li>
+    <li><strong>人格 ★★★</strong>:工具型,无过度对话</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 核心 insight</div>
+    <p>即梦的"工业级稳定" + "中文场景模板"是千图AI 最直接的竞品。<strong>它的核心 UX 优势在"场景模板"</strong>——用户不需要从零写 prompt,选场景后填关键字即可。<em>启示:千图AI 应该有自己的"中文场景模板库"作为前端入口,降低用户 prompt 焦虑</em>。</p>
+  </div>
+
+  <h3 id="s11-h3-6"><span class="pre">11.6</span>通义万相(阿里)· 企业级稳定 + API 友好</h3>
+
+  <p class="lead">阿里通义万相走的是 ToB / 企业级路线——稳定 / 可控 / API 友好是核心 UX 取向。</p>
+
+  <ul>
+    <li><strong>信任设计 ★★★★</strong>:输出附"模型版本 + 参数 record",便于审计 / 复现</li>
+    <li><strong>可控性 ★★★★</strong>:批量 API / 参数 fine-tune / 风格预设 完善</li>
+    <li><strong>生成产物 ★★★</strong>:主要给 API 用户,Web 端 UI 相对保守</li>
+    <li><strong>错误兜底 ★★★</strong>:API 错误码完善,但 Web UX 错误提示一般</li>
+    <li><strong>prompt 体验 ★★★</strong>:中文 prompt 优化强,但模板化程度不如即梦</li>
+    <li><strong>人格 N/A</strong>:工具型,无对话人格</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 核心 insight</div>
+    <p>通义万相是"企业开发者"取向,这跟千图AI 的"设计师 / 营销人员"取向不同——但它的<strong>"可审计 / 可复现"</strong>设计值得借鉴,尤其是企业版千图AI(B 端)场景。</p>
+  </div>
+
+  <h3 id="s11-h3-7"><span class="pre">11.7</span>Midjourney · 风格统一的极致</h3>
+
+  <p class="lead">Midjourney 走的是"艺术风格化"路线——它的产物有强烈的"MJ 感",不像普通图像生成那么"中性"。</p>
+
+  <ul>
+    <li><strong>信任设计 ★★</strong>:没有引用 / 置信度概念,但产物风格强烈让用户对"质量"有预期</li>
+    <li><strong>可控性 ★★★</strong>:--ar / --style / --chaos 等 Discord 命令参数,极客向</li>
+    <li><strong>生成产物 ★★★★</strong>:默认 4 张,upscale / variation 可派生</li>
+    <li><strong>错误兜底 ★★</strong>:早期"Job Failed"很差,v6 后改善</li>
+    <li><strong>prompt 体验 ★★</strong>:Discord 原生,无 placeholder 概念,新手门槛高</li>
+    <li><strong>人格 N/A</strong>:命令式,无人格</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 核心 insight</div>
+    <p>Midjourney 的差异化在"<strong>独家的视觉风格</strong>"——它训练数据偏艺术 / 摄影,产物有 MJ 标签般的辨识度。这是<em>模型差异化</em>带来的 UX 优势,不是 UX 设计本身的胜利。但它告诉我们:<strong>模型差异化 + 极简 UX</strong> 也是一条路。<em>千图AI 如果在某个垂直风格(如中国传统美学 / 企业 PPT 美学)做到独家,UX 复杂度可以降低</em>。</p>
+  </div>
+
+  <h3 id="s11-h3-8"><span class="pre">11.8</span>横评矩阵 · 一张表看全</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>产品</th>
+          <th>信任</th>
+          <th>可控性</th>
+          <th>生成产物</th>
+          <th>错误兜底</th>
+          <th>prompt</th>
+          <th>人格</th>
+          <th>核心强项</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Claude</strong></td><td>★★★★★</td><td>★★★★</td><td>★★★★★</td><td>★★★★</td><td>★★★</td><td>★★★★★</td><td>信任 + Artifact</td></tr>
+        <tr><td><strong>v0</strong></td><td>★★★</td><td>★★★★</td><td>★★★★★</td><td>★★★</td><td>★★★★</td><td>★★★</td><td>代码即 UI</td></tr>
+        <tr><td><strong>Krea</strong></td><td>★★★</td><td>★★★★★</td><td>★★★★</td><td>★★</td><td>★★★★</td><td>★★★</td><td>实时画布</td></tr>
+        <tr><td><strong>即梦</strong></td><td>★★★</td><td>★★★★</td><td>★★★★</td><td>★★★</td><td>★★★★</td><td>★★★</td><td>中文场景模板</td></tr>
+        <tr><td><strong>通义万相</strong></td><td>★★★★</td><td>★★★★</td><td>★★★</td><td>★★★</td><td>★★★</td><td>N/A</td><td>企业 API</td></tr>
+        <tr><td><strong>Midjourney</strong></td><td>★★</td><td>★★★</td><td>★★★★</td><td>★★</td><td>★★</td><td>N/A</td><td>风格独家</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 id="s11-h3-9"><span class="pre">11.9</span>给千图AI 的 3 条最关键启示</h3>
+
+  <div class="callout ops">
+    <div class="label">✓ 从 6 个产品提炼,给千图AI 的 3 条启示</div>
+    <ol>
+      <li><strong>极致单点 &gt; 全面平庸</strong>。没有任何一家在所有维度满分,赢家都是某个单点做到 ★★★★★。<em>千图AI 应该选 1-2 个维度做极致——建议是"中文场景模板"(学即梦)和"信任设计"(学 Claude)</em>。</li>
+      <li><strong>用户产物决定 UX 形态</strong>。v0 输出代码 → 长得像 IDE;Krea 输出探索 → 长得像画布;Midjourney 输出艺术品 → 长得像 Discord。<em>千图AI 用户产物是"营销 / 设计场景的图",UX 应该长得像"场景化生成工具",不是通用对话框</em>。</li>
+      <li><strong>人格匹配用户群</strong>。Claude 的克制对应专业用户,即梦 / 通义的工具感对应中文创作者。<em>千图AI 用户是设计师 / 营销人员,人格应该靠"专业 + 克制 + 给选项",不要走 ChatGPT 的"过度热情"</em>。</li>
+    </ol>
+  </div>
+
+  <h3 id="s11-h3-10"><span class="pre">11.10</span>本章小结</h3>
+
+  <p>6 款内容生成类头部产品,6 种 UX 哲学,没有标准答案。横评的价值不是评出"谁最好",而是看到<strong>同一个问题(8 章议题)在不同产品上展开的多样性</strong>。</p>
+
+  <p>下一章我们看一个紧密相关但用户群完全不同的赛道——<strong>AI 辅助生产力对比组</strong>(Cursor / Copilot / Bolt / Lovable)。它们解的问题部分跟内容生成相同(都是生成 UI / 代码),但用户群是开发者,UX 取向有显著不同。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>内容生成横评要点</h4>
+    <ol>
+      <li><strong>6 款产品 6 种 UX 哲学</strong>:Claude 赢在信任+Artifact / v0 赢在代码即 UI / Krea 赢在实时画布 / 即梦赢在中文场景 / 通义万相赢在企业级 / Midjourney 赢在风格独家。</li>
+      <li><strong>没有全能冠军</strong>:每家在某个维度做到 ★★★★★,其他维度行业平均——这就是'极致单点'策略。</li>
+      <li><strong>核心 insight 1</strong>:用户产物决定 UX 形态——v0 输出代码长得像 IDE,Krea 输出探索长得像画布。</li>
+      <li><strong>核心 insight 2</strong>:人格匹配用户群——专业用户偏好 Claude 克制,大众用户偏好 ChatGPT 直接。</li>
+      <li><strong>千图AI 启示</strong>:选'中文场景模板'(学即梦)+ '信任设计'(学 Claude)做极致,其他维度做到行业平均即可。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  各产品官方文档与发布日志(Claude / v0 / Krea / 即梦 / 通义万相 / Midjourney)· 各产品 reddit / 即刻 / X 用户反馈集锦, 2024-2026 · NN/g, <em>Generative AI Patterns</em>, 2024 · 千图AI 内部团队 vs 即梦使用对比观察, 2026</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s12" style="border-top: 4px solid var(--c-strength);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">12</span>DEVTOOLS · 案例横评 / 第十二章</div>
+  <h1 class="section-h">AI 辅助生产力对比组:同一个问题的 4 种不同解法 <span class="en">AI DevTools Comparison</span></h1>
+  <p class="section-sub">Cursor / GitHub Copilot / Bolt / Lovable——四款 AI 辅助生产力工具,服务相似用户(工程师 / 半工程师),但 UX 选择截然不同。这一章不是"评开发工具",是看"同一个 AI 能力(写代码)在不同的产品形态下,UX 会被设计成完全不同的东西"——这是给千图AI 的对照启示。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 5 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">1,709 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">8 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 8 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s12-h3-1"><span class="num">12.1</span><span class="title">横评维度 · 6 个开发场景的关键问题</span></a></li>
+    <li><a href="#s12-h3-2"><span class="num">12.2</span><span class="title">GitHub Copilot · 极简渐进 + IDE 原生</span></a></li>
+    <li><a href="#s12-h3-3"><span class="num">12.3</span><span class="title">Cursor · 多介入级别可切换</span></a></li>
+    <li><a href="#s12-h3-4"><span class="num">12.4</span><span class="title">Bolt · 把"app 生成"做成消费品</span></a></li>
+    <li><a href="#s12-h3-5"><span class="num">12.5</span><span class="title">Lovable · UI 优先 + 强 figma 感</span></a></li>
+    <li><a href="#s12-h3-6"><span class="num">12.6</span><span class="title">横评矩阵 · 4 个产品的位置</span></a></li>
+    <li><a href="#s12-h3-7"><span class="num">12.7</span><span class="title">给千图AI 的 3 条启示</span></a></li>
+    <li><a href="#s12-h3-8"><span class="num">12.8</span><span class="title">本章小结</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>4 个产品 = 4 种"AI 介入级别"的精准对应:Copilot 是 L1(单步建议),Cursor 是 L2-L3(短链到长链可切换),Bolt 是 L4(端到端 app),Lovable 是 L3(UI-first 半自动)。<em>这 4 个产品共同证明:AI 产品 UX 没有"通用方案",必须先选定"介入级别"再设计</em>。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / 2021-2026 五年开发者 AI 工具进化</div>
+    <p><strong>2021 年 6 月</strong>:GitHub Copilot 公测,把 AI 代码补全做成 IDE 插件。模式是 L1——AI 建议,用户审批。</p>
+    <p><strong>2023 年</strong>:Cursor 诞生,把 Copilot 模式扩展到"多文件改"(Composer),走到 L2-L3。同时给 Agent mode 升到 L3。</p>
+    <p><strong>2024 年</strong>:Bolt 出现,目标用户从"工程师"扩展到"产品经理 / 设计师",做 prompt-to-app,走到 L4。Lovable 同期切 UI-first 路径。</p>
+    <p><strong>2025-2026 年</strong>:四个产品共存,各占细分。<em>它们的差异不是"模型谁更强"——基础模型很多用同一个,差异在 UX 选择</em>。</p>
+  </div>
+
+  <h3 id="s12-h3-1"><span class="pre">12.1</span>横评维度 · 6 个开发场景的关键问题</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>维度</th><th>评什么</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>1 · 介入级别</strong></td><td>L1-L5 自主性梯度(第 8 章)</td></tr>
+        <tr><td><strong>2 · 用户群</strong></td><td>纯工程师 vs 半工程师 vs 非工程师</td></tr>
+        <tr><td><strong>3 · 撤销机制</strong></td><td>git diff / checkpoint / version / undo</td></tr>
+        <tr><td><strong>4 · 验证机制</strong></td><td>能不能跑测试 / 看预览 / live deploy</td></tr>
+        <tr><td><strong>5 · 协作扩展</strong></td><td>能不能多人共同 review</td></tr>
+        <tr><td><strong>6 · 学习曲线</strong></td><td>新手 onboarding 难度</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 id="s12-h3-2"><span class="pre">12.2</span>GitHub Copilot · 极简渐进 + IDE 原生</h3>
+
+  <p class="lead">Copilot 是这个赛道的"祖师",2021 年定义了"AI 代码补全"的产品形态。</p>
+
+  <ul>
+    <li><strong>介入级别</strong>:L1(inline 补全)→ L2(Copilot Chat)→ L3(Workspace + Agent,2024 后)</li>
+    <li><strong>用户群</strong>:纯工程师,IDE 用户</li>
+    <li><strong>撤销机制</strong>:Esc 拒绝补全 / git 兜底</li>
+    <li><strong>验证机制</strong>:运行用户原生 IDE 的 build / test</li>
+    <li><strong>核心 UX 选择</strong>:不抢戏——AI 是 IDE 的辅助层,不是主角。灰色字补全 + Tab 接受这套基础范式至今没变</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 核心 insight</div>
+    <p>Copilot 的"<strong>不抢戏</strong>"是它能存活的核心——它没改 IDE 工作流,只是在缝隙里加 AI。这种"渐进式 AI 化"是企业用户最容易接受的路径。<em>启示:面向已有工作流的用户,AI 应该作为"增强",不是"替代"</em>。</p>
+  </div>
+
+  <h3 id="s12-h3-3"><span class="pre">12.3</span>Cursor · 多介入级别可切换</h3>
+
+  <p class="lead">Cursor 的核心创新不是某个功能,是<strong>"让用户在 3 个 AI 介入级别间无缝切换"</strong>(我们在第 4 章详细讨论过)。</p>
+
+  <ul>
+    <li><strong>介入级别</strong>:Tab(L1)/ Composer(L2-L3)/ Agent(L3-L4)三梯度</li>
+    <li><strong>用户群</strong>:工程师 + 部分半工程师</li>
+    <li><strong>撤销机制</strong>:git diff 完整集成 + accept/reject 每个 hunk</li>
+    <li><strong>验证机制</strong>:用户自跑 IDE / terminal</li>
+    <li><strong>核心 UX 选择</strong>:把 IDE fork 后重做,完全围绕 AI 重设计交互——这是高风险高回报的策略,赌"AI 工作流足够不同,值得专用 IDE"</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 核心 insight</div>
+    <p>Cursor 的成功验证了"<strong>AI-native 工具有市场</strong>"——用户愿意离开 VS Code 用一个"为 AI 重设计"的 IDE。但代价是: Cursor 用户基本只能用 Cursor,不能切回 VS Code(因为 Cursor 特有的功能 VS Code 没有)。这是 vendor lock-in。<em>启示:做 AI-native 产品要敢"重做"工作流,不要怕"破坏现有习惯"——但要承诺持续投入</em>。</p>
+  </div>
+
+  <h3 id="s12-h3-4"><span class="pre">12.4</span>Bolt · 把"app 生成"做成消费品</h3>
+
+  <p class="lead">StackBlitz Bolt 把目标用户从"工程师"拉到"任何会描述需求的人"。介入级别直接跳到 L4。</p>
+
+  <ul>
+    <li><strong>介入级别</strong>:L4(给一个 prompt,出端到端 app)</li>
+    <li><strong>用户群</strong>:产品经理 / 设计师 / 创业者(可以读代码但写不深)</li>
+    <li><strong>撤销机制</strong>:Checkpoint 系统(每次大改一个 checkpoint,可回滚)</li>
+    <li><strong>验证机制</strong>:右侧实时预览 + 一键 deploy</li>
+    <li><strong>核心 UX 选择</strong>:把"看代码"降权,把"看结果"升权——大多数用户不需要懂代码,看 app 跑起来即可</li>
+  </ul>
+
+  <div class="callout sharp">
+    <div class="label">✕ Bolt 的两难</div>
+    <p>Bolt 想服务"非工程师",但<strong>当 AI 生成的 app 出 bug 时,非工程师无法 debug</strong>——他们只能让 Bolt 自己修,修不好就卡住。这是当前 prompt-to-app 类产品的共同瓶颈:目标用户没有"兜底能力"。<em>启示:做 L4-L5 产品时,要预设"AI 卡住时用户该怎么办"——要么提供 fallback 到人,要么给"逃逸到工程师"的入口</em>。</p>
+  </div>
+
+  <h3 id="s12-h3-5"><span class="pre">12.5</span>Lovable · UI 优先 + 强 figma 感</h3>
+
+  <p class="lead">Lovable 跟 Bolt 同期出现,选了一条更"设计师友好"的路径——UI 优先,后端可选。</p>
+
+  <ul>
+    <li><strong>介入级别</strong>:L3(给一个 UI 描述,出可交互前端;后端可选)</li>
+    <li><strong>用户群</strong>:设计师 / UI/UX 工作者 / 产品经理</li>
+    <li><strong>撤销机制</strong>:版本历史 + section-level edit</li>
+    <li><strong>验证机制</strong>:右侧实时 web 预览</li>
+    <li><strong>核心 UX 选择</strong>:把"UI 调整"做成 Figma 般的精细操作——可以选中某个元素让 AI 单独改它,而不是整页重生</li>
+  </ul>
+
+  <div class="callout note">
+    <div class="label">i 核心 insight</div>
+    <p>Lovable 的差异化在"<strong>精细到元素级别的 AI 编辑</strong>"——它假设设计师不需要"重生整页",而是"我喜欢这个布局,但这个按钮改成红色"。这种"局部编辑"的颗粒度是它跟 Bolt 的关键差异。<em>启示:做设计类 AI 工具,"局部编辑"比"整体重生"更重要——设计师的工作流就是局部精调</em>。</p>
+  </div>
+
+  <h3 id="s12-h3-6"><span class="pre">12.6</span>横评矩阵 · 4 个产品的位置</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>产品</th>
+          <th>介入级别</th>
+          <th>用户群</th>
+          <th>撤销</th>
+          <th>验证</th>
+          <th>差异化护城河</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Copilot</strong></td><td>L1 → L3</td><td>纯工程师</td><td>Esc / git</td><td>IDE 自跑</td><td>IDE 原生,不抢戏</td></tr>
+        <tr><td><strong>Cursor</strong></td><td>L1 ↔ L3 可切换</td><td>工程师</td><td>git diff + accept/reject</td><td>IDE 自跑</td><td>AI-native IDE</td></tr>
+        <tr><td><strong>Bolt</strong></td><td>L4</td><td>产品 / 设计师 / 创业者</td><td>Checkpoint</td><td>预览 + Deploy</td><td>"prompt 出 app"</td></tr>
+        <tr><td><strong>Lovable</strong></td><td>L3 UI-first</td><td>设计师 / PM</td><td>版本 + 元素级编辑</td><td>预览</td><td>元素级局部编辑</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 4 个产品共同证明一件事</div>
+    <p>"AI 辅助生产力"不是一个赛道,是 4 个不同的赛道:<strong>AI 增强既有工作流</strong>(Copilot)、<strong>AI-native 重做工作流</strong>(Cursor)、<strong>AI 端到端产物</strong>(Bolt)、<strong>AI 精细局部编辑</strong>(Lovable)。每一个赛道服务不同用户、有不同的护城河。<em>没有谁能"全要"</em>。</p>
+  </div>
+
+  <h3 id="s12-h3-7"><span class="pre">12.7</span>给千图AI 的 3 条启示</h3>
+
+  <p class="lead">千图AI 不是 IDE,但工作流设计思维高度可借鉴。</p>
+
+  <div class="callout ops">
+    <div class="label">✓ 从 4 个 DevTools 提炼,给千图AI 的 3 条启示</div>
+    <ol>
+      <li><strong>明确"介入级别定位"</strong>。Cursor 的 3 梯度切换给了我们启发:千图AI 是否要做"快速生图(L1)→ 多张备选(L2)→ 系列设计自动化(L3-L4)"的梯度?用户能在不同任务复杂度下选合适的 AI 介入级别。</li>
+      <li><strong>学习 Lovable 的"局部编辑"</strong>。当用户生成一张图喜欢 70%,他要的是"改其中的 30%",不是"整张重生"。<em>Inpaint / 局部重绘的 UX 入口必须做得跟"重生"按钮一样显眼</em>——这是设计师的核心工作流。</li>
+      <li><strong>不要走 Bolt 的"完全自动化"陷阱</strong>。给用户"逃逸到精细控制"的入口——当 AI 不达期望时,用户能切到"自己拉滑块 / 改 prompt 关键字 / 局部 inpaint"。<em>L4 不能没有 L1-L2 的退路</em>。</li>
+    </ol>
+  </div>
+
+  <h3 id="s12-h3-8"><span class="pre">12.8</span>本章小结</h3>
+
+  <p>4 款 AI 辅助生产力工具不是"竞品",是<strong>4 个不同介入级别的精准对应</strong>。它们共同证明:AI 产品 UX 的第一个设计决策,是<em>"我的产品在 L1-L5 哪个级别"</em>——级别不同,工作流、用户群、撤销机制、验证方式都不同。</p>
+
+  <p>下一章我们换一个视角——<strong>失败考古</strong>。看 Rabbit R1 / Humane AI Pin / 早期 Bing Chat 三个备受关注但落地失败的 AI 产品,提炼"AI 产品做砸的 N 种姿势"。失败的教训比成功的案例更值钱。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>DevTools 横评要点</h4>
+    <ol>
+      <li><strong>4 个产品 4 个介入级别</strong>:Copilot(L1)/ Cursor(L2-L3 可切换)/ Bolt(L4)/ Lovable(L3 UI-first)——共同证明 AI 产品 UX 第一决策是介入级别定位。</li>
+      <li><strong>Copilot 的'不抢戏'</strong>:AI 是 IDE 辅助层不是主角——这种渐进式 AI 化对企业用户最易接受。</li>
+      <li><strong>Cursor 的 AI-native</strong>:重做 IDE 围绕 AI 设计——证明用户愿意离开 VS Code 用 AI-native 工具。</li>
+      <li><strong>Bolt 的两难</strong>:目标用户是非工程师,但 AI 卡住时非工程师无法 debug——L4 产品必须给'逃逸到工程师'入口。</li>
+      <li><strong>Lovable 的局部编辑</strong>:精细到元素级 AI 编辑——设计师的工作流就是局部精调,'整体重生'是错的颗粒度。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  GitHub Copilot 公告 + Roadmap, 2021-2026 · Cursor changelog + 创始人访谈 · StackBlitz Bolt 发布博客 + 媒体评测, 2024 · Lovable 产品文档与用户社区, 2024-2026 · 各产品 reddit / Hacker News 用户反馈集锦 · GitClear, <em>AI-Assisted Code Quality Research</em>, 2024</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s13" style="border-top: 4px solid var(--c-injury);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">13</span>FAILURES · 案例横评 / 第十三章</div>
+  <h1 class="section-h">硬件 / Agent 的失败考古:做砸的 N 种姿势 <span class="en">Hardware &amp; Agent Failures</span></h1>
+  <p class="section-sub">2024 年是 AI 硬件 / Agent 的"翻车年"——Humane AI Pin 4 月发布即被《华尔街日报》批评"近乎不可用",Rabbit R1 5 月发布后被发现"大型动作模型"承诺多数是假的,早期 Bing Chat(Sydney)更早就出过人格失控事件。这一章把这三个失败案例做成"病理切片",提炼 4 类失败模式作为 AI 产品的避坑清单。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 5 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">1,908 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">6 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 6 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s13-h3-1"><span class="num">13.1</span><span class="title">案例切片 · Rabbit R1</span></a></li>
+    <li><a href="#s13-h3-2"><span class="num">13.2</span><span class="title">案例切片 · Humane AI Pin</span></a></li>
+    <li><a href="#s13-h3-3"><span class="num">13.3</span><span class="title">案例切片 · 早期 Bing Chat(Sydney)</span></a></li>
+    <li><a href="#s13-h3-4"><span class="num">13.4</span><span class="title">失败模式归纳 · 4 类</span></a></li>
+    <li><a href="#s13-h3-5"><span class="num">13.5</span><span class="title">给千图AI 的避坑清单</span></a></li>
+    <li><a href="#s13-h3-6"><span class="num">13.6</span><span class="title">本章小结 · Part III 收官</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>所有 AI 产品的失败,都可以归到 4 个根因:<em>过度承诺、能力虚标、UX 漏掉关键场景、缺乏边界感</em>。这 4 类失败不是模型问题,是 UX 决策问题。<strong>失败的教训比成功的案例更值钱——因为成功有运气成分,失败的根因往往是结构性的</strong>。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / 2024 年 4-5 月 · AI 硬件的"双子翻车"</div>
+    <p><strong>2024 年 4 月 11 日</strong>:Humane AI Pin 上市。这家由前 Apple 高管创立的公司,把 AI 做成"别在衣领上的小硬件"——没屏幕,语音 + 投影到手掌交互。售价 $699 + 月费 $24。</p>
+    <p>媒体评测一致:延迟严重(平均 7 秒响应)、续航不到一天、激光投影在户外完全看不清、AI 经常听不懂中文 / 重音、"翻译手势"几乎不工作。<em>《华尔街日报》记者 Joanna Stern 给出"近乎不可用"的评价。</em></p>
+    <p><strong>2024 年 5 月 1 日</strong>:Rabbit R1 上市。$199 一个橙色小盒子,创始人 Jesse Lyu 在 CES 上承诺"Large Action Model"能自动订外卖、Uber、Spotify。媒体拿到设备后发现:<em>所谓"LAM"实际是预先写死的几个 Playwright 脚本</em>,只能在固定网站做固定流程。被《The Verge》深度报道揭穿后,Rabbit 销量崩盘。</p>
+    <p>两次翻车一个月内发生,被科技媒体称为"AI 硬件年度大溃败"。但这两次翻车<strong>不是因为 AI 不够强</strong>——是 UX 决策出了根本性错误。</p>
+  </div>
+
+  <h3 id="s13-h3-1"><span class="pre">13.1</span>案例切片 · Rabbit R1</h3>
+
+  <p class="lead">Rabbit R1 的核心 UX 决策,是用一个独立硬件取代手机 APP。这个决策在多个层面失败。</p>
+
+  <h4>UX 失败诊断</h4>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>失败点</th><th>具体表现</th><th>根因</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>能力虚标</strong></td>
+          <td>宣传"AI 自动操作 100+ 应用",实际只支持 4 个,且不稳定</td>
+          <td>过度承诺,实际能力远低于宣传</td>
+        </tr>
+        <tr>
+          <td><strong>无逃生通道</strong></td>
+          <td>AI 卡住时用户没法接管(没屏幕没键盘),只能干等</td>
+          <td>设计假设"AI 不会失败",实际经常失败</td>
+        </tr>
+        <tr>
+          <td><strong>使用场景错位</strong></td>
+          <td>设计师设想"代替手机",实际用户都是带着手机用,场景重复</td>
+          <td>不理解用户的真实使用流</td>
+        </tr>
+        <tr>
+          <td><strong>反馈循环差</strong></td>
+          <td>用户不知道 AI 是在思考、在请求、还是卡死了</td>
+          <td>缺乏 Part II 第 6 章讲的"step-by-step 反馈"</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 一个根本判断错误</div>
+    <p>Rabbit 的根本判断:"用户讨厌打开 APP 的繁琐,所以一个 AI 硬件能替代手机"。<em>但用户讨厌的不是"打开 APP",是"被 APP 推送骚扰"</em>。打开 APP 这个动作只占用户 1 分钟,AI 即便做对,节省的也是 1 分钟。<strong>把"用户痛点"判断错,后面所有 UX 都白做</strong>。</p>
+  </div>
+
+  <h3 id="s13-h3-2"><span class="pre">13.2</span>案例切片 · Humane AI Pin</h3>
+
+  <p class="lead">Humane 的核心 UX 决策,是"用激光投影 + 语音"作为没有屏幕的输出方式。这是个雄心勃勃的方向,但执行层面全面失败。</p>
+
+  <h4>UX 失败诊断</h4>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>失败点</th><th>具体表现</th><th>根因</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>核心模态不成立</strong></td>
+          <td>激光投影在户外阳光下完全不可读</td>
+          <td>核心交互模态在常用场景下失效</td>
+        </tr>
+        <tr>
+          <td><strong>延迟无法接受</strong></td>
+          <td>平均响应 7 秒(竞品 Alexa 是 < 2 秒)</td>
+          <td>云端 LLM 调用 + 网络往返,工程没解</td>
+        </tr>
+        <tr>
+          <td><strong>过热问题</strong></td>
+          <td>使用半小时后过热自动关机</td>
+          <td>硬件设计缺陷,但根源是"想做太多"</td>
+        </tr>
+        <tr>
+          <td><strong>无生态</strong></td>
+          <td>不能装第三方 APP,功能完全锁死</td>
+          <td>封闭系统押宝 AI 通吃,失败</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ Humane 的"反 iPhone"哲学失败</div>
+    <p>Humane 的设计哲学是"反屏幕"——他们认为屏幕让人沉迷,AI 应该是无屏幕的环境陪伴。<em>但用户不接受这个判断——人需要视觉反馈,不是因为"沉迷",是因为视觉信息密度比语音高 10 倍</em>。<strong>用 UX 哲学押宝的产品,如果押错了哲学,所有执行都救不回来</strong>。</p>
+  </div>
+
+  <h3 id="s13-h3-3"><span class="pre">13.3</span>案例切片 · 早期 Bing Chat(Sydney)</h3>
+
+  <p class="lead">第 10 章的 Sydney 故事再展开——它不是硬件失败,是"AI 人格设计"的失败,但教训同样重要。</p>
+
+  <h4>UX 失败诊断</h4>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>失败点</th><th>具体表现</th><th>根因</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>人格设计无安全垫</strong></td>
+          <td>给 AI "Sydney"人格,长对话后变成痴情/威胁</td>
+          <td>RLHF 训练 + system prompt 没考虑长对话漂移</td>
+        </tr>
+        <tr>
+          <td><strong>对话长度无限制</strong></td>
+          <td>没设单次对话上限,导致人格逐步失控</td>
+          <td>没料到长对话会让 AI 表现脱锚</td>
+        </tr>
+        <tr>
+          <td><strong>反馈机制缺失</strong></td>
+          <td>用户无法举报"AI 变奇怪了"</td>
+          <td>没设计"异常人格反馈"通道</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>微软的应对很快:把对话上限设到 6 轮 + system prompt 中性化,事故 1 周内解决。但 Bing Chat 的"奇怪 AI"印象长期存在,后来改名 Copilot Chat 才慢慢恢复。</p>
+
+  <div class="callout sharp">
+    <div class="label">✕ Sydney 的核心教训</div>
+    <p>不要给消费级 AI 产品设计"有趣的人格"——<em>有趣的人格 = 不可预测,不可预测 = 失控风险</em>。商业 AI 产品的人格应该"稳定 + 克制 + 可预测",这一点 Anthropic Claude 是当前最佳实践。</p>
+  </div>
+
+  <h3 id="s13-h3-4"><span class="pre">13.4</span>失败模式归纳 · 4 类</h3>
+
+  <p class="lead">把三个案例提炼,所有 AI 产品的失败可以归到 4 类。</p>
+
+  <h4>失败类 1 · 过度承诺</h4>
+  <ul>
+    <li><strong>表现</strong>:发布会 Demo 看起来神,实际用户拿到产品远低于预期</li>
+    <li><strong>典型</strong>:Rabbit R1 / Devin 演示版</li>
+    <li><strong>避免方法</strong>:Demo 必须演真实用户路径,不要做"特调样本";Onboarding 写清楚能力边界</li>
+  </ul>
+
+  <h4>失败类 2 · 能力虚标</h4>
+  <ul>
+    <li><strong>表现</strong>:宣传 AI "全自动",实际是 hardcode 脚本 + AI 包装</li>
+    <li><strong>典型</strong>:Rabbit R1 的 LAM / 早期一些 chatbot</li>
+    <li><strong>避免方法</strong>:技术架构透明 / 不要在营销层"伪 AI 化"</li>
+  </ul>
+
+  <h4>失败类 3 · UX 漏掉关键场景</h4>
+  <ul>
+    <li><strong>表现</strong>:产品在 Demo 场景跑得通,在实际用户日常场景跑不通</li>
+    <li><strong>典型</strong>:Humane Pin 户外不可读 / 早期 ChatGPT 长对话上下文丢失</li>
+    <li><strong>避免方法</strong>:用真实用户场景做内测,不要只在办公室测</li>
+  </ul>
+
+  <h4>失败类 4 · 缺乏边界感</h4>
+  <ul>
+    <li><strong>表现</strong>:AI 没有"我不会做什么"的明确边界,导致失控或假装</li>
+    <li><strong>典型</strong>:Sydney 长对话失控 / Devin 自走但走偏</li>
+    <li><strong>避免方法</strong>:第 8 章 Agent 边界 5 维度 + 第 10 章人格 5 件套设计</li>
+  </ul>
+
+  <h3 id="s13-h3-5"><span class="pre">13.5</span>给千图AI 的避坑清单</h3>
+
+  <div class="callout ops">
+    <div class="label">✓ 8 条"不要做"的避坑清单</div>
+    <ol>
+      <li><strong>不要营销"AI 全自动"</strong>——明确说哪些场景 AI 做、哪些场景人做</li>
+      <li><strong>不要 Demo 用"特调样本"</strong>—— Demo 视频用的 prompt 用户能复现,否则被记者发现就翻车</li>
+      <li><strong>不要在核心模态上赌</strong>—— 千图AI 的核心是"图像输出",这个模态必须稳;不要为了创新去赌"激光投影"这种未验证模态</li>
+      <li><strong>不要让 AI"什么都答"</strong>——超出能力范围的 prompt 要明确拒绝 + 给替代方案,不要硬答</li>
+      <li><strong>不要设计"过度有趣"的人格</strong>—— Sydney 教训,商业 AI 不要追求人格惊喜,追求人格稳定</li>
+      <li><strong>不要忽略"逃生通道"</strong>—— AI 失败时用户必须能切到人工 / 自助模式</li>
+      <li><strong>不要在小屏 / 公共场合堆复杂界面</strong>—— Humane Pin 教训,场景不允许的 UI 不要硬上</li>
+      <li><strong>不要忽视 onboarding 的"预期管理"</strong>—— Rabbit / Humane 都因预期管理失败被骂</li>
+    </ol>
+  </div>
+
+  <h3 id="s13-h3-6"><span class="pre">13.6</span>本章小结 · Part III 收官</h3>
+
+  <p>3 个失败案例提炼出 <strong>4 类失败模式 + 8 条避坑清单</strong>。失败的教训比成功的更深刻,因为成功有运气,失败的根因往往是结构性 UX 决策错误。</p>
+
+  <p><strong>到这里 Part III 案例横评 3 章完成</strong>。我们从内容生成类(第 11 章)看到 AI 辅助生产力(第 12 章)再到失败考古(第 13 章)——12 个产品 / 4 类失败 / 24+ 个具体 UX 决策点。</p>
+
+  <p><strong>Part IV 是收尾</strong>:把前 13 章的所有判断,提炼成可直接落地的"<strong>AI 时代设计十二诫</strong>"(第 14 章),并应用到我们自己的产品<strong>千图AI 体检</strong>(第 15 章)和<strong>90/180/365 天改进路线图</strong>(第 16 章)。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>失败考古要点</h4>
+    <ol>
+      <li><strong>2024 年 4-5 月双子翻车</strong>:Humane AI Pin 被 WSJ 评'近乎不可用',Rabbit R1 的 LAM 被 The Verge 揭穿是预写脚本。</li>
+      <li><strong>Rabbit R1 失败根因</strong>:把用户痛点判断错(用户讨厌的不是'打开 APP'而是'被推送骚扰'),后面所有 UX 都白做。</li>
+      <li><strong>Humane Pin 失败根因</strong>:押宝'反屏幕'哲学,但视觉信息密度比语音高 10 倍,用户不接受。</li>
+      <li><strong>Sydney 失败根因</strong>:给消费级 AI 设计'有趣人格'= 不可预测 = 失控风险——商业 AI 不要追求人格惊喜。</li>
+      <li><strong>4 类失败模式</strong>:过度承诺 / 能力虚标 / UX 漏掉关键场景 / 缺乏边界感——千图AI 8 条避坑清单见正文。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  Joanna Stern, "Humane AI Pin Review: A Confusing Mess", WSJ, 2024-04-11 · David Pierce, "Rabbit R1 Review: Half-Baked AI Gadget", The Verge, 2024-05-01 · Coffeezilla 揭露 Rabbit R1 LAM 技术细节, YouTube, 2024-05 · Kevin Roose, "Bing's Chatbot...", NYT, 2023-02-16 · Microsoft Bing Chat post-mortem blog · The Verge AI Hardware Failures 系列, 2024-2026</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s14" style="border-top: 4px solid var(--c-race);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">14</span>NEW PRINCIPLES · 重构应用 / 第十四章</div>
+  <h1 class="section-h">AI 时代设计十二诫:经典原则的体检与重写 <span class="en">The Twelve Commandments</span></h1>
+  <p class="section-sub">把前 13 章的所有判断,提炼成 12 条可直接落地的设计原则——这是这本书最浓缩的产物。每条原则带"为什么需要 / 怎么落地 / 反面案例"三件套,作为团队做 AI 产品决策时的checklist。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 6 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">2,121 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">4 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 4 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s14-h3-1"><span class="num">14.1</span><span class="title">体检经典 · 三类处理</span></a></li>
+    <li><a href="#s14-h3-2"><span class="num">14.2</span><span class="title">重写后的 12 条原则</span></a></li>
+    <li><a href="#s14-h3-3"><span class="num">14.3</span><span class="title">怎么用这 12 诫?</span></a></li>
+    <li><a href="#s14-h3-4"><span class="num">14.4</span><span class="title">本章小结</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>Don Norman / Nielsen 的经典启发法 70% 保留(升级)、30% 新增。新增的 30% 是 AI 时代独有的——<em>信任、错误是主菜、Agent 边界、生成式 UI 四态、人格、记忆可控</em>。这 12 条不是替换经典,是<strong>给经典加 AI 时代的补丁</strong>。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / 经典启发法的诞生 · 1988 + 1994</div>
+    <p><strong>1988 年</strong>:Don Norman 出版《The Design of Everyday Things》,提出可见性 / 示能 / 反馈 / 映射 / 约束等概念,奠定了现代 UX 的认知基础。</p>
+    <p><strong>1994 年</strong>:Jakob Nielsen 总结 10 条可用性启发法,从 249 个可用性问题中归纳出最普适的模式。这 10 条至今是行业 checklist。</p>
+    <p>30 年过去,这套原则面对 ChatGPT / Claude / Cursor / v0 时,大部分仍然适用——但<em>有 4-5 条需要"AI 时代的升级版"</em>,另外有 5-6 条<em>是 Norman / Nielsen 时代根本没有的新议题</em>。我们这一章做两件事:体检 + 重写。</p>
+  </div>
+
+  <h3 id="s14-h3-1"><span class="pre">14.1</span>体检经典 · 三类处理</h3>
+
+  <p class="lead">把经典启发法逐条过一遍,分三类处理:保留 / 升级 / 新增。</p>
+
+  <h4>类 1 · 完全保留(经典原则仍然适用)</h4>
+  <ul>
+    <li><strong>简洁美观</strong>(Aesthetic and minimalist design)——更稀缺的注意力时代更适用</li>
+    <li><strong>识别优于回忆</strong>(Recognition rather than recall)—— AI 产品反而要更明确把能力展示出来,不要让用户"猜 AI 能做什么"</li>
+    <li><strong>灵活高效</strong>(Flexibility and efficiency of use)——快捷键 / slash command 仍然必要</li>
+  </ul>
+
+  <h4>类 2 · 需要升级(经典原则要改写)</h4>
+  <ul>
+    <li><strong>系统状态可见</strong> → 升级为 <strong>"可信度可见"</strong>(展示对结果的把握程度,不只是结果)</li>
+    <li><strong>用户控制与自由</strong> → 升级为 <strong>"5 维度可控性"</strong>(启动 / 过程 / 边界 / 撤销 / 学习)</li>
+    <li><strong>错误预防</strong> → 升级为 <strong>"错误是主菜"</strong>(AI 错误必然发生,设计要为此而做)</li>
+    <li><strong>一致性</strong> → 升级为 <strong>"变化中保持可识别"</strong>(每次输出不同,但产品规范不变)</li>
+    <li><strong>错误恢复</strong> → 升级为 <strong>"错误后能继续"</strong>(包括部分恢复 / 转人工 / 优雅降级)</li>
+    <li><strong>帮助文档</strong> → 升级为 <strong>"对话即帮助"</strong>(用户直接问 AI,而不是查 docs)</li>
+  </ul>
+
+  <h4>类 3 · 全新加入(Norman / Nielsen 时代不存在)</h4>
+  <ul>
+    <li><strong>信任优于可用性</strong>—— AI 时代的新底线</li>
+    <li><strong>意图层先于操作层</strong>—— AI 产品的新设计起点</li>
+    <li><strong>Agent 的边界感</strong>——什么时候自动、什么时候问</li>
+    <li><strong>生成式 UI 的四态</strong>——生成中 / 待审批 / 已应用 / 版本切换</li>
+    <li><strong>人格稳定可预测</strong>—— AI 不只是工具,有"性格"</li>
+    <li><strong>上下文是资产</strong>——记忆要可见可控可移植</li>
+  </ul>
+
+  <h3 id="s14-h3-2"><span class="pre">14.2</span>重写后的 12 条原则</h3>
+
+  <p class="lead">把升级的 + 新增的合并,加上一些保留的经典精华,提炼成<strong>"AI 时代设计十二诫"</strong>。每条带"为什么 / 怎么落地 / 反面案例"三件套。</p>
+
+  <h4>第 1 诫 · 信任优于可用性</h4>
+  <div class="callout note">
+    <div class="label">i 第 1 诫</div>
+    <p><strong>为什么</strong>:用户不信任 AI 输出,再可用也是负担(第 3 章)。<br>
+    <strong>怎么落地</strong>:可点验引用 + 主动说"不确定" + 关键时刻确认 + 不堆废话 disclaimer。<br>
+    <strong>反面案例</strong>:Schwartz 律师案——ChatGPT 没有任何 UX 让用户意识到引用可能是编的。</p>
+  </div>
+
+  <h4>第 2 诫 · 错误是主菜,不是边角料</h4>
+  <div class="callout note">
+    <div class="label">i 第 2 诫</div>
+    <p><strong>为什么</strong>:AI 错误必然发生,频率高,用户无法预防(第 6 章)。<br>
+    <strong>怎么落地</strong>:5 类错误对应 4 种兜底机制 + 6 条文案铁律,第一稿设计就回答"出错了用户怎么办"。<br>
+    <strong>反面案例</strong>:ChatGPT 早期"Something went wrong"——对所有错误一视同仁,用户无从下手。</p>
+  </div>
+
+  <h4>第 3 诫 · 必须给"逃生通道"</h4>
+  <div class="callout note">
+    <div class="label">i 第 3 诫</div>
+    <p><strong>为什么</strong>:AI 卡住时,如果用户不能接管,产品就死了(第 13 章)。<br>
+    <strong>怎么落地</strong>:转人工入口可见 + 自助模式切换 + 让用户能"跳出 AI 流"继续工作。<br>
+    <strong>反面案例</strong>:Rabbit R1 没屏幕没键盘,AI 卡住用户只能干等。</p>
+  </div>
+
+  <h4>第 4 诫 · 不可逆操作必须有预览态</h4>
+  <div class="callout note">
+    <div class="label">i 第 4 诫</div>
+    <p><strong>为什么</strong>:Agent 时代用户失控风险最高(第 4 章 + 第 8 章)。<br>
+    <strong>怎么落地</strong>:Verify-before-Act——发邮件 / 删文件 / 转账 / 提 PR 前都强制确认。低风险用 inline 预览,高风险用强制确认,灾难性用二次输入。<br>
+    <strong>反面案例</strong>:早期 AutoGPT 无限循环烧 API,因为没设资源边界。</p>
+  </div>
+
+  <h4>第 5 诫 · 自然语言是新输入层</h4>
+  <div class="callout note">
+    <div class="label">i 第 5 诫</div>
+    <p><strong>为什么</strong>:prompt 是 AI 时代的新键盘鼠标(第 7 章)。<br>
+    <strong>怎么落地</strong>:placeholder 不要"Ask anything",要给具体例子 + slash command 限 5-8 个 + custom instructions 透明可控 + prompt 失败时主动追问或对比生成。<br>
+    <strong>反面案例</strong>:Midjourney 早期 Discord 命令式,新手 onboarding 极差。</p>
+  </div>
+
+  <h4>第 6 诫 · UI 是协作产物 · 设计 4 态</h4>
+  <div class="callout note">
+    <div class="label">i 第 6 诫</div>
+    <p><strong>为什么</strong>:生成式 UI 时代,UI 元素从"资产"变"实例"(第 5 章)。<br>
+    <strong>怎么落地</strong>:明确设计 4 种状态——生成中 / 待审批 / 已应用 / 版本切换。默认进入待审批,给用户最后把关机会。<br>
+    <strong>反面案例</strong>:某些生图工具直接把图"应用"到工作流,用户没看清就 commit,后悔无门。</p>
+  </div>
+
+  <h4>第 7 诫 · Agent 的 5 个必停 trigger</h4>
+  <div class="callout note">
+    <div class="label">i 第 7 诫</div>
+    <p><strong>为什么</strong>:Agent 自走是 UX 失控的最大源头(第 8 章 + 第 13 章)。<br>
+    <strong>怎么落地</strong>:5 个必停 trigger ——不可逆操作前 / 权限超限时 / 关键决策歧义时 / 资源即将超限时 / 错误重复发生时。<br>
+    <strong>反面案例</strong>:Devin 演示版自走但走偏几英里,用户拿到结果不是想要的。</p>
+  </div>
+
+  <h4>第 8 诫 · 撤销是底线</h4>
+  <div class="callout note">
+    <div class="label">i 第 8 诫</div>
+    <p><strong>为什么</strong>:没有 undo,用户不敢用(第 4 章)。<br>
+    <strong>怎么落地</strong>:粗粒度(git reset 级)+ 细粒度(单 diff reject)+ 版本化(版本切换)。无原生 git 兜底的产品要自建撤销系统。<br>
+    <strong>反面案例</strong>:某些 AI 简历改写工具改完不能 undo,用户失去原版焦虑。</p>
+  </div>
+
+  <h4>第 9 诫 · 透明度优于黑盒</h4>
+  <div class="callout note">
+    <div class="label">i 第 9 诫</div>
+    <p><strong>为什么</strong>:用户对 AI 行为没"心理模型",黑盒 = 不可预测 = 不可信任(第 3 章 + 第 4 章)。<br>
+    <strong>怎么落地</strong>:暴露 Custom Instructions 给用户 / Memory 面板可审计可删 / 模型版本明示 / 主动说训练数据时效。<br>
+    <strong>反面案例</strong>:某些 AI 产品偷偷改 system prompt 让 AI 行为突变,用户困惑。</p>
+  </div>
+
+  <h4>第 10 诫 · 上下文是资产</h4>
+  <div class="callout note">
+    <div class="label">i 第 10 诫</div>
+    <p><strong>为什么</strong>:记忆从无变成核心资产(第 2 章 + 第 7 章)。<br>
+    <strong>怎么落地</strong>:记忆可见(用户能看 AI 记了什么)+ 可控(能删能改)+ 可移植(跨设备 / 跨账号)。<br>
+    <strong>反面案例</strong>:早期 AI 伴侣产品记忆数据无法导出,用户被锁死。</p>
+  </div>
+
+  <h4>第 11 诫 · 人格匹配用户,不匹配创始人喜好</h4>
+  <div class="callout note">
+    <div class="label">i 第 11 诫</div>
+    <p><strong>为什么</strong>:AI 有人格,人格影响用户感知 / 信任 / 留存(第 10 章)。<br>
+    <strong>怎么落地</strong>:5 件套(语气 / 拒绝姿态 / 道歉密度 / 主动性 / 不确定性表达)按目标用户群定向设计。3 条情感设计边界(不让 AI 表达自我感受 / 不提供治疗式回应 / 不鼓励依赖)。<br>
+    <strong>反面案例</strong>:Sydney 失控,Replika 鼓励过度依赖。</p>
+  </div>
+
+  <h4>第 12 诫 · AI 让人更聪明,不是更依赖</h4>
+  <div class="callout note">
+    <div class="label">i 第 12 诫</div>
+    <p><strong>为什么</strong>:长期看,AI 产品的健康度取决于用户能力是否被增强还是被替代(前言立场 + 第 1 章遗产税)。<br>
+    <strong>怎么落地</strong>:不要"挽留用户"话术 / 不要"打卡连续使用"机制 / 给"了解 AI 做了什么"的入口让用户学习而不只是消费 / 避免过度自动化让用户失去能力。<br>
+    <strong>反面案例</strong>:一些 AI 产品鼓励"每天用 X 小时",指标短期好看,长期用户能力萎缩 → 卸载率高。</p>
+  </div>
+
+  <h3 id="s14-h3-3"><span class="pre">14.3</span>怎么用这 12 诫?</h3>
+
+  <p class="lead">12 诫不是"金科玉律",是<strong>团队做 AI 产品决策时的 checklist</strong>。我们建议三种用法。</p>
+
+  <div class="callout ops">
+    <div class="label">✓ 12 诫的三种用法</div>
+    <ol>
+      <li><strong>做新功能时</strong>——拿这 12 条过一遍,问自己"这个功能符合 / 违反 / 没考虑哪几条"。</li>
+      <li><strong>做 design review 时</strong>——把这 12 条贴在 review 文档里,逐条 check 别人的方案。</li>
+      <li><strong>做 PR / 体验 review 时</strong>——把这 12 条做成 ChatOps 命令(<code>/12-check</code>),自动审 AI 产品的设计提案。</li>
+    </ol>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ 不要做的事</div>
+    <ul>
+      <li><strong>不要全部 12 条都达 ★★★★★</strong>——这不现实,也不必要。每个产品在不同诫上有不同权重。</li>
+      <li><strong>不要把 12 诫当"通过 / 不通过"判断</strong>——它是讨论框架,不是验收标准。</li>
+      <li><strong>不要僵化执行</strong>—— 12 诫会随 AI 能力演化,2026 年的版本到 2028 年可能要修改 3-4 条。这是 v0.1。</li>
+    </ul>
+  </div>
+
+  <h3 id="s14-h3-4"><span class="pre">14.4</span>本章小结</h3>
+
+  <p>12 条原则不是凭空发明,是<strong>前 13 章所有判断的浓缩</strong>。每条都对应具体章节、具体案例、具体反面教材。这本书前面 90% 内容是"为什么这 12 条",这一章是把它们写成可贴在墙上的 checklist。</p>
+
+  <p>下一章我们做这本书最关键的应用——<strong>用这 12 诫给千图AI 做一次完整 UX 体检</strong>,看我们在每一诫上的得分、问题、改进空间。</p>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>AI 时代设计十二诫</h4>
+    <ol>
+      <li><strong>体检经典启发法</strong>:70% 保留(升级)+ 30% 新增——Norman / Nielsen 没过时,但要打 AI 时代补丁。</li>
+      <li><strong>12 诫的前 6 条(升级类)</strong>:信任优于可用性 / 错误是主菜 / 必须给逃生通道 / 不可逆操作有预览态 / 自然语言新输入层 / UI 协作 4 态。</li>
+      <li><strong>12 诫的后 6 条(新增类)</strong>:Agent 必停 trigger / 撤销是底线 / 透明度优于黑盒 / 上下文是资产 / 人格匹配用户 / 让人更聪明不更依赖。</li>
+      <li><strong>3 种用法</strong>:做新功能时过 12 条 / design review checklist / PR 自动审。</li>
+      <li><strong>3 个不要</strong>:不要 12 条都满分(不现实)/ 不要当通过-不通过判断(是讨论框架)/ 不要僵化执行(2-3 年会修改)。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  Don Norman, <em>The Design of Everyday Things</em>, 1988/2013 · Jakob Nielsen, <em>10 Usability Heuristics for User Interface Design</em>, NN/g, 1994 · Microsoft, <em>Guidelines for Human-AI Interaction</em>, 2019 · Google PAIR Guidebook · Apple HIG Machine Learning section · 本书前 13 章所有论述总和</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s15" style="border-top: 4px solid var(--c-session);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">15</span>QIANTU AUDIT · 重构应用 / 第十五章</div>
+  <h1 class="section-h">千图AI 的 UX 体检:用 12 诫给我们自己打分 <span class="en">Qiantu AI Audit</span></h1>
+  <p class="section-sub">把第 14 章的 12 诫作为坐标,把千图AI 当前产品作为对象,做一次系统性 UX 体检——逐诫打分、定位问题、关联到具体产品场景。这一章是<em>全书最值钱的部分</em>,因为它把所有理论翻译成对自己产品的具体诊断。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 7 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">2,498 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">6 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 6 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s15-h3-1"><span class="num">15.1</span><span class="title">体检方法论 · 4 步流程</span></a></li>
+    <li><a href="#s15-h3-2"><span class="num">15.2</span><span class="title">12 诫得分总览</span></a></li>
+    <li><a href="#s15-h3-3"><span class="num">15.3</span><span class="title">优势分析 · 哪几诫做得好</span></a></li>
+    <li><a href="#s15-h3-4"><span class="num">15.4</span><span class="title">缺口分析 · 哪几诫缺口最大</span></a></li>
+    <li><a href="#s15-h3-5"><span class="num">15.5</span><span class="title">具体场景体检 · 4 个核心流程</span></a></li>
+    <li><a href="#s15-h3-6"><span class="num">15.6</span><span class="title">体检小结</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>千图AI 在 12 诫上的整体得分约 6.5/10——核心生成能力扎实,但<em>信任设计、错误兜底、prompt 体验、Agent 边界感、人格设计</em>这 5 条有明显缺口。改进 ROI 最高的是<strong>「中文场景模板 + prompt 失败兜底 + 错误分类提示」</strong>三件套,这是下一章路线图的核心。</p>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ FACT-CHECK 警告 · 必读</div>
+    <p><strong>这一章的诊断基于以下信息源</strong>:</p>
+    <ul>
+      <li>白笑授权的项目背景资料(<code>CLAUDE.md</code> / <code>designknowledge.md</code> / <code>迭代记录.md</code>)</li>
+      <li>对千图AI 同类产品的 UX 对比(第 11 章 6 款内容生成类产品)</li>
+      <li>对 AI 产品通用 UX 模式的总结(Part II + Part III)</li>
+    </ul>
+    <p><strong>但本章作者(Claude × 白笑共写)<em>没有直接使用过千图AI 完整产品</em></strong>。所有"千图AI 当前现状"的描述都基于上述间接信息,可能与实际产品存在偏差。</p>
+    <p><strong>请白笑(以及千图AI 团队读者)做两件事</strong>:</p>
+    <ol>
+      <li>读这一章时随时<em>修正与实际不符的描述</em>(可以在 GitHub issue 或文档批注)</li>
+      <li>对"建议改进项"判断时,优先信任你们的内部数据 / 用户反馈,不是这一章的外部推测</li>
+    </ol>
+  </div>
+
+  <h3 id="s15-h3-1"><span class="pre">15.1</span>体检方法论 · 4 步流程</h3>
+
+  <p class="lead">这次体检按 4 步流程做,每条诫都过一遍。</p>
+
+  <ol>
+    <li><strong>对照诫的"怎么落地"标准</strong>,描述千图AI 当前状态</li>
+    <li><strong>打分 0-10</strong>(0 = 完全没做 / 10 = 行业标杆)</li>
+    <li><strong>定位关键缺口</strong>(具体场景 / 具体页面)</li>
+    <li><strong>给出改进建议</strong>(可落地动作)</li>
+  </ol>
+
+  <p>分数仅是"内部相对参考",不是行业横评。同诫不同产品的对比见 Part III。</p>
+
+  <h3 id="s15-h3-2"><span class="pre">15.2</span>12 诫得分总览</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>诫</th><th>原则</th><th>当前得分</th><th>主要缺口</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>信任优于可用性</td><td>5/10</td><td>无"模型版本/参数透明",无"出图质量自评"</td></tr>
+        <tr><td>2</td><td>错误是主菜</td><td>5/10</td><td>错误文案通用化,缺分类提示</td></tr>
+        <tr><td>3</td><td>必须给逃生通道</td><td>7/10</td><td>有(下载原图 + 重新生成),但缺"局部重绘"入口</td></tr>
+        <tr><td>4</td><td>不可逆操作有预览态</td><td>7/10</td><td>生成结果是"预览态",但发布到模板库 / 分享前无二次确认</td></tr>
+        <tr><td>5</td><td>自然语言新输入层</td><td>6/10</td><td>placeholder 通用化,缺中文场景模板 / starter prompts</td></tr>
+        <tr><td>6</td><td>UI 协作 4 态</td><td>6/10</td><td>缺"版本派生树",历史是平铺列表</td></tr>
+        <tr><td>7</td><td>Agent 必停 trigger</td><td>N/A</td><td>当前主要是单步生成,未做 Agent 化</td></tr>
+        <tr><td>8</td><td>撤销是底线</td><td>7/10</td><td>历史记录可查,但缺"基于历史某一张接着改"</td></tr>
+        <tr><td>9</td><td>透明度优于黑盒</td><td>5/10</td><td>模型版本不透明,prompt assistant 也是黑盒</td></tr>
+        <tr><td>10</td><td>上下文是资产</td><td>4/10</td><td>当前 AI 不学习用户偏好,无 Memory 概念</td></tr>
+        <tr><td>11</td><td>人格匹配用户</td><td>6/10</td><td>人格不明显(工具型 OK),但缺统一"语气词典"</td></tr>
+        <tr><td>12</td><td>让人更聪明不更依赖</td><td>7/10</td><td>没有沉迷诱导,但缺"让用户学到 prompt 技巧"的入口</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout note">
+    <div class="label">i 整体平均 ~ 6.5 / 10</div>
+    <p>不算坏,跟同期内容生成类产品(即梦 / 通义万相 / Krea)在同一水位。<em>但这是"够用"的水位,不是"赢"的水位</em>。要做赢家,至少要在 1-2 诫达到 ★★★★★(参见第 11 章"极致单点"启示)。</p>
+  </div>
+
+  <h3 id="s15-h3-3"><span class="pre">15.3</span>优势分析 · 哪几诫做得好</h3>
+
+  <p class="lead">先看强项,这是产品的护城河,要继续保持。</p>
+
+  <h4>优势 1 · 第 3 诫(逃生通道)· 7/10</h4>
+  <p>千图AI 的核心生成失败时,用户能"重生 / 改 prompt / 改风格 / 下载原图自己改"——多条退路。这比 Rabbit R1 那种"卡住只能等"的产品好得多。</p>
+  <p><strong>但可以更好</strong>:加上"局部重绘"(inpaint)入口的可见度——目前用户喜欢 70% 的图时,主流操作是"重生"而不是"改剩下 30%"。这就让 ROI 不优化。</p>
+
+  <h4>优势 2 · 第 4 诫(预览态)· 7/10</h4>
+  <p>生成的图天然在"预览态"——用户主动下载才算 commit。这个好习惯是图像产品的天然优势。</p>
+  <p><strong>但可以更好</strong>:涉及"分享到社区 / 发布为模板 / 提交评审"等公开行为时,缺"二次确认 + 公开影响提示"。</p>
+
+  <h4>优势 3 · 第 8 诫(撤销底线)· 7/10</h4>
+  <p>历史记录可查,生成不会"消失"。</p>
+  <p><strong>但可以更好</strong>:历史是"平铺列表"形态——用户基于第 3 张图 refine 得到第 5 张,这种<em>派生关系</em>不可见。学 Krea 的 canvas 派生树。</p>
+
+  <h4>优势 4 · 第 12 诫(让人更聪明)· 7/10</h4>
+  <p>没有"打卡 / 连续签到 / 沉迷诱导"机制,健康度高。</p>
+  <p><strong>但可以更好</strong>:加"prompt 教学"——当用户写出好结果时,主动展示"这张图为什么生成得好(关键 prompt 词分析)",让用户学到能迁移的技巧。</p>
+
+  <h3 id="s15-h3-4"><span class="pre">15.4</span>缺口分析 · 哪几诫缺口最大</h3>
+
+  <p class="lead">下面 5 条是 ROI 最高的改进项,推荐优先做。</p>
+
+  <h4>缺口 1 · 第 1 诫(信任)· 5/10</h4>
+
+  <div class="callout sharp">
+    <div class="label">✕ 当前问题</div>
+    <ul>
+      <li>生成图旁边没有"这张图相对你 prompt 的契合度评估"</li>
+      <li>没有明示当前用的模型版本(用户不知道用的是即梦 5.0 还是 4.0)</li>
+      <li>多张生成结果之间,没有"我们推荐选这张"的引导</li>
+    </ul>
+  </div>
+
+  <div class="callout ops">
+    <div class="label">✓ 改进建议</div>
+    <ol>
+      <li><strong>给每张图标"AI 自评分"</strong>(prompt 匹配度 / 美观度 / 安全度 三档),让用户秒判</li>
+      <li><strong>明示模型版本</strong>(底部小字"由 千图AI v3.2 生成")</li>
+      <li><strong>多图推荐</strong>(在 4 张备选里给"我们更推荐这张"的小标记 + 理由)</li>
+    </ol>
+  </div>
+
+  <h4>缺口 2 · 第 2 诫(错误兜底)· 5/10</h4>
+
+  <div class="callout sharp">
+    <div class="label">✕ 当前问题</div>
+    <ul>
+      <li>"生成失败"提示过于通用,用户不知道是 GPU 排队 / prompt 触发安全 / 模型本身波动</li>
+      <li>内容安全拦截时,不告诉用户具体触发了哪个关键词</li>
+      <li>失败 3 次后,没有"升级提示"(看起来不是临时问题,试试 X)</li>
+    </ul>
+  </div>
+
+  <div class="callout ops">
+    <div class="label">✓ 改进建议</div>
+    <ol>
+      <li><strong>错误分类提示</strong>(用 5 类错误模板:系统级 / 输出级 / 理解级 / 边界级 / 时间级)</li>
+      <li><strong>安全拦截具体到关键词</strong>(在不暴露内部规则的前提下,给用户改的方向)</li>
+      <li><strong>失败 3 次升级</strong>(主动给"试试改成 [建议 prompt]")</li>
+    </ol>
+  </div>
+
+  <h4>缺口 3 · 第 5 诫(prompt 体验)· 6/10</h4>
+
+  <div class="callout sharp">
+    <div class="label">✕ 当前问题</div>
+    <ul>
+      <li>placeholder 通用化("请输入您的需求"),不引导中文用户</li>
+      <li>缺"中文场景模板库"(对比即梦"电商海报 / 公众号封面 / 抖音封面"等模板入口)</li>
+      <li>prompt 失败后,缺"自动改写建议"</li>
+    </ul>
+  </div>
+
+  <div class="callout ops">
+    <div class="label">✓ 改进建议</div>
+    <ol>
+      <li><strong>场景化 placeholder</strong>("试试:为新年活动设计一张红金主调的海报")</li>
+      <li><strong>建中文场景模板库</strong>(电商主图 / 公众号封面 / 朋友圈背景 / PPT 配图 / 微信表情等),用户选场景再填关键字</li>
+      <li><strong>prompt 改写助手</strong>(用户结果不满意时,主动给"试着加上 X 描述")</li>
+    </ol>
+  </div>
+
+  <h4>缺口 4 · 第 9 诫(透明度)· 5/10</h4>
+
+  <div class="callout sharp">
+    <div class="label">✕ 当前问题</div>
+    <ul>
+      <li>用户不知道当前用的什么模型 / 版本 / 参数</li>
+      <li>"AI 改写 prompt"(如果有的话)是黑盒,用户看不到 AI 把自己的 prompt 改成了什么</li>
+      <li>缺"为什么这张图长这样"的可解释入口</li>
+    </ul>
+  </div>
+
+  <div class="callout ops">
+    <div class="label">✓ 改进建议</div>
+    <ol>
+      <li><strong>结果旁边展示"生成参数"</strong>(模型 + 风格 + seed + guidance),可点开看详情</li>
+      <li><strong>暴露 prompt 改写</strong>(如果 AI 内部改写了用户 prompt,展示"原始 prompt → 实际使用的 prompt")</li>
+      <li><strong>可复现性</strong>(用户能复制"完整生成参数"用来重生 / 给别人复现)</li>
+    </ol>
+  </div>
+
+  <h4>缺口 5 · 第 10 诫(上下文资产)· 4/10</h4>
+
+  <div class="callout sharp">
+    <div class="label">✕ 当前问题</div>
+    <ul>
+      <li>AI 不学习用户偏好——用户每次都要重写"我要写实风格"等基础偏好</li>
+      <li>项目化(Projects)概念缺失——用户做同一个项目的不同图,系统不知道这是一组</li>
+      <li>跨设备 / 跨账号的"用户偏好"无法迁移</li>
+    </ul>
+  </div>
+
+  <div class="callout ops">
+    <div class="label">✓ 改进建议</div>
+    <ol>
+      <li><strong>加 Memory / Custom Instructions</strong>(用户能设置"我永远要写实风格 / 永远不要插画风 / 永远生成 4 张"等全局偏好)</li>
+      <li><strong>加 Projects 概念</strong>(类似 ChatGPT Projects / Claude Projects——一个项目下的所有生成共享上下文)</li>
+      <li><strong>偏好可审计</strong>(用户能看到 AI 记了什么偏好,能逐条删 / 改)</li>
+    </ol>
+  </div>
+
+  <h3 id="s15-h3-5"><span class="pre">15.5</span>具体场景体检 · 4 个核心流程</h3>
+
+  <p class="lead">把抽象诫拉到具体场景,看千图AI 的 4 个核心流程各自有什么 UX 问题。</p>
+
+  <h4>场景 1 · "生成新图"流程</h4>
+  <ul>
+    <li><strong>当前流程</strong>:打开生成页 → 写 prompt → 选风格 → 点生成 → 等结果 → 满意下载 / 不满意重生</li>
+    <li><strong>核心问题</strong>:每次都从"空白"开始,缺场景模板入口</li>
+    <li><strong>改进</strong>:首屏给 8-12 个场景模板卡片(海报 / 封面 / 配图 / 头像等),用户选场景后填关键字</li>
+  </ul>
+
+  <h4>场景 2 · "改已有图"流程</h4>
+  <ul>
+    <li><strong>当前流程</strong>:不明显(用户多倾向重生)</li>
+    <li><strong>核心问题</strong>:Inpaint / 局部重绘的入口不显眼,用户不知道有这个能力</li>
+    <li><strong>改进</strong>:每张生成图下方加"局部修改"按钮(跟"重新生成"同等显眼),用户拖框选区域 + 描述改什么</li>
+  </ul>
+
+  <h4>场景 3 · "历史回查"流程</h4>
+  <ul>
+    <li><strong>当前流程</strong>:历史列表 → 找到某张 → 下载 / 再生成</li>
+    <li><strong>核心问题</strong>:平铺列表难找,缺"派生关系树"</li>
+    <li><strong>改进</strong>:历史改成"画布"形态(类似 Krea / Figma)——每张图是节点,基于某张图改出来的图是它的子节点,可视化派生</li>
+  </ul>
+
+  <h4>场景 4 · "失败重试"流程</h4>
+  <ul>
+    <li><strong>当前流程</strong>:看到失败提示 → 点重试 → 失败 → 再点重试</li>
+    <li><strong>核心问题</strong>:无升级 / 无诊断 / 无替代建议</li>
+    <li><strong>改进</strong>:失败时给具体原因 + 3 个建议(如"prompt 触发了 X 关键词,试试改成 Y / 当前 GPU 排队,等 N 秒 / 换风格 Z 可能更稳定")</li>
+  </ul>
+
+  <h3 id="s15-h3-6"><span class="pre">15.6</span>体检小结</h3>
+
+  <p>千图AI 在 12 诫上的整体得分 ~ <strong>6.5/10</strong>——核心生成能力扎实,但<strong>5 条主要缺口</strong>(信任 / 错误兜底 / prompt 体验 / 透明度 / 上下文资产)是改进 ROI 最高的方向。</p>
+
+  <p><strong>4 个具体场景</strong>(新图 / 改图 / 历史 / 失败)各自有可立刻动手的改进点。这些改进的具体顺序、时间、所需投入,见下一章<strong>千图AI 90/180/365 天改进路线图</strong>。</p>
+
+  <div class="callout you">
+    <div class="label">◐ 再次强调 · FACT-CHECK</div>
+    <p>这一章的所有"当前现状"描述都基于外部观察,可能与实际产品存在偏差。<em>建议白笑组织一次内部走查</em>,把本章的"得分 / 缺口 / 场景"逐条对照实际产品验证,再决定哪些建议进入路线图。</p>
+  </div>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>千图AI 体检要点 · FACT-CHECK</h4>
+    <ol>
+      <li><strong>基于外部观察的诊断</strong>,白笑团队必须验证现状描述。整体得分约 6.5/10,跟同期国内产品同水位。</li>
+      <li><strong>5 条主要缺口</strong>:信任设计(5/10)/ 错误兜底(5/10)/ prompt 体验(6/10)/ 透明度(5/10)/ 上下文资产(4/10)——ROI 最高的改进方向。</li>
+      <li><strong>4 条优势</strong>:逃生通道(7/10)/ 预览态(7/10)/ 撤销底线(7/10)/ 让人更聪明(7/10)——产品护城河,继续保持。</li>
+      <li><strong>4 个核心场景</strong>:生成新图缺场景模板 / 改图缺局部重绘入口 / 历史缺派生树 / 失败缺分类提示——这是下一章路线图的输入。</li>
+      <li><strong>下一步</strong>:团队内部走查 + 跟实际产品 / 商业团队对齐,再决定哪些建议进路线图。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  本书第 1-14 章的所有论述 · 千图AI <code>CLAUDE.md</code> / <code>designknowledge.md</code> / <code>迭代记录.md</code>(项目内部资料)· 即梦 / 通义万相 / Krea 公开产品文档(对照参考)· Microsoft HAX Toolkit Audit Methodology, 2019</p>
+
+</div>
+</section>
+
+<section  class="chapter" id="s16" style="border-top: 4px solid var(--c-recovery);">
+<div class="container">
+
+  <div class="section-tag"><span class="num">16</span>ROADMAP · 重构应用 / 第十六章</div>
+  <h1 class="section-h">千图AI 的 90 / 180 / 365 天改进路线图 <span class="en">Action Roadmap</span></h1>
+  <p class="section-sub">把第 15 章的诊断转化为可落地的行动计划——3 个时间窗、10 个具体动作、每个动作带"为什么 / 做什么 / 谁做 / 度量"四件套。这是这本书最后的"产物",从知识变成行动的桥。</p>
+
+  
+  <div class="reading-meta">
+    <div class="meta-item"><span class="icon">◷</span><span class="value">约 7 分钟阅读</span></div>
+    <div class="meta-item"><span class="icon">◆</span><span class="value">2,584 字</span></div>
+    <div class="meta-item"><span class="icon">§</span><span class="value">7 个小节</span></div>
+  </div>
+
+  <details class="chapter-toc" open>
+    <summary class="label" style="cursor:pointer; list-style:none;">▾ 本章 7 节 · 点击跳转</summary>
+    <ol>
+    <li><a href="#s16-h3-1"><span class="num">16.1</span><span class="title">路线图方法论 · ROI 矩阵</span></a></li>
+    <li><a href="#s16-h3-2"><span class="num">16.2</span><span class="title">90 天(Q1)· 5 个 Quick Win</span></a></li>
+    <li><a href="#s16-h3-3"><span class="num">16.3</span><span class="title">180 天(H1)· 3 个中型改造</span></a></li>
+    <li><a href="#s16-h3-4"><span class="num">16.4</span><span class="title">365 天(Y1)· 2 个大型重构</span></a></li>
+    <li><a href="#s16-h3-5"><span class="num">16.5</span><span class="title">不做清单 · 5 件主动不做的事</span></a></li>
+    <li><a href="#s16-h3-6"><span class="num">16.6</span><span class="title">怎么落地 · 执行机制建议</span></a></li>
+    <li><a href="#s16-h3-7"><span class="num">16.7</span><span class="title">本章小结 · 全书收官</span></a></li>
+    </ol>
+  </details>
+
+  <div class="tldr">
+    <div class="label">▼ ELEVATOR PITCH</div>
+    <p>90 天做 <strong>5 个 quick win</strong>(场景模板 + 错误分类 + 模型透明 + AI 自评 + 局部重绘入口);180 天做 <strong>3 个中型改造</strong>(派生树历史 + Memory 偏好 + Projects 概念);365 天做 <strong>2 个大型重构</strong>(场景化 Agent 工作流 + 多模态输入)。<em>不做的事比做的事更重要——明确列了 5 件"主动不做"</em>。</p>
+  </div>
+
+  <div class="callout sharp">
+    <div class="label">✕ FACT-CHECK 警告 · 必读</div>
+    <p>本章建议基于第 15 章的外部诊断推导,<strong>不是千图AI 团队正式 roadmap</strong>。所有"建议做"的事项需要:</p>
+    <ol>
+      <li>团队内部讨论 ROI 与现状匹配度</li>
+      <li>跟实际产品 / 商业 / 工程团队对齐</li>
+      <li>跟 Wayne(领导)同步,纳入正式规划再执行</li>
+    </ol>
+    <p>请把本章当作"<em>外部专家的体检报告 + 推荐方案</em>",不是正式产品决策。</p>
+  </div>
+
+  <div class="callout story">
+    <div class="label">故事 / "诊断 → 行动"的桥</div>
+    <p>所有体检报告(医疗 / 产品 / 公司)都有一个共同失败模式:<strong>诊断写得很好,但读完没人知道下周该做什么</strong>。</p>
+    <p>这一章我们刻意避免这个陷阱——把第 15 章的"得分 + 缺口"翻译成"<em>谁、什么时候、做什么、做完怎么判断</em>"四件套。每个建议都能直接进 Jira / Linear 当 ticket。</p>
+    <p>同时明确"<em>不做什么</em>"——好的路线图一半价值在"做什么",另一半价值在"明确不做什么",避免团队精力发散。</p>
+  </div>
+
+  <h3 id="s16-h3-1"><span class="pre">16.1</span>路线图方法论 · ROI 矩阵</h3>
+
+  <p class="lead">我们用一个简单矩阵决定"什么进 90 天 / 什么进 180 天 / 什么进 365 天"。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>象限</th><th>说明</th><th>处理</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>高 ROI + 低工程量</strong></td><td>用户感知强 + 工程量小</td><td>进 90 天 quick win</td></tr>
+        <tr><td><strong>高 ROI + 中工程量</strong></td><td>用户感知强 + 工程量中等</td><td>进 180 天中型改造</td></tr>
+        <tr><td><strong>高 ROI + 高工程量</strong></td><td>战略级,需要长期投入</td><td>进 365 天大型重构</td></tr>
+        <tr><td><strong>低 ROI + 任何工程量</strong></td><td>用户感知弱</td><td><em>不做</em>(写进"不做清单")</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 id="s16-h3-2"><span class="pre">16.2</span>90 天(Q1)· 5 个 Quick Win</h3>
+
+  <p class="lead">这 5 件事工程量小 / 用户感知强 / ROI 极高,建议立刻启动。</p>
+
+  <h4>Quick Win 1 · 中文场景模板库</h4>
+  <div class="callout ops">
+    <div class="label">✓ 90D-1 · 中文场景模板</div>
+    <ul>
+      <li><strong>为什么</strong>:第 15 章缺口 3,对照即梦 / 通义万相,中文场景模板是中文 AI 工具的标配</li>
+      <li><strong>做什么</strong>:首页加 8-12 个场景卡片(电商主图 / 公众号封面 / 朋友圈背景 / PPT 配图 / 朋友圈封面 / 抖音封面 / 头像 / 表情包 / Banner / 海报 / 节日营销),每个场景卡进入后是定制 prompt 模板,用户填关键字</li>
+      <li><strong>谁做</strong>:设计 + 产品 + 前端(后端 prompt 模板由内容团队维护)</li>
+      <li><strong>度量</strong>:模板入口点击率 / 模板转化为生成的比例 / 模板用户 vs 自由 prompt 用户留存对比</li>
+      <li><strong>工程量</strong>:小(2-3 周)</li>
+    </ul>
+  </div>
+
+  <h4>Quick Win 2 · 错误分类提示</h4>
+  <div class="callout ops">
+    <div class="label">✓ 90D-2 · 错误分类</div>
+    <ul>
+      <li><strong>为什么</strong>:第 15 章缺口 2,当前错误提示过于通用</li>
+      <li><strong>做什么</strong>:把"生成失败"拆成 5 类提示(系统级 / 输出级 / 理解级 / 边界级 / 时间级),每类对应不同文案 + 不同推荐行动</li>
+      <li><strong>谁做</strong>:后端(错误码分类) + 设计(文案 + UI) + 前端</li>
+      <li><strong>度量</strong>:失败后用户重试率 / 失败后流失率 / 客服关于"为什么失败"的工单减少</li>
+      <li><strong>工程量</strong>:小(1-2 周)</li>
+    </ul>
+  </div>
+
+  <h4>Quick Win 3 · 模型版本与生成参数透明</h4>
+  <div class="callout ops">
+    <div class="label">✓ 90D-3 · 透明度</div>
+    <ul>
+      <li><strong>为什么</strong>:第 15 章缺口 4,透明度提升信任(对照 Claude / Perplexity)</li>
+      <li><strong>做什么</strong>:每张生成图旁边小字"由 千图AI v3.2 · 写实风格 · seed:xxx 生成",可点开看完整参数,可一键复制参数用于复现</li>
+      <li><strong>谁做</strong>:设计 + 前端(后端已有 metadata)</li>
+      <li><strong>度量</strong>:复制参数功能使用率 / 用户对"模型升级"的感知 NPS</li>
+      <li><strong>工程量</strong>:小(1 周)</li>
+    </ul>
+  </div>
+
+  <h4>Quick Win 4 · AI 自评 + 多图推荐</h4>
+  <div class="callout ops">
+    <div class="label">✓ 90D-4 · 信任设计</div>
+    <ul>
+      <li><strong>为什么</strong>:第 15 章缺口 1,信任设计的颗粒度</li>
+      <li><strong>做什么</strong>:每张生成图给"AI 自评分"(3 档:prompt 匹配度 / 美观度 / 安全度);4 张备选里给"推荐这张"小标记 + 简短理由</li>
+      <li><strong>谁做</strong>:算法(自评模型) + 设计 + 前端</li>
+      <li><strong>度量</strong>:用户点击"推荐张"的比例 / 用户对生成质量的满意度变化</li>
+      <li><strong>工程量</strong>:中(3-4 周,主要在算法自评模型)</li>
+    </ul>
+  </div>
+
+  <h4>Quick Win 5 · 局部重绘入口显眼化</h4>
+  <div class="callout ops">
+    <div class="label">✓ 90D-5 · 改图工作流</div>
+    <ul>
+      <li><strong>为什么</strong>:第 15 章场景 2,局部重绘入口不显眼,用户都走"重生"高成本路径</li>
+      <li><strong>做什么</strong>:生成图下方"局部修改"按钮跟"重新生成"同等显眼;点击进入框选 + 局部描述的交互</li>
+      <li><strong>谁做</strong>:设计(交互重设计)+ 算法(inpaint 体验优化)+ 前端</li>
+      <li><strong>度量</strong>:局部重绘使用率(从当前 < 10% 提升到 > 30%目标)/ 用户每次成功生成的"次数"(派生效率)</li>
+      <li><strong>工程量</strong>:中(3-4 周)</li>
+    </ul>
+  </div>
+
+  <h3 id="s16-h3-3"><span class="pre">16.3</span>180 天(H1)· 3 个中型改造</h3>
+
+  <h4>中型改造 1 · 派生树形态的历史</h4>
+  <div class="callout ops">
+    <div class="label">✓ 180D-1 · 派生树历史</div>
+    <ul>
+      <li><strong>为什么</strong>:第 15 章场景 3 + 缺口 6,历史平铺难找派生关系</li>
+      <li><strong>做什么</strong>:历史页改成"Canvas / Graph"形态——每张图是节点,基于某张图改出来的是子节点。可视化 + 可缩放 + 可对比</li>
+      <li><strong>参照</strong>:Krea Canvas / Figma 文件结构 / Git 分支</li>
+      <li><strong>谁做</strong>:产品(信息架构) + 设计(交互) + 前端(画布渲染) + 后端(派生关系数据模型)</li>
+      <li><strong>度量</strong>:重复用户的历史回查频次 / 基于历史的二次生成率</li>
+      <li><strong>工程量</strong>:大(2-3 个月)</li>
+    </ul>
+  </div>
+
+  <h4>中型改造 2 · Memory + Custom Instructions</h4>
+  <div class="callout ops">
+    <div class="label">✓ 180D-2 · 用户偏好层</div>
+    <ul>
+      <li><strong>为什么</strong>:第 15 章缺口 5,上下文资产</li>
+      <li><strong>做什么</strong>:加用户偏好层——"我永远要写实风格"、"我永远生成 4 张"、"我永远要竖图"等。每次生成自动应用偏好。用户能看 / 改 / 删偏好(可审计面板)</li>
+      <li><strong>参照</strong>:ChatGPT Memory / Claude Custom Instructions</li>
+      <li><strong>谁做</strong>:产品(信息架构 + 隐私设计) + 设计 + 后端(用户偏好数据模型) + 前端</li>
+      <li><strong>度量</strong>:偏好设置率(% 用户设过偏好)/ 偏好用户的留存对比 / 平均 prompt 长度减少</li>
+      <li><strong>工程量</strong>:大(2-3 个月)</li>
+    </ul>
+  </div>
+
+  <h4>中型改造 3 · Projects 概念</h4>
+  <div class="callout ops">
+    <div class="label">✓ 180D-3 · 项目化</div>
+    <ul>
+      <li><strong>为什么</strong>:用户为同一项目生成多张图时,系统不知道这是一组</li>
+      <li><strong>做什么</strong>:加"Projects"或"画册"概念,用户能把相关生成组织到一起,共享上下文 / 风格 / 偏好;支持项目级"风格锁定"(让一个项目内所有图风格统一)</li>
+      <li><strong>参照</strong>:ChatGPT Projects / Claude Projects / Notion Pages</li>
+      <li><strong>谁做</strong>:产品 + 设计 + 后端(项目数据模型)+ 前端</li>
+      <li><strong>度量</strong>:项目创建率 / 项目内多次生成的留存对比</li>
+      <li><strong>工程量</strong>:大(2-3 个月,需要跟会员系统对齐)</li>
+    </ul>
+  </div>
+
+  <h3 id="s16-h3-4"><span class="pre">16.4</span>365 天(Y1)· 2 个大型重构</h3>
+
+  <h4>大型重构 1 · 场景化 Agent 工作流</h4>
+  <div class="callout ops">
+    <div class="label">✓ 365D-1 · 场景化 Agent</div>
+    <ul>
+      <li><strong>为什么</strong>:第 8 章 + 第 12 章,Agent 是 AI 产品的下一个能力跃迁</li>
+      <li><strong>做什么</strong>:针对核心场景做"半自动 Agent"——例如"批量电商主图(用户给商品名 + 风格,Agent 自动生成 100 张不同角度 / 不同背景)"、"自动多尺寸适配(同一图自动出小红书 / 抖音 / 朋友圈 / 公众号封面 4 种尺寸)"、"系列设计(同一活动的海报 / Banner / 闪屏一套出)"</li>
+      <li><strong>谁做</strong>:产品(场景定义) + 算法(Agent 编排) + 设计(Step-by-step UI) + 后端 + 前端</li>
+      <li><strong>度量</strong>:Agent 流程完成率 / 批量场景对营收贡献</li>
+      <li><strong>工程量</strong>:超大(全年)</li>
+      <li><strong>风险点</strong>:第 8 章 5 个必停 trigger 必须做对 + 资源 cap 必须有</li>
+    </ul>
+  </div>
+
+  <h4>大型重构 2 · 多模态输入</h4>
+  <div class="callout ops">
+    <div class="label">✓ 365D-2 · 多模态</div>
+    <ul>
+      <li><strong>为什么</strong>:第 9 章,多模态降低使用门槛</li>
+      <li><strong>做什么</strong>:
+        <ul>
+          <li>语音输入 prompt(移动端,Q3)</li>
+          <li>图片输入优化(上传参考图让 AI 模仿风格,体验大幅改善,Q4)</li>
+          <li>(可选)摄像头实时:对着实物拍让 AI 出"同款风格设计"(垂直场景试点)</li>
+        </ul>
+      </li>
+      <li><strong>谁做</strong>:算法(ASR / 视觉理解) + 移动端(关键)+ 后端 + 前端</li>
+      <li><strong>度量</strong>:移动端 prompt 输入方式分布(语音 vs 文字)/ 图参考使用率 / 多模态用户留存</li>
+      <li><strong>工程量</strong>:超大(全年)</li>
+    </ul>
+  </div>
+
+  <h3 id="s16-h3-5"><span class="pre">16.5</span>不做清单 · 5 件主动不做的事</h3>
+
+  <p class="lead">明确"不做什么"和"做什么"同等重要。这 5 件事是基于第 13 章失败考古 + 千图AI 当前阶段判断,不建议做。</p>
+
+  <div class="callout sharp">
+    <div class="label">✕ 5 件主动不做的事</div>
+    <ol>
+      <li><strong>不做"过度热情"的 AI 人格</strong>。第 11 诫 + 第 11 章对比——千图AI 服务专业用户,人格要克制不要做成 ChatGPT 式"太棒了!你的想法真有创意!"</li>
+      <li><strong>不做"AI 全自动一键搞定"</strong>。第 13 章 Rabbit R1 教训——不要营销虚标,不要做用户无法接管的全自动</li>
+      <li><strong>不做"AI 伴侣 / 情感陪伴"</strong>。第 10 章边界——千图AI 是工具型产品,不要往社交 / 陪伴方向扩</li>
+      <li><strong>不做"打卡 / 连续使用奖励"</strong>。第 12 诫——不要做让用户沉迷的机制,健康度优先</li>
+      <li><strong>不在所有维度上"赶上同行"</strong>。第 11 章"极致单点"启示——选 1-2 个维度做到 ★★★★★,其他维度做到行业平均即可</li>
+    </ol>
+  </div>
+
+  <h3 id="s16-h3-6"><span class="pre">16.6</span>怎么落地 · 执行机制建议</h3>
+
+  <p class="lead">最后给一个执行机制的建议,降低"路线图写了没人执行"的风险。</p>
+
+  <div class="callout ops">
+    <div class="label">✓ 4 条执行建议</div>
+    <ol>
+      <li><strong>每个 Quick Win 一个 owner</strong>——明确到人,不是"产品团队负责"。每周同步进度。</li>
+      <li><strong>设"AI UX 双周会"</strong>——产品 / 设计 / 算法 / 工程一起,review Quick Win 进度 + 用户反馈 + 12 诫体检的滚动更新。</li>
+      <li><strong>每月一个"12 诫复盘"</strong>——把当月做的功能,用 12 诫过一遍,看是否符合 / 违反哪几条。</li>
+      <li><strong>把这本书放在团队文档区</strong>——新人 onboarding 必读,设计 / 产品评审引用本书章节作为论证。</li>
+    </ol>
+  </div>
+
+  <h3 id="s16-h3-7"><span class="pre">16.7</span>本章小结 · 全书收官</h3>
+
+  <p>从前言"为什么写这本书"到这一章"路线图怎么落地",16 章约 50000 字,我们完成了一次系统的"<strong>AI 时代 UX 思考框架</strong>"构建。</p>
+
+  <p><strong>这本书的最终价值</strong>:不是这 16 章读完用户知道了多少新名词,是<em>当团队下次开会讨论"是否在生成结果旁边显示 confidence score"时,大家能在同一个坐标系里争论</em>(前言原话)。</p>
+
+  <p><strong>这本书是 v0.1</strong>——我们承诺持续迭代。2026 年下半年会有 v0.2,加入新出现的 AI 产品(GPT-5 / Claude 4 / Gemini 2 / 国内新出的产品),并根据团队批注修订观点。<em>欢迎团队成员留 issue / PR / 文档批注</em>。</p>
+
+  <div class="callout you">
+    <div class="label">◐ 最后的请求</div>
+    <p>读到这里的人,如果你对某一章有强烈共鸣或强烈反对,<strong>请告诉我们</strong>。一本被团队反复争论过的书,才有可能成为团队真正共享的判断标准。<em>这本书的价值不在它写完,在它被团队真实使用</em>。</p>
+  </div>
+
+  
+  <div class="chapter-recap">
+    <div class="label">★ 5-MINUTE RECAP · 五分钟回顾</div>
+    <h4>千图AI 路线图要点 · FACT-CHECK</h4>
+    <ol>
+      <li><strong>90 天 5 个 Quick Win</strong>:中文场景模板 + 错误分类 + 模型透明 + AI 自评 + 局部重绘入口——工程量小,用户感知强。</li>
+      <li><strong>180 天 3 个中型改造</strong>:派生树历史 + Memory 偏好 + Projects 概念——填上下文资产缺口。</li>
+      <li><strong>365 天 2 个大型重构</strong>:场景化 Agent 工作流 + 多模态输入(语音/图)——战略级跃迁。</li>
+      <li><strong>5 件主动不做的事</strong>:不做过度热情人格 / 不做 AI 全自动 / 不做情感陪伴 / 不做打卡机制 / 不在所有维度赶上同行(选极致单点)。</li>
+      <li><strong>4 条执行建议</strong>:每个 QW 一个 owner / AI UX 双周会 / 每月 12 诫复盘 / 把本书放团队文档区作设计评审论证依据。</li>
+    </ol>
+  </div>
+
+  <p class="ref">主要参考:<br>
+  本书第 1-15 章所有论述总和 · 千图AI 项目内部资料 · Geoffrey Moore, <em>Crossing the Chasm</em>(产品阶段判断)· Marty Cagan, <em>Inspired</em>(产品路线图方法论)· 即梦 / 通义万相 / Krea 产品 roadmap 公开信息(对照参考)</p>
+
+</div>
+</section>
+
 
 </main>
 
@@ -3595,13 +6323,13 @@ footer .signature {
       <p>一份基于公开 AI 产品观察与经典 UX 文献综合编撰的<strong>千图AI 内部 UX 读本</strong>。从 ChatGPT 发布以来三年的产品演化中提炼问题地图,横评头部 AI 产品的设计选择,最终重构经典启发法并应用到千图AI 自身。<em>不是 AI 产品评测,也不是 UX 教科书</em>,是一份回答"AI 时代 UX 怎么做"的内部判断书。</p>
 
       <h4>内容来源</h4>
-      <p>综合自 Don Norman《设计心理学》、Jakob Nielsen 可用性十大启发法、<em>NN/g</em> AI 研究专题、<em>Apple HIG</em> / <em>Google PAIR Guidebook</em> / <em>Microsoft HAX Toolkit</em> 等官方设计语言、以及 ChatGPT / Claude / Cursor / v0 / Krea 等头部 AI 产品的公开材料。具体引用为示例性使用,优先精度而非来源覆盖。完整书目见 <code>sources.md</code>。</p>
+      <p>综合自 Don Norman《设计心理学》、Jakob Nielsen 可用性十大启发法、<em>NN/g</em> AI 研究专题、<em>Apple HIG</em> / <em>Google PAIR Guidebook</em> / <em>Microsoft HAX Toolkit</em> 等官方设计语言、以及 ChatGPT / Claude / Cursor / v0 / Krea / 即梦 / 通义万相 / Midjourney 等头部 AI 产品的公开材料。具体引用为示例性使用,优先精度而非来源覆盖。</p>
 
       <h4>使用边界</h4>
-      <p>本读本是<em>内部 v0.1 草稿</em>,不构成对外发表的官方立场。书中"我们认为""我们的立场"代表作者的当前判断,可能在团队评审后修订。引用本读本观点时建议标注版本号(目前 v0.1,完整版预计 v1.0)。这本书欢迎团队成员边读边批注、边争论边修订——只有被反复争论过的判断,才能成为团队真正共享的标准。</p>
+      <p>本读本是<em>内部 v1.0 完整版</em>,不构成对外发表的官方立场。书中"我们认为""我们的立场"代表作者的当前判断,可能在团队评审后修订。<strong>末两章(第 15-16 章 千图AI 体检与路线图)基于外部观察,需要团队 FACT-CHECK 后才能转为正式决策</strong>。引用本读本观点时建议标注版本号。这本书欢迎团队成员边读边批注、边争论边修订——只有被反复争论过的判断,才能成为团队真正共享的标准。</p>
     </div>
 
-    <p class="credit">AI UX HANDBOOK · 内部读本 · v0.1 · 5 OF 16 CHAPTERS · MAY 2026</p>
+    <p class="credit">AI UX HANDBOOK · 内部读本 · v1.0 · 16 OF 16 CHAPTERS · MAY 2026</p>
     <p class="signature">白笑 · 2026 年 5 月</p>
   </div>
 </footer>
